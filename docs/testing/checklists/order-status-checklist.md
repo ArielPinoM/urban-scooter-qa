@@ -4,7 +4,7 @@
 - [] Hacer clic en "Estado del pedido" en el encabezado muestra el campo "Número de pedido".
 - [] El campo "Número de pedido" acepta entrada de texto.
 - [] Presionar Enter con un número válido muestra la información del pedido.
-- [] Presionar Enter con un número inválido muestra el mensaje: "No existe tal pedido. ¿Seguro que ese es el número correcto?"
+- [] Presionar Enter con un número inválido muestra el mensaje: "No existe tal pedido. ¿Seguro que ese es el número correcto?".
 - [] Se puede introducir otro número de pedido después de consultar uno.
 
 ## Visualización de datos del pedido
