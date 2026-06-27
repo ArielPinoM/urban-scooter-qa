@@ -14,16 +14,16 @@ Se le pide al usuario o usuaria que acepte el uso de cookies.
 Si el usuario o usuaria se desplaza al tercer bloque, encuentra la siguiente información:
 "Cómo funciona", "Preguntas frecuentes".
 
-### Pantalla "Realizar pedido"
+## Pantalla "Realizar pedido"
 
 Para hacer un pedido, el usuario o usuaria necesita rellenar dos formularios: "Para quién es el scooter" y "Alquiler".
 
-#### Para quién es el scooter
+### Para quién es el scooter
 
 Los campos son: "Nombre", "Apellido", "Dirección: a dónde llevar el scooter", "Estación de metro" y "Teléfono: el repartidor o repartidora llamará".
 Todos los campos son obligatorios. Si el usuario no los rellena correctamente, no puede avanzar a la siguiente página. En la parte inferior se encuentra el botón "Siguiente" que conduce al usuario o usuaria al formulario "Alquiler".
 
-#### Alquiler
+### Alquiler
 
 Los campos son "Fecha de entrega", "Periodo de alquiler", "Color del scooter" y "Comentario".
 
@@ -39,7 +39,7 @@ usuaria haga clic en el botón "Pedir", aparecerá un error "Introduce un <nombr
 
 El usuario o usuaria puede hacer varios pedidos, uno tras otro.
 
-### Pantalla "estado del pedido"
+## Pantalla "estado del pedido"
 
 Si el usuario o usuaria hace clic en "Estado del pedido" en el encabezado del inicio, aparece el campo "Número de pedido" El usuario o usuaria debe introducir un valor y presionar Enter. Si el número de pedido se introduce correctamente, aparece la información:
 
@@ -58,7 +58,7 @@ Hay cuatro estados en la pantalla de estado del pedido. Solo uno de ellos puede 
 
 El usuario o usuaria puede introducir otro número de pedido y ver su estado.
 
-#### Cancelación de pedido
+### Cancelación de pedido
 
 Si el usuario o usuaria hace clic en él, aparecerá una ventana emergente con el texto "¿Deseas cancelar el pedido?". Hay dos botones en la ventana emergente: "Cancelar" y "Atrás".
 
@@ -70,7 +70,7 @@ El usuario o usuaria puede cancelar el pedido antes de que el repartidor o repar
 
 El pedido cancelado se elimina del sistema, el usuario o usuaria no puede verlo
 
-#### Pedido atrasado
+### Pedido atrasado
 
 Un pedido se considera atrasado cuando el repartidor o repartidora no lo entregó a tiempo. Por ejemplo, un usuario o usuaria pidió un scooter para el 1 de enero. Si el scooter no se entrega a las 11:59 p.m. del 1 de enero o antes, el pedido está atrasado.
 
@@ -78,7 +78,7 @@ Si el pedido está atrasado, su estado cambia a "El repartidor o repartidora se 
 
 Si se ha entregado al usuario o usuaria un pedido atrasado, la cuenta regresiva para el final del periodo de alquiler comienza cuando se recibe el pedido.
 
-### Perfeccionamiento del front-end
+## Perfeccionamiento del front-end
 
 Se ha agregado un quinto estado a la cadena de estado: "El periodo de alquiler terminó". Esta es una función que sólo se implementó en el front-end, y el back-end aún no está listo. Este mensaje solía aparecer en lugar del cuarto estado, en el momento en que el periodo de alquiler estaba por terminar. Ahora el texto en el cuarto estado no cambia, simplemente se vuelve gris, como los otros estados.
 
@@ -86,7 +86,7 @@ Un ejemplo de la respuesta se describe en la documentación de la API en el bloq
 
 Nuevo número de estado en la solicitud = 3.
 
-#### Restricciones de los campos
+## Restricciones de los campos
 
 | Nombre              | Tipo de campo                                                                                | Valores posibles                                                                                                                                                                                                                                                                                                                                           | Obligatorio |
 | :------------------ | :------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------- |
@@ -100,7 +100,7 @@ Nuevo número de estado en la solicitud = 3.
 | Color               | Casilla de verificación                                                                      | Negro, gris. Se puede elegir una o ambas opciones.                                                                                                                                                                                                                                                                                                         | ⨉           |
 | Comentario          | Campo de texto                                                                               | Solo letras del alfabeto latino, números, espacios, guiones, puntos y comas. La longitud maxima es de 24 caracteres.                                                                                                                                                                                                                                       | ⨉           |
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 - ¿Cuánto cuesta? ¿Y cómo lo puedo pagar?
 
 Son $8 por día. El servicio de entrega recibe pagos en efectivo o con tarjeta.
