@@ -90,3 +90,9 @@
     - Tipo de prueba: Funcional
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟢 PASSED
+
+### "El repartidor o repartidora está en camino"
+18. Se activa cuando el repartido confirma que aceptó el pedido.
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
