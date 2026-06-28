@@ -29,16 +29,21 @@
 
 6. Se puede introducir otro número de pedido después de consultar uno.
     - Tipo de prueba: Funcional
-    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: Nose puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟢 PASSED
 
 ## Visualización de datos del pedido
 7. Se muestra el nombre del usuario.
     - Tipo de prueba: Funcional
-    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: Nose puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟢 PASSED
 
 8. Se muestra el apellido del usuario.
     - Tipo de prueba: Funcional
-    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: Nose puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
+
+9. Se muestra la dirección del usuario.
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟢 PASSED
