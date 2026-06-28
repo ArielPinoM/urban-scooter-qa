@@ -13,7 +13,7 @@
 
 3. Presionar Enter con un número válido muestra la información del pedido.
     - Tipo de prueba: Funcional
-    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED [[BUG US-1]](../bug-reports/US-1.md)
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: Nose puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟢 PASSED
 
 4. Tras hacer clic en "Pedir" con datos válidos, no aparece ninguna ventana de confirmación intermedia (según BRD y Figma).
@@ -27,4 +27,7 @@
     - Chrome 85 o superior, 1280x720: 🟢 PASSED
     - Opera 71 o superior, 1280x720: 🟢 PASSED
 
-6. 
+6. Se puede introducir otro número de pedido después de consultar uno.
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: Nose puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
