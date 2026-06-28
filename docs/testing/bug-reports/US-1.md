@@ -1,4 +1,4 @@
-# Ventana emergente de confirmación no documentada bloquea la creación del pedido en Chrome (funciona en Opera)
+# US-1: Ventana emergente de confirmación no documentada bloquea la creación del pedido en Chrome (funciona en Opera)
 
 # Detalles clave
 
