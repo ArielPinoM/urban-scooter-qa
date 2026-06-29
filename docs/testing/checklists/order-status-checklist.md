@@ -190,7 +190,13 @@
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟡 SKIPPED: El pedido no se cancela. [[BUG US-10]](../bug-reports/US-10.md)
 
-### API - Aceptación de Pedidos - PUT /api/v1/orders/accept/:id
+## Pedido atrasado
+37. Un pedido no entregado a las 23:59 o antes, del día acordado, cambia a estado "El repartidor o repartidora se demoró".
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
+
+# API - Aceptación de Pedidos - PUT /api/v1/orders/accept/:id
 1. Al aceptar un pedido mediante la API, se actualiza el campo inDelivery = f a inDelivery = t en la tabla "Orders" de dicho pedido y no se duplica el registro del pedido.
     - Tipo de prueba: Funcional
     - Api Ez-scooter versión 1.0.0: 🔴 FAILED [[BUG US-5]](../bug-reports/US-5.md)
