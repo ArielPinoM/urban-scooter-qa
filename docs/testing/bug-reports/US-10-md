@@ -45,7 +45,7 @@ Tras la cancelación, el pedido desaparece del sistema. Al intentar consultarlo,
 ### Evidencia
 
 #### Video mostrando el proceso de cancelación y la reaparición del pedido al consultarlo
-![Video](../test-evidence/US-10/cancelled-order-not-deleted.mp4)
+https://github.com/ArielPinoM/urban-scooter-qa/blob/main/docs/testing/test-evidence/US-10/cancelled-order-not-deleted.mp4
 
 #### Registro del pedido de la tabla Orders
 - 5 |           | Ariel     | Pino     | 1st Street | 2            | +19999999999     |        1 | 2026-06-30 06:00:00+00 | 849473 | f          | {}      |              | f        | f        | 2026-06-29 21:54:17.203+00 | 2026-06-29 21:54:17.203+00
