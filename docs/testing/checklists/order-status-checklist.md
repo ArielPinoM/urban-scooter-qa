@@ -144,7 +144,18 @@
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟢 PASSED
 
-27. Los estados inactivos están en gris.
+28. Los estados inactivos están en gris.
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
+
+29. Al pasar de un estado al siguiente, el número delante del estado cambia a una marca (check).
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
+
+## Cancelación de pedido
+30. Al hacer clic en "Cancelar pedido", aparece una ventana emergente con el texto "¿Deseas cancelar el pedido?".
     - Tipo de prueba: Funcional
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟢 PASSED
