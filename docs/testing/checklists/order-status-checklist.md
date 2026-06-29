@@ -122,7 +122,12 @@
 23. Muestra "El alquiler finalizará el <fecha>".
     - Tipo de prueba: Funcional
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
-    - Opera 71 o superior, 1280x720: 
+    - Opera 71 o superior, 1280x720: 🔴 FAILED [[BUG US-7]](../bug-reports/US-7.md)
+
+24. La fecha se coincide con el cálculo desde la entrega y el número de días de alquiler.
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟡 SKIPPED: No se muestra la fecha. [[BUG US-7]](../bug-reports/US-7.md)
 
 ### API - Aceptación de Pedidos - PUT /api/v1/orders/accept/:id
 1. Al aceptar un pedido mediante la API, se actualiza el campo inDelivery = f a inDelivery = t en la tabla "Orders" de dicho pedido y no se duplica el registro del pedido.
