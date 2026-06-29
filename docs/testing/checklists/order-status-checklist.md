@@ -185,6 +185,11 @@
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟡 SKIPPED: El botón desaparece cuando el repartidor tiene el pedido. [[BUG US-9]](../bug-reports/US-9.md)
 
+36. El pedido cancelado se elimina del sistema y no es visible para el usuario.
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟡 SKIPPED: El pedido no se cancela. [[BUG US-10]](../bug-reports/US-10.md)
+
 ### API - Aceptación de Pedidos - PUT /api/v1/orders/accept/:id
 1. Al aceptar un pedido mediante la API, se actualiza el campo inDelivery = f a inDelivery = t en la tabla "Orders" de dicho pedido y no se duplica el registro del pedido.
     - Tipo de prueba: Funcional
