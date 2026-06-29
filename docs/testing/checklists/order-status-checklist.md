@@ -160,7 +160,12 @@
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟢 PASSED
 
-31. Botón "Atrás" cierra la ventana y vuelve a la pantalla de estado
+31. Botón "Atrás" cierra la ventana y vuelve a la pantalla de estado.
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
+
+32. Botón "Cancelar" muestra ventana: "El pedido ha sido cancelado. Siéntete libre de volver en cualquier momento :)" y botón "Bien".
     - Tipo de prueba: Funcional
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🟢 PASSED
