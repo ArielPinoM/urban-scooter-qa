@@ -112,3 +112,19 @@
     - Tipo de prueba: Funcional
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🔴 FAILED [[BUG US-4]](../bug-reports/US-4.md)
+
+### "Bien, vamos a dar un paseo"
+22. Se activa cuando el repartidor confirma finalización.
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🟡 SKIPPED: El estado se activa cuando el repartidor presiona "Completar" desde la app. [[BUG US-6]](../bug-reports/US-6.md)
+
+23. Muestra "El alquiler finalizará el <fecha>".
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 
+
+### API - Aceptación de Pedidos - PUT /api/v1/orders/accept/:id
+1. Al aceptar un pedido mediante la API, se actualiza el campo inDelivery = f a inDelivery = t en la tabla "Orders" de dicho pedido y no se duplica el registro del pedido.
+    - Tipo de prueba: Funcional
+    - Api Ez-scooter versión 1.0.0: 🔴 FAILED [[BUG US-5]](../bug-reports/US-5.md)

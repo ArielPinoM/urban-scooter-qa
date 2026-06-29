@@ -1,4 +1,4 @@
-# US-4: El estado "El servicio de entrega llegó" es gris y muestra la marca "✔" al completar pedido
+# US-4: El estado "El servicio de entrega llegó" es gris y muestra la marca "✔" al completar pedido - posible consecuencia de registros duplicados
 
 # Detalles clave
 
@@ -11,6 +11,7 @@
 ## Entorno
 - Opera 132, 1280x720 (Chrome bloqueado por [US-1](./US-1.md))
 - Postman 12.16.4
+- Api Ez-scooter versión 1.0.0
 - Dispositivo móvil
     - Samsung Galaxy S23+
     - Android version: 16
@@ -20,15 +21,12 @@
 Estado del Pedido - Cadena de Estados
 
 ## Descripción
-Al simular la acción del repartidor presionando “Completar” mediante la aplicación móvil “Urban Scooter“, el tercer estado “El servicio de entrega llegó“ no se activa. Se muestra en gris con la marca de completado, como si ya hubiese sido superado. En su lugar, el cuarto estado “Bien, vamos a dar un paseo“ aparece resaltado en negro como activo.
+Al intentar verificar que el tercer estado “El servicio de entrega llegó“ se activa cuando el repartidor presiona “Completar“ desde la aplicación móvil, se encontró que el pedido se había duplicado en la base de datos ([US-5](./US-5.md)). Para forzar el avance de estados fue necesario completar ambos registros; al hacerlo, el estado 3 apareció como inactivo y el 4 como activo.
 
-Según el documento de requisitos:
-> - "El servicio de entrega llegó". Se activa cuando el repartidor o repartidora
-presiona el botón "Completar" en su aplicación.
-
-Esto indica que el estado 3 debería estar activo en ese punto, y el 4 aún no.
+Este comportamiento parece ser un síntoma de [US-5](./US-5.md), ya que la lógica de estados podría estar operando sobre múltiples registros del mismo pedido. Se requiere que se resuelva [US-5](./US-5.md), para poder volver a ejecutar esta prueba.
 
 ### Precondiciones
+- US-5 resuelto.
 - Existe un pedido creado con un número de pedido conocido.
 - Se ha creado una cuenta de mensajero (vía API).
 - Se ha instalado la aplicación móvil “Urban Scooter“ versión 1.0 en un dispositivo físico o un emulador con Android 16.
@@ -50,7 +48,7 @@ Esto indica que el estado 3 debería estar activo en ese punto, y el 4 aún no.
 ### Resultado esperado
 El estado 3 ("El servicio de entrega llegó") está activo (resaltado en negro, con el número 3 delante).
 
-### Resultado actual
+### Resultado actual (con [US-5](./US-5.md) presente)
 El estado 3 aparece en gris con marca de completado.
 
 ### Evidencia

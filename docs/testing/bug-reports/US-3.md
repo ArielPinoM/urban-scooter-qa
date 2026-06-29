@@ -28,7 +28,7 @@ Esto no se cumple; el texto se corta.
 
 ### Pasos para reproducir
 1. Crear un pedido válido (usar Opera 1280x720) y guardar el número de pedido.
-2. Mediante Postman, crear una cuenta de mensajero con `POST` `/api/v1/courier` con el body:
+2. Mediante Postman, crear una cuenta de mensajero con `POST` `/api/v1/courier` con el payload:
     ```json
     {
         "login": "arielpinomeza96arielpinomeza96",
@@ -36,7 +36,7 @@ Esto no se cumple; el texto se corta.
         "firstName": "Ariel"
     }
     ```
-3. Mediante Postman, iniciar sesión con `POST` `/api/v1/courier/login` con el body: 
+3. Mediante Postman, iniciar sesión con `POST` `/api/v1/courier/login` con el payload: 
     ```json
     {
         "login": "arielpinomeza96arielpinomeza96",
