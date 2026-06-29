@@ -60,5 +60,5 @@ El texto aparece truncado: “El repartidor o repartidora ar ... está en camino
 
 ### Evidencia
 
-#### Captura de pantalla del estado con el texto truncado.
+#### Captura de pantalla del estado con el texto truncado
 ![](../test-evidence/US-3/truncated-text.png)

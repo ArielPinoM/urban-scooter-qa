@@ -106,3 +106,9 @@
     - Tipo de prueba: Funcional
     - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1280x720: 🔴 FAILED [[BUG US-3]](../bug-reports/US-3.md)
+
+### "El servicio de entrega llegó"
+21. Se activa cuando el repartidor presiona "Completar".
+    - Tipo de prueba: Funcional
+    - Chrome 85 o superior, 1280x720: 🟡 SKIPPED: No se puede crear pedido. [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1280x720: 🔴 FAILED [[BUG US-4]](../bug-reports/US-4.md)
