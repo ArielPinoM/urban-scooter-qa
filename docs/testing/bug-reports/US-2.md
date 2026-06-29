@@ -40,8 +40,8 @@ Se muestra “Artesia“ en “Estación de metro“.
 
 ### Evidencia
 
-#### Captura de pantalla del formulario con el dato ingresado.
+#### Captura de pantalla del formulario con el dato ingresado
 ![](../test-evidence/US-2/form-data.png)
 
-#### Captura de pantalla de “Estado del pedido“ mostrando el dato incorrecto.
+#### Captura de pantalla de “Estado del pedido“ mostrando el dato incorrecto
 ![](../test-evidence/US-2/order-status-wrong-data.png)
