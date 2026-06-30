@@ -74,3 +74,7 @@
 
 53. Si "Teléfono" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un número de teléfono válido".
     - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-15]](../bug-reports/US-15-md)
+
+### Navegación
+54. Si todos los campos están rellenados correctamente, al hacer clic en "Siguiente" se avanza al formulario "Alquiler".
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
