@@ -64,4 +64,7 @@
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 50. Si "Apellido" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un Nombre correcto".
-    - Opera 71 o superior, 1920x1080: 🔴 FAILED
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-12]](../bug-reports/US-12-md)
+
+51. Si "Dirección" está vacía o es inválido, al intentar avanzar se muestra error "Introduce un dirección correcto".
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-13]](../bug-reports/US-13-md)
