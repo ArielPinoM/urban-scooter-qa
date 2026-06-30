@@ -53,7 +53,7 @@
     - Chrome 85 o superior, 1280x720: 🔴 FAILED
     - Opera 71 o superior, 1280x720: 🔴 FAILED
     - Opera 71 o superior, 1920x1080: 🔴 FAILED
-    - [[US-11]](../bug-reports/US-11-md)
+    - [[US-11]](../bug-reports/US-11.md)
 
 ---
 
@@ -66,16 +66,16 @@
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 50. Si "Apellido" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un apellido válido".
-    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-12]](../bug-reports/US-12-md)
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-12]](../bug-reports/US-12.md)
 
 51. Si "Dirección" está vacía o es inválida, al intentar avanzar se muestra error "Introduce una dirección válida".
-    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-13]](../bug-reports/US-13-md)
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-13]](../bug-reports/US-13.md)
 
 52. Si "Estación de metro" está vacía, al intentar avanzar se muestra error "Introduce una estación de metro correcta".
-    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-14]](../bug-reports/US-14-md)
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-14]](../bug-reports/US-14.md)
 
 53. Si "Teléfono" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un número de teléfono válido".
-    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-15]](../bug-reports/US-15-md)
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-15]](../bug-reports/US-15.md)
 
 ### Navegación
 54. Si todos los campos están rellenados correctamente, al hacer clic en "Siguiente" se avanza al formulario "Alquiler".
@@ -167,3 +167,14 @@
 75. Al hacer hover en "Siguiente", el cursor cambia a mano.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+---
+
+# Formulario "Alquiler"
+
+## Pruebas funcionales
+
+### Validaciones de campos
+
+76. Si "Fecha de entrega" se marca como inválido, al hacer clic en "Pedir" se muestra error "Introduce una fecha de entrega correcta".
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
