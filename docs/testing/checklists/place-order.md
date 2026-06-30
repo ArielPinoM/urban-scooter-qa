@@ -87,5 +87,10 @@
 ## Pruebas de diseño
 
 ### Encabezado
-55. Si algún campo se marca como inválido, al hacer clic en "Siguiente" se muestra el error correspondiente y no se avanza.
+56. Si algún campo se marca como inválido, al hacer clic en "Siguiente" se muestra el error correspondiente y no se avanza.
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+### Campos
+57. El campo "Nombre" está presente.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
