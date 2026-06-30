@@ -18,3 +18,11 @@
     - Chrome 85 o superior, 1280x720: 🟢 PASSED
     - Opera 71 o superior, 1280x720: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+### Botones del header
+43. El botón "Pedir" está presente y en la posición esperada.
+    - Tipo de prueba: Diseño
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Chrome 85 o superior, 1280x720: 🟢 PASSED
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
