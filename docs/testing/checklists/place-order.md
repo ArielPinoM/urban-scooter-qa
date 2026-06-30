@@ -63,11 +63,14 @@
 49. Si "Nombre" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un Nombre correcto".
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
-50. Si "Apellido" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un Nombre correcto".
+50. Si "Apellido" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un apellido válido".
     - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-12]](../bug-reports/US-12-md)
 
-51. Si "Dirección" está vacía o es inválido, al intentar avanzar se muestra error "Introduce un dirección correcto".
+51. Si "Dirección" está vacía o es inválida, al intentar avanzar se muestra error "Introduce una dirección válida".
     - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-13]](../bug-reports/US-13-md)
 
-52. Si "Estación de metro" está vacía, al intentar avanzar se muestra error "Introduce un Estación de metro correcto".
+52. Si "Estación de metro" está vacía, al intentar avanzar se muestra error "Introduce una estación de metro correcta".
     - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-14]](../bug-reports/US-14-md)
+
+53. Si "Teléfono" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un número de teléfono válido".
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-15]](../bug-reports/US-15-md)
