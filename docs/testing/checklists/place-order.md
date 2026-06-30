@@ -94,3 +94,7 @@
 57. El campo "Nombre" está presente.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+58. El placeholder de "Nombre" coincide con "* Nombre".
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
