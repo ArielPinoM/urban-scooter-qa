@@ -142,3 +142,7 @@
 69. El placeholder de "Teléfono" coincide con "Teléfono: el repartidor o repartidora te llamará".
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+70. "Teléfono" inválido se resalta en rojo.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
