@@ -178,3 +178,6 @@
 
 76. Si "Fecha de entrega" se marca como inválido, al hacer clic en "Pedir" se muestra error "Introduce una fecha de entrega correcta".
     - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+
+77. Si "Periodo de alquiler" se marca como inválido, al hacer clic en "Pedir" se muestra error "Introduce un Periodo de alquiler correcto".
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-17]](../bug-reports/US-17.md)
