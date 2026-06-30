@@ -40,3 +40,10 @@
     - Chrome 85 o superior, 1280x720: 🟢 PASSED
     - Opera 71 o superior, 1280x720: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+46. Color de fondo del botón "Estado del pedido" coincide con Figma.
+    - Tipo de prueba: Diseño
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Chrome 85 o superior, 1280x720: 🟢 PASSED
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
