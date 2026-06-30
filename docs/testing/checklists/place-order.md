@@ -68,3 +68,6 @@
 
 51. Si "Dirección" está vacía o es inválido, al intentar avanzar se muestra error "Introduce un dirección correcto".
     - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-13]](../bug-reports/US-13-md)
+
+52. Si "Estación de metro" está vacía, al intentar avanzar se muestra error "Introduce un Estación de metro correcto".
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-14]](../bug-reports/US-14-md)
