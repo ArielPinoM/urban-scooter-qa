@@ -47,3 +47,10 @@
     - Chrome 85 o superior, 1280x720: 🟢 PASSED
     - Opera 71 o superior, 1280x720: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+47. Al hacer hover en "Pedir", el botón muestra el estilo especificado en Figma.
+    - Tipo de prueba: Diseño
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Chrome 85 o superior, 1280x720: 🟢 PASSED
+    - Opera 71 o superior, 1280x720: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
