@@ -155,3 +155,7 @@
 72. El botón "Siguiente" está presente en la parte inferior del formulario.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+73. Color de fondo del botón "Siguiente" coincide con Figma.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
