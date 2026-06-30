@@ -64,4 +64,4 @@
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 50. Si "Apellido" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un Nombre correcto".
-    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED
