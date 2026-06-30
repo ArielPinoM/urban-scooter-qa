@@ -78,3 +78,6 @@
 ### Navegación
 54. Si todos los campos están rellenados correctamente, al hacer clic en "Siguiente" se avanza al formulario "Alquiler".
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+55. Si algún campo se marca como inválido, al hacer clic en "Siguiente" se muestra el error correspondiente y no se avanza.
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
