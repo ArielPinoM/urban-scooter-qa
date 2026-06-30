@@ -98,3 +98,7 @@
 58. El placeholder de "Nombre" coincide con "* Nombre".
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+59. "Nombre" inválido se resalta en rojo.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
