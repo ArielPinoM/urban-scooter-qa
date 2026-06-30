@@ -150,3 +150,8 @@
 71. Los campos obligatorios están marcados con asterisco.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+### Botón "Siguiente"
+72. El botón "Siguiente" está presente en la parte inferior del formulario.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
