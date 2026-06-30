@@ -122,3 +122,7 @@
 64. El placeholder de "Dirección" coincide con "* Dirección: a dónde llevar el scooter".
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+65. "Dirección" inválida se resalta en rojo.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
