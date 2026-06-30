@@ -102,3 +102,7 @@
 59. "Nombre" inválido se resalta en rojo.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+60. El campo "Apellido" está presente.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
