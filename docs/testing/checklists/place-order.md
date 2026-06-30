@@ -55,6 +55,8 @@
     - Opera 71 o superior, 1920x1080: 🔴 FAILED
     - [[US-11]](../bug-reports/US-11-md)
 
+---
+
 # Formulario "Para quién es el scooter"
 
 ## Pruebas Funcionales
@@ -79,5 +81,11 @@
 54. Si todos los campos están rellenados correctamente, al hacer clic en "Siguiente" se avanza al formulario "Alquiler".
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
+55. Si algún campo se marca como inválido, al hacer clic en "Siguiente" se muestra el error correspondiente y no se avanza.
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+## Pruebas de diseño
+
+### Encabezado
 55. Si algún campo se marca como inválido, al hacer clic en "Siguiente" se muestra el error correspondiente y no se avanza.
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
