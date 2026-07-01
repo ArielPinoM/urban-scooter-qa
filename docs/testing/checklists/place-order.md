@@ -219,3 +219,8 @@
 86. El formulario no se envía hasta que todos los campos obligatorios sean correctos.
     - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+
+### Múltiples pedidos
+87. Después de realizar un pedido exitosamente, el usuario puede realizar otro pedido.
+    - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
