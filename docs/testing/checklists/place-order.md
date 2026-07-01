@@ -198,3 +198,7 @@
 81. La ventana emergente muestra el mensaje "Número de pedido NNNNN. Escríbelo: será útil para darle seguimiento al estado".
     - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+82. La ventana emergente contiene un botón "Comprueba el estado".
+    - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
