@@ -215,3 +215,7 @@
 85. Si algún campo obligatorio está vacío o es inválido, al hacer clic en "Pedir" aparece un mensaje de error indicando el campo problemático.
     - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-18]](../bug-reports/US-18.md)
+
+86. El formulario no se envía hasta que todos los campos obligatorios sean correctos.
+    - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
