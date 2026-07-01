@@ -236,6 +236,11 @@
 ## Pruebas de diseño
 
 ### Encabezado
-89. El texto del encabezado coincide con "Alquiler".
+90. El texto del encabezado coincide con "Alquiler".
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+### Campos
+91. El campo "Fecha de entrega" está presente.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
