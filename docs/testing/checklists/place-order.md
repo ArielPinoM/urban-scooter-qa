@@ -232,3 +232,10 @@
 89. Cada pedido genera un número de pedido distinto (visible en la ventana emergente).
     - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+## Pruebas de diseño
+
+### Encabezado
+89. El texto del encabezado coincide con "Alquiler".
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
