@@ -244,3 +244,8 @@
 91. El campo "Fecha de entrega" está presente.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+92. El placeholder de "Fecha de entrega" coincide con "* Cuándo entregar el scooter".
+    - Chrome 85 o superior, 1920x1080: 🔴 FAILED 
+    - Opera 71 o superior, 1920x1080: 🔴 FAILED
+    - [[US-19]](../bug-reports/US-19.md)
