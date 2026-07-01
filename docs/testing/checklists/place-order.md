@@ -202,3 +202,7 @@
 82. La ventana emergente contiene un botón "Comprueba el estado".
     - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+83. Al hacer clic en "Comprueba el estado" se redirige a la pantalla "Estado del pedido".
+    - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
