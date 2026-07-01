@@ -185,3 +185,6 @@
 ### Botón "Atrás"
 78. Al hacer clic en "Atrás" se regresa a la pantalla "Para quién es el scooter".
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+79. Los campos de "Alquiler" conservan la información al regresar después de haber avanzado nuevamente.
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
