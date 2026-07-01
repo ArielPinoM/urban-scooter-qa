@@ -228,3 +228,7 @@
 88. Los datos del nuevo pedido no se mezclan con los del anterior.
     - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+89. Cada pedido genera un número de pedido distinto (visible en la ventana emergente).
+    - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
