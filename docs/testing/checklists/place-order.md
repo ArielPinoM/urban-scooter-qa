@@ -206,3 +206,7 @@
 83. Al hacer clic en "Comprueba el estado" se redirige a la pantalla "Estado del pedido".
     - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+84. En la pantalla "Estado del pedido", el campo "Número de pedido" aparece ya completado con el número del pedido recién creado.
+    - Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
