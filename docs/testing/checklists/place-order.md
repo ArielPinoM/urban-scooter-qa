@@ -181,3 +181,7 @@
 
 77. Si "Periodo de alquiler" se marca como inválido, al hacer clic en "Pedir" se muestra error "Introduce un Periodo de alquiler correcto".
     - Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-17]](../bug-reports/US-17.md)
+
+### Botón "Atrás"
+78. Al hacer clic en "Atrás" se regresa a la pantalla "Para quién es el scooter".
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
