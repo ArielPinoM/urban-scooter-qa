@@ -188,3 +188,9 @@
 
 79. Los campos de "Alquiler" conservan la información al regresar después de haber avanzado nuevamente.
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+### Botón "Pedir"
+80. Con todos los campos obligatorios correctos, al hacer clic en "Pedir" aparece una ventana emergente "El pedido ha sido realizado".
+    - Chrome 85 o superior, 1920x1080
+    - Opera 71 o superior, 1920x1080
+    - 🔴 FAILED [[US-1]](../bug-reports/US-1.md)
