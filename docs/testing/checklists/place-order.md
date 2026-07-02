@@ -265,3 +265,7 @@
 96. El placeholder de "Periodo de alquiler" coincide con "* Periodo de alquiler".
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+97. "Periodo de alquiler" es obligatorio, tiene indicación visual "*".
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
