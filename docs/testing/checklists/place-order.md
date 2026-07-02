@@ -257,3 +257,7 @@
 94. "Fecha de entrega" es obligatorio, tiene indicación visual "*".
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+95. El campo "Periodo de alquiler" está presente.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
