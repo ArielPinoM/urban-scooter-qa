@@ -307,3 +307,7 @@ El color del scooter
 105. Al hacer hover en "Atrás", el cursor cambia a mano.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+106. El botón "Pedir" está presente en la parte inferior del formulario.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
