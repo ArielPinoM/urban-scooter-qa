@@ -478,27 +478,32 @@ Cada ítem verifica:
 157. **VÁLIDO** – Caracteres del alfabeto latino
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
-144. **INVÁLIDO** – Números
+158. **VÁLIDO** – Números
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
-138. **VÁLIDO** – Dirección con espacios
+159. **VÁLIDO** – Dirección con espacios
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
-139. **VÁLIDO** – Dirección con guiones
+160. **VÁLIDO** – Dirección con guiones
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
-140. **INVÁLIDO** – Dirección con puntos
+161. **VÁLIDO** – Dirección con puntos
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
-141. **INVÁLIDO** – Dirección con comas
+162. **VÁLIDO** – Dirección con comas
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
-142. **INVÁLIDO** – Dirección con caracteres especiales [ №%@\" ]
+163. **INVÁLIDO** – Dirección con caracteres especiales [ №%@\" ]
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
-143. **INVÁLIDO** – Caracteres de otro lenguaje [ 加布里埃爾F加布爾 ]
+164. **INVÁLIDO** – Caracteres de otro lenguaje [ 加布里埃爾F加布爾 ]
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 #### Estación de Metro
+165. **VÁLIDO** - Selección de alguna estación de la lista.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+166. **INVÁLIDO** - Sin selección.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 #### Teléfono
