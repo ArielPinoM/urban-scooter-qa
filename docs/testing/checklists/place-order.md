@@ -287,6 +287,11 @@ El color del scooter
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
-101. El campo "Comentario" está presente.
+101. El placeholder de "Comentario" coincide con "Comentario".
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+### Botones
+102. El botón "Atrás" está presente en la parte inferior del formulario.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
