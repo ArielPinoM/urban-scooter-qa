@@ -269,3 +269,7 @@
 97. "Periodo de alquiler" es obligatorio, tiene indicación visual "*".
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+98. El campo "Color" está presente.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
