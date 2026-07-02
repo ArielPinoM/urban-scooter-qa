@@ -280,34 +280,39 @@ El color del scooter
 ☐ negro
 ☐ gris
 ".
-    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
-    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED
+- Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 100. El campo "Comentario" está presente.
-    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
-    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED
+- Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 101. El placeholder de "Comentario" coincide con "Comentario".
-    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
-    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED
+- Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 ### Botones
+
 102. El botón "Atrás" está presente en la parte inferior del formulario.
-    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
-    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED
+- Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 103. Color de fondo del botón "Atrás" coincide con Figma.
-    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
-    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED
+- Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 104. Al hacer hover en "Atrás", el botón muestra el estilo especificado en Figma.
-    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
-    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED
+- Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 105. Al hacer hover en "Atrás", el cursor cambia a mano.
-    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
-    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED
+- Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 106. El botón "Pedir" está presente en la parte inferior del formulario.
-    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
-    - Opera 71 o superior, 1920x1080: 🟢 PASSED
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED
+- Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+107. Color de fondo del botón "Pedir" coincide con Figma.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED
+- Opera 71 o superior, 1920x1080: 🟢 PASSED
