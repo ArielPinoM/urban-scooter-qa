@@ -507,3 +507,63 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 #### Teléfono
+
+167. **VÁLIDO** - Longitud de 10 caracteres numéricos y símbolo "+" al inicio.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+168. **VÁLIDO** - Longitud de 11 caracteres numéricos y símbolo "+" al inicio.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+169. **VÁLIDO** - Longitud de 12 caracteres numéricos y símbolo "+" al inicio.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+170. **INVÁLIDO** - Longitud de 7 caracteres numéricos y símbolo "+" al inicio.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+171. **INVÁLIDO** - Longitud de 8 caracteres numéricos y símbolo "+" al inicio.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+172. **INVÁLIDO** - Longitud de 9 caracteres numéricos y símbolo "+" al inicio.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+173. **INVÁLIDO** - Longitud de 13 caracteres numéricos y símbolo "+" al inicio.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+174. **INVÁLIDO** - Longitud de 14 caracteres numéricos y símbolo "+" al inicio.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+175. **INVÁLIDO** - Longitud de 15 caracteres numéricos y símbolo "+" al inicio.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+176. **INVÁLIDO** - Sin el símbolo "+".
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-25]](../bug-reports/US-25.md)
+
+177. **INVÁLIDO** - Vacío: 0 caracteres con signo "+".
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+178. **INVÁLIDO** - Vacío: 0 caracteres sin signo "+".
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+179. **INVÁLIDO** - Símbolo "+" no inicial.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+180. **INVÁLIDO** - Teléfono con caracteres del alfabeto
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+181. **INVÁLIDO** - Teléfono con espacios
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+182. **INVÁLIDO** - Teléfono con guiones
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+183. **INVÁLIDO** - Teléfono con puntos
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+184. **INVÁLIDO** - Teléfono con comas
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+185. **INVÁLIDO** - Teléfono con caracteres especiales
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+186. **INVÁLIDO** - Teléfono con caracteres de otro lenguaje
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
