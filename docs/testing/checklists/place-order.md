@@ -249,3 +249,7 @@
     - Chrome 85 o superior, 1920x1080: 🔴 FAILED 
     - Opera 71 o superior, 1920x1080: 🔴 FAILED
     - [[US-19]](../bug-reports/US-19.md)
+
+93. Focus en "Fecha de entrega" se resalta en azul.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
