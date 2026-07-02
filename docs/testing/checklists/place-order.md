@@ -319,3 +319,70 @@
 108. Al hacer hover en "Pedir", el cursor cambia a mano.
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 - Opera 71 o superior, 1920x1080: 🟢 PASSED 
+
+## Pruebas de validación de datos en los campos
+Cada ítem verifica:
+- La señalización visual del campo (estilo de error).
+- La lógica de bloqueo/permiso en el flujo (botón "Siguiente" o "Pedir").
+
+### Formulario "Para quién es el scooter"
+
+#### Nombre
+109. **VÁLIDO** – Longitud 2 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+110. **VÁLIDO** – Longitud 3 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+111. **VÁLIDO** – Longitud 5 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+112. **VÁLIDO** – Longitud 14 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+113. **VÁLIDO** – Longitud 15 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+114. **INVÁLIDO** – Longitud 1 caracter.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+115. **INVÁLIDO** – Longitud 16 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+116. **INVÁLIDO** – Longitud 17 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+117. **INVÁLIDO** – Longitud 18 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+118. **INVÁLIDO** – Vacío: 0 caracteres
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+119. **VÁLIDO** – Caracteres del alfabeto latino
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+120. **VÁLIDO** – Nombre con espacios
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+121. **VÁLIDO** – Nombre con guiones
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+122. **INVÁLIDO** – Nombre con puntos
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+123. **INVÁLIDO** – Nombre con comas
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+124. **INVÁLIDO** – Nombre con caracteres especiales [ №%@\" ]
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+125. **INVÁLIDO** – Caracteres de otro lenguaje [ 加布里埃爾F加布爾 ]
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+#### Apellido
+
+#### Dirección
+
+#### Estación de Metro
+
+#### Teléfono
