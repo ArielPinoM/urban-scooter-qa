@@ -253,3 +253,7 @@
 93. Focus en "Fecha de entrega" se resalta en azul.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+94. "Fecha de entrega" es obligatorio, tiene indicación visual "*".
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
