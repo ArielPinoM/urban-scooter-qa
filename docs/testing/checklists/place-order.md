@@ -379,7 +379,64 @@ Cada ítem verifica:
 125. **INVÁLIDO** – Caracteres de otro lenguaje [ 加布里埃爾F加布爾 ]
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
+126. **INVÁLIDO** – Números
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
 #### Apellido
+
+127. **VÁLIDO** – Longitud 2 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+128. **VÁLIDO** – Longitud 3 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+129. **VÁLIDO** – Longitud 5 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+130. **VÁLIDO** – Longitud 14 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+131. **VÁLIDO** – Longitud 15 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+132. **INVÁLIDO** – Longitud 1 caracter.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+133. **INVÁLIDO** – Longitud 16 caracteres.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-20]](../bug-reports/US-20.md)
+
+134. **INVÁLIDO** – Longitud 17 caracteres.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-21]](../bug-reports/US-21.md)
+
+135. **INVÁLIDO** – Longitud 18 caracteres.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-22]](../bug-reports/US-22.md)
+
+136. **INVÁLIDO** – Vacío: 0 caracteres
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+137. **VÁLIDO** – Caracteres del alfabeto latino
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+138. **VÁLIDO** – Apellido con espacios
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+139. **VÁLIDO** – Apellido con guiones
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+140. **INVÁLIDO** – Apellido con puntos
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+141. **INVÁLIDO** – Apellido con comas
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+142. **INVÁLIDO** – Apellido con caracteres especiales [ №%@\" ]
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+143. **INVÁLIDO** – Caracteres de otro lenguaje [ 加布里埃爾F加布爾 ]
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+144. **INVÁLIDO** – Números
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 #### Dirección
 
