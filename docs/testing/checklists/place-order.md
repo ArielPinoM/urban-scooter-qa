@@ -439,6 +439,65 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 #### Dirección
+145. **VÁLIDO** – Longitud 5 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+146. **VÁLIDO** – Longitud 6 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+147. **VÁLIDO** – Longitud 24 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+148. **VÁLIDO** – Longitud 49 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+149. **VÁLIDO** – Longitud 50 caracteres.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-23]](../bug-reports/US-23.md)
+
+150. **INVÁLIDO** – Longitud 2 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+151. **INVÁLIDO** – Longitud 3 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+152. **INVÁLIDO** – Longitud 4 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+153. **INVÁLIDO** – Longitud 51 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+154. **INVÁLIDO** – Longitud 52 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+155. **INVÁLIDO** – Longitud 53 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+156. **INVÁLIDO** – Vacío: 0 caracteres
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-24]](../bug-reports/US-24.md)
+
+157. **VÁLIDO** – Caracteres del alfabeto latino
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+144. **INVÁLIDO** – Números
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+138. **VÁLIDO** – Dirección con espacios
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+139. **VÁLIDO** – Dirección con guiones
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+140. **INVÁLIDO** – Dirección con puntos
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+141. **INVÁLIDO** – Dirección con comas
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+142. **INVÁLIDO** – Dirección con caracteres especiales [ №%@\" ]
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+143. **INVÁLIDO** – Caracteres de otro lenguaje [ 加布里埃爾F加布爾 ]
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 #### Estación de Metro
 
