@@ -303,3 +303,7 @@ El color del scooter
 104. Al hacer hover en "Atrás", el botón muestra el estilo especificado en Figma.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+105. Al hacer hover en "Atrás", el cursor cambia a mano.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
