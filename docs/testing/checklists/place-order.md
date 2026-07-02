@@ -273,3 +273,12 @@
 98. El campo "Color" está presente.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+99. El placeholder de "Color" coincide con
+"
+El color del scooter
+☐ negro
+☐ gris
+".
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
