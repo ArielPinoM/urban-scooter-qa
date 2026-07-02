@@ -295,3 +295,7 @@ El color del scooter
 102. El botón "Atrás" está presente en la parte inferior del formulario.
     - Chrome 85 o superior, 1920x1080: 🟢 PASSED
     - Opera 71 o superior, 1920x1080: 🟢 PASSED
+
+103. Color de fondo del botón "Atrás" coincide con Figma.
+    - Chrome 85 o superior, 1920x1080: 🟢 PASSED
+    - Opera 71 o superior, 1920x1080: 🟢 PASSED
