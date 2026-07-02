@@ -567,3 +567,97 @@ Cada ítem verifica:
 
 186. **INVÁLIDO** - Teléfono con caracteres de otro lenguaje
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+### Formulario "Alquiler"
+
+#### Fecha de entrega
+
+187. **VÁLIDO** - Fecha a partir del día siguiente.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+188. **VÁLIDO** - Fecha 2 días después.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+189. **VÁLIDO** - Fecha 3 días después.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+190. **INVÁLIDO** - Fecha de ayer.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+
+191. **INVÁLIDO** - Fecha de hoy.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+
+192. **INVÁLIDO** - Fecha de 2 días antes.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+
+193. **INVÁLIDO** - Sin selección de fecha de entrega.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+
+#### Periodo de alquiler
+
+194. **VÁLIDO** - Selección de días de alquiler.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+195. **INVÁLIDO** - Sin selección de días de alquiler.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-17]](../bug-reports/US-17.md)
+
+#### Color
+
+196. **VÁLIDO** - Selección de un color.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+197. **VÁLIDO** - Selección de ambos colores.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+198. **VÁLIDO** - Sin selección de color.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+#### Comentario
+
+199. **VÁLIDO** - Vacío: 0 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+200. **VÁLIDO** - Longitud de 1 caracter.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+201. **VÁLIDO** - Longitud de 12 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+202. **VÁLIDO** - Longitud de 23 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+203. **VÁLIDO** - Longitud de 24 caracteres.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+204. **INVÁLIDO** - Longitud de 25 caracteres.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-26]](../bug-reports/US-26.md)
+
+205. **INVÁLIDO** - Longitud de 26 caracteres.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-27]](../bug-reports/US-27.md)
+
+206. **INVÁLIDO** - Longitud de 27 caracteres.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-28]](../bug-reports/US-28.md)
+
+207. **VÁLIDO** - Comentario con caracteres del alfabeto latino.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+208. **VÁLIDO** - Comentario con caracteres numéricos.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+209. **VÁLIDO** - Comentario con espacios.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+210. **VÁLIDO** - Comentario con guiones.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+211. **VÁLIDO** - Comentario con puntos.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+212. **VÁLIDO** - Comentario con comas.
+- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+
+213. **INVÁLIDO** - Comentario con caracteres especiales.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-29]](../bug-reports/US-29.md)
+
+214. **INVÁLIDO** - Comentario con caracteres de otro lenguaje.
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-30]](../bug-reports/US-30.md)
