@@ -53,7 +53,7 @@
 - Chrome 85 o superior, 1280x720: 🔴 FAILED
 - Opera 71 o superior, 1280x720: 🔴 FAILED
 - Opera 71 o superior, 1920x1080: 🔴 FAILED
-- [[US-11]](../bug-reports/US-11.md)
+- [[US-11]](/docs/testing/bug-reports/US-11.md)
 
 ---
 
@@ -66,16 +66,16 @@
 - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 50. Si "Apellido" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un apellido válido".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-12]](../bug-reports/US-12.md)
+- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-12]](/docs/testing/bug-reports/US-12.md)
 
 51. Si "Dirección" está vacía o es inválida, al intentar avanzar se muestra error "Introduce una dirección válida".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-13]](../bug-reports/US-13.md)
+- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-13]](/docs/testing/bug-reports/US-13.md)
 
 52. Si "Estación de metro" está vacía, al intentar avanzar se muestra error "Introduce una estación de metro correcta".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-14]](../bug-reports/US-14.md)
+- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-14]](/docs/testing/bug-reports/US-14.md)
 
 53. Si "Teléfono" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un número de teléfono válido".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-15]](../bug-reports/US-15.md)
+- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-15]](/docs/testing/bug-reports/US-15.md)
 
 ### Navegación
 54. Si todos los campos están rellenados correctamente, al hacer clic en "Siguiente" se avanza al formulario "Alquiler".
@@ -177,10 +177,10 @@
 ### Validaciones de campos
 
 76. Si "Fecha de entrega" se marca como inválido, al hacer clic en "Pedir" se muestra error "Introduce una fecha de entrega correcta".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
 77. Si "Periodo de alquiler" se marca como inválido, al hacer clic en "Pedir" se muestra error "Introduce un Periodo de alquiler correcto".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-17]](../bug-reports/US-17.md)
+- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-17]](/docs/testing/bug-reports/US-17.md)
 
 ### Botón "Atrás"
 78. Al hacer clic en "Atrás" se regresa a la pantalla "Para quién es el scooter".
@@ -193,44 +193,44 @@
 80. Con todos los campos obligatorios correctos, al hacer clic en "Pedir" aparece una ventana emergente "El pedido ha sido realizado".
 - Chrome 85 o superior, 1920x1080
 - Opera 71 o superior, 1920x1080
-- 🔴 FAILED [[US-1]](../bug-reports/US-1.md)
+- 🔴 FAILED [[US-1]](/docs/testing/bug-reports/US-1.md)
 
 81. La ventana emergente muestra el mensaje "Número de pedido NNNNN. Escríbelo: será útil para darle seguimiento al estado".
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
 - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 82. La ventana emergente contiene un botón "Comprueba el estado".
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
 - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 83. Al hacer clic en "Comprueba el estado" se redirige a la pantalla "Estado del pedido".
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
 - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 84. En la pantalla "Estado del pedido", el campo "Número de pedido" aparece ya completado con el número del pedido recién creado.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
 - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 ### Botón "Pedir" (error)
 85. Si algún campo obligatorio está vacío o es inválido, al hacer clic en "Pedir" aparece un mensaje de error indicando el campo problemático.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-18]](../bug-reports/US-18.md)
+- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-18]](/docs/testing/bug-reports/US-18.md)
 
 86. El formulario no se envía hasta que todos los campos obligatorios sean correctos.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
 ### Múltiples pedidos
 87. Después de realizar un pedido exitosamente, el usuario puede realizar otro pedido.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
 - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 88. Los datos del nuevo pedido no se mezclan con los del anterior.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
 - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 89. Cada pedido genera un número de pedido distinto (visible en la ventana emergente).
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](../bug-reports/US-1.md)
+- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
 - Opera 71 o superior, 1920x1080: 🟢 PASSED
 
 ## Pruebas de diseño
@@ -248,7 +248,7 @@
 92. El placeholder de "Fecha de entrega" coincide con "* Cuándo entregar el scooter".
 - Chrome 85 o superior, 1920x1080: 🔴 FAILED 
 - Opera 71 o superior, 1920x1080: 🔴 FAILED
-- [[US-19]](../bug-reports/US-19.md)
+- [[US-19]](/docs/testing/bug-reports/US-19.md)
 
 93. Focus en "Fecha de entrega" se resalta en azul.
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED
@@ -403,13 +403,13 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 133. **INVÁLIDO** – Longitud 16 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-20]](../bug-reports/US-20.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-20]](/docs/testing/bug-reports/US-20.md)
 
 134. **INVÁLIDO** – Longitud 17 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-21]](../bug-reports/US-21.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-21]](/docs/testing/bug-reports/US-21.md)
 
 135. **INVÁLIDO** – Longitud 18 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-22]](../bug-reports/US-22.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-22]](/docs/testing/bug-reports/US-22.md)
 
 136. **INVÁLIDO** – Vacío: 0 caracteres
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
@@ -452,7 +452,7 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 149. **VÁLIDO** – Longitud 50 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-23]](../bug-reports/US-23.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-23]](/docs/testing/bug-reports/US-23.md)
 
 150. **INVÁLIDO** – Longitud 2 caracteres.
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
@@ -473,7 +473,7 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 156. **INVÁLIDO** – Vacío: 0 caracteres
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-24]](../bug-reports/US-24.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-24]](/docs/testing/bug-reports/US-24.md)
 
 157. **VÁLIDO** – Caracteres del alfabeto latino
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
@@ -536,7 +536,7 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 176. **INVÁLIDO** - Sin el símbolo "+".
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-25]](../bug-reports/US-25.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-25]](/docs/testing/bug-reports/US-25.md)
 
 177. **INVÁLIDO** - Vacío: 0 caracteres con signo "+".
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
@@ -582,16 +582,16 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 190. **INVÁLIDO** - Fecha de ayer.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
 191. **INVÁLIDO** - Fecha de hoy.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
 192. **INVÁLIDO** - Fecha de 2 días antes.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
 193. **INVÁLIDO** - Sin selección de fecha de entrega.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](../bug-reports/US-16.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
 #### Periodo de alquiler
 
@@ -599,7 +599,7 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 195. **INVÁLIDO** - Sin selección de días de alquiler.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-17]](../bug-reports/US-17.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-17]](/docs/testing/bug-reports/US-17.md)
 
 #### Color
 
@@ -630,13 +630,13 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 204. **INVÁLIDO** - Longitud de 25 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-26]](../bug-reports/US-26.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-26]](/docs/testing/bug-reports/US-26.md)
 
 205. **INVÁLIDO** - Longitud de 26 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-27]](../bug-reports/US-27.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-27]](/docs/testing/bug-reports/US-27.md)
 
 206. **INVÁLIDO** - Longitud de 27 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-28]](../bug-reports/US-28.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-28]](/docs/testing/bug-reports/US-28.md)
 
 207. **VÁLIDO** - Comentario con caracteres del alfabeto latino.
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
@@ -657,7 +657,7 @@ Cada ítem verifica:
 - Chrome 85 o superior, 1920x1080: 🟢 PASSED 
 
 213. **INVÁLIDO** - Comentario con caracteres especiales.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-29]](../bug-reports/US-29.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-29]](/docs/testing/bug-reports/US-29.md)
 
 214. **INVÁLIDO** - Comentario con caracteres de otro lenguaje.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-30]](../bug-reports/US-30.md)
+- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-30]](/docs/testing/bug-reports/US-30.md)
