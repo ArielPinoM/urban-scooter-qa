@@ -1,4 +1,4 @@
-# Requisitos - Urban Scooter
+# Requisitos aplicación web - Urban Scooter
 
 ## Versiones compatibles
 
