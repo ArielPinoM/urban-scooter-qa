@@ -10,3 +10,14 @@
 | [TC-MOB-FUNC-004](../../../test-planning/mobile-app/TC-MOB-FUNC-004.md) | La notificación incluye la misma dirección del pedido aceptado. | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): sin notificación no se puede verificar el contenido. |
 | [TC-MOB-FUNC-005](../../../test-planning/mobile-app/TC-MOB-FUNC-005.md) | Tocar la notificación redirige a la pestaña "Mis pedidos" en la aplicación. | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): sin notificación no se puede verificar el contenido. |
 | [TC-MOB-FUNC-006](../../../test-planning/mobile-app/TC-MOB-FUNC-006.md) | No se recibe notificación si el pedido ya fue completado. | 🟢 PASSED |
+
+## Falta de acceso a internet
+
+| ID | Título | Estado | Reporte de error |
+| :--- | :--- | :--- | :--- |
+| [TC-MOB-FUNC-007](../../../test-planning/mobile-app/TC-MOB-FUNC-007.md) | Se muestra ventana emergente "Sin acceso a Internet" al tocar "Iniciar sesión" sin conexión a internet. | 🔴 FAILED | [US-32](../../bug-reports/US-32.md) |
+| [TC-MOB-FUNC-008](../../../test-planning/mobile-app/TC-MOB-FUNC-008.md) | Se muestra ventana emergente "Sin acceso a Internet" al tocar "Mis pedidos" sin conexión a internet. | 🟢 PASSED |
+| [TC-MOB-FUNC-009](../../../test-planning/mobile-app/TC-MOB-FUNC-009.md) | Se muestra ventana emergente "Sin acceso a Internet" al tocar aceptar un pedido sin conexión a internet. | 🟢 PASSED |
+| [TC-MOB-FUNC-010](../../../test-planning/mobile-app/TC-MOB-FUNC-010.md) | Se muestra ventana emergente "Sin acceso a Internet" al completar un pedido sin conexión a internet. | 🟢 PASSED |
+| [TC-MOB-FUNC-011](../../../test-planning/mobile-app/TC-MOB-FUNC-011.md) | Clic en "Aceptar" en la ventana emergente "Sin acceso a Internet" cierra la ventana. | 🟢 PASSED |
+| [TC-MOB-FUNC-012](../../../test-planning/mobile-app/TC-MOB-FUNC-012.md) | Ventana emergente "Sin acceso a Internet" reaparece al tocar cualquier botón si aún no hay conexión.  | 🟢 PASSED |
