@@ -1,8 +1,6 @@
-# Ejecución de pruebas móviles
+# Ejecución de pruebas funcionales de la aplicación móvil
 
 ## Notificación
-
-### Funcionales
 
 | ID | Título | Estado | Reporte de error |
 | :--- | :--- | :--- | :--- |
