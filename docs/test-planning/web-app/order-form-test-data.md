@@ -18,6 +18,7 @@ Esta documentación usa particiones de equivalencia y análisis de valores lími
 | [Inválida] Comas | Ariel, |
 | [Inválida] Caracteres especiales | №%@\" |
 | [Inválida] Caracteres de otro lenguaje | 加布里埃爾F加布爾 |
+| [Inválida] Caracteres numéricos | 1234567890 |
 
 ### Campo: Apellido
 | Clase | Datos de Prueba | 
@@ -33,6 +34,7 @@ Esta documentación usa particiones de equivalencia y análisis de valores lími
 | [Inválida] Comas | Pino, |
 | [Inválida] Caracteres especiales | №%@\" |
 | [Inválida] Caracteres de otro lenguaje | 加布里埃爾F加布爾 |
+| [Inválida] Caracteres numéricos | 1234567890 |
 
 ### Campo: Dirección
 | Clase | Datos de Prueba | 
