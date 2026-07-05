@@ -120,11 +120,11 @@ Si el pedido se creó con éxito, se debe devolver su número de seguimiento; de
 
 ### Restricciones de los campos [Test]
 
-| Elemento | Requisitos | Obligatorio |
-| :--- | :--- | :--- |
-| **login** | Solo letras latinas. La longitud del texto es de 2 a 10 caracteres. | ☑️ |
-| **password** | Solo letras latinas. La longitud del texto es de 2 a 10 caracteres. | ⬜ |
-| **firstName** | Solo números enteros. La longitud es exactamente de 4 caracteres. | ☑️ |
+| Elemento      | Requisitos                                                          | Obligatorio |
+| :------------ | :------------------------------------------------------------------ | :---------- |
+| **login**     | Solo letras latinas. La longitud del texto es de 2 a 10 caracteres. | ☑️          |
+| **firstName**  | Solo letras latinas. La longitud del texto es de 2 a 10 caracteres. | ⬜          |
+| **password** | Solo números enteros. La longitud es exactamente de 4 caracteres.   | ☑️          |
 
 ## Descripción del contenido de la base de datos
 
@@ -132,27 +132,27 @@ La base de datos consiste en dos tablas: `Couriers` y `Orders`. La primera tabla
 
 ### Couriers
 
-| Nombre | Tipo | Asignación |
-| :--- | :--- | :--- |
-| **login** | string | Inicio de sesión del repartidor o repartidora. |
-| **passwordHash** | string | Contraseña hash del repartidor o repartidora. |
-| **firstName** | string | Primer nombre del repartidor o repartidora. |
+| Nombre           | Tipo   | Asignación                                     |
+| :--------------- | :----- | :--------------------------------------------- |
+| **login**        | string | Inicio de sesión del repartidor o repartidora. |
+| **passwordHash** | string | Contraseña hash del repartidor o repartidora.  |
+| **firstName**    | string | Primer nombre del repartidor o repartidora.    |
 
 ### Orders
 
-| Nombre | Tipo | Asignación |
-| :--- | :--- | :--- |
-| **courierId** | número | El campo que vincula esta tabla con la tabla `Couriers`. |
-| **firstName** | string | Nombre del cliente. |
-| **lastName** | string | Apellido del cliente. |
-| **address** | string | Dirección. |
-| **metroStation** | string | Estación de metro más cercana. |
-| **phone** | string | Número de teléfono. |
-| **rentTime** | número | Periodo de alquiler. |
-| **deliveryDate** | fecha | Fecha de entrega. |
-| **track** | número | Número de seguimiento. |
-| **color** | array de strings | Colores de scooter preferidos. |
-| **comment** | string | Un comentario para el repartidor o repartidora. |
-| **cancelled** | string | Un comentario para el repartidor o repartidora. |
-| **finished** | lógico | El pedido ha sido enviado. |
-| **inDelivery** | lógico | El pedido se está entregando. |
+| Nombre           | Tipo             | Asignación                                               |
+| :--------------- | :--------------- | :------------------------------------------------------- |
+| **courierId**    | número           | El campo que vincula esta tabla con la tabla `Couriers`. |
+| **firstName**    | string           | Nombre del cliente.                                      |
+| **lastName**     | string           | Apellido del cliente.                                    |
+| **address**      | string           | Dirección.                                               |
+| **metroStation** | string           | Estación de metro más cercana.                           |
+| **phone**        | string           | Número de teléfono.                                      |
+| **rentTime**     | número           | Periodo de alquiler.                                     |
+| **deliveryDate** | fecha            | Fecha de entrega.                                        |
+| **track**        | número           | Número de seguimiento.                                   |
+| **color**        | array de strings | Colores de scooter preferidos.                           |
+| **comment**      | string           | Un comentario para el repartidor o repartidora.          |
+| **cancelled**    | string           | Un comentario para el repartidor o repartidora.          |
+| **finished**     | lógico           | El pedido ha sido enviado.                               |
+| **inDelivery**   | lógico           | El pedido se está entregando.                            |
