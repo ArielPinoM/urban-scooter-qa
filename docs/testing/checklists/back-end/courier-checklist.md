@@ -4,20 +4,119 @@
 
 `POST /api/v1/courier`
 
-1. Enviar una solicitud con `login`, `password` y `firstName` válidos devuelve un código `201 Created` y `{ok: true}`.
+### Validación de datos en los parámetros de la solicitud
 
-2. Enviar una solicitud sin el campo `login` devuelve `400 Bad Request` y {"message": "No hay suficientes datos para crear una cuenta"}.
+#### Campo `login` - 201 Created y {ok: true}
 
-3. Enviar una solicitud sin el campo `password` devuelve `400 Bad Request` y "message": "No hay suficientes datos para crear una cuenta".
+1. 2 caracteres latinos y el resto de campos obligatorios con datos válidos.
+2. 3 caracteres latinos y el resto de campos obligatorios con datos válidos.
+3. 5 caracteres latinos y el resto de campos obligatorios con datos válidos.
+4. 9 caracteres latinos y el resto de campos obligatorios con datos válidos.
+5. 10 caracteres latinos y el resto de campos obligatorios con datos válidos.
 
-4. Enviar una solicitud con `login` y `password` válidos sin el campo `firstName`, devuelve un código `201 Created` y `{ok: true}`.
+#### Campo `login` - 400 Bad Request
 
-5. Enviar una solicitud con `login` existente devuelve `409 Conflict` y {"message": "Este inicio de sesión no está disponible"}.
+6. 1 caracter latino y el resto de campos obligatorios con datos válidos.
+7. 11 caracteres latinos y el resto de campos obligatorios con datos válidos.
+8. 12 caracteres latinos y el resto de campos obligatorios con datos válidos.
+9. 13 caracteres latinos y el resto de campos obligatorios con datos válidos.
+10. Vacío y el resto de campos obligatorios con datos válidos.
+11. Omitir campo y el resto de campos obligatorios con datos válidos.
+12. Caracteres numéricos y el resto de campos obligatorios con datos válidos.
+13. Caracteres con espacios y el resto de campos obligatorios con datos válidos.
+14. Caracteres con guiones y el resto de campos obligatorios con datos válidos.
+15. Caracteres con puntos y el resto de campos obligatorios con datos válidos.
+16. Caracteres con comas y el resto de campos obligatorios con datos válidos.
+17. Caracteres especiales y el resto de campos obligatorios con datos válidos.
+18. Caracteres de otro lenguaje y el resto de campos obligatorios con datos válidos.
 
-6. Verificar en la base de datos que el `login` enviado aparece en la tabla `Couriers` exactamente como se envió.
+#### Campo `password` - 201 Created y {ok: true}
 
-7. Verificar que el campo `passwordHash` en la tabla `Couriers` no es la contraseña en texto plano (es un hash).
+19. 4 caracteres numéricos y el resto de campos obligatorios con datos válidos.
 
-8. Verificar que el campo `firstName` en la tabla `Couriers` coincide con el enviado.
+#### Campo `password` - 400 Bad Request
 
-9. Iniciar sesión (`POST /api/v1/courier/login`) con el login y la contraseña correcta devuelve un código `200 OK` y el `id` del repartidor. Esto confirma que el hash se generó correctamente y la verificación funciona.
+20. 1 caracter numérico y el resto de campos obligatorios con datos válidos.
+21. 2 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+22. 3 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+23. 5 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+24. 6 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+25. 7 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+26. Caracteres del alfabeto latino y el resto de campos obligatorios con datos válidos.
+27. Vacío y el resto de campos obligatorios con datos válidos.
+28. Omitir campo y el resto de campos obligatorios con datos válidos.
+29. Caracteres numéricos con espacios y el resto de campos obligatorios con datos válidos.
+30. Caracteres numéricos con guiones y el resto de campos obligatorios con datos válidos.
+31. Caracteres numéricos con puntos y el resto de campos obligatorios con datos válidos.
+32. Caracteres numéricos con comas y el resto de campos obligatorios con datos válidos.
+33. Caracteres especiales y el resto de campos obligatorios con datos válidos.
+34. Caracteres de otro lenguaje y el resto de campos obligatorios con datos válidos.
+
+#### Campo `firstName` - 201 Created y {ok: true}
+
+35. 2 caracteres latinos y el resto de campos obligatorios con datos válidos.
+36. 3 caracteres latinos y el resto de campos obligatorios con datos válidos.
+37. 5 caracteres latinos y el resto de campos obligatorios con datos válidos.
+38. 9 caracteres latinos y el resto de campos obligatorios con datos válidos.
+39. 10 caracteres latinos y el resto de campos obligatorios con datos válidos.
+40. Omitir campo y el resto de campos obligatorios con datos válidos.
+
+#### Campo `firstName` - 400 Bad Request
+
+41. 1 caracter latino y el resto de campos obligatorios con datos válidos.
+42. 11 caracteres latinos y el resto de campos obligatorios con datos válidos.
+43. 12 caracteres latinos y el resto de campos obligatorios con datos válidos.
+44. 13 caracteres latinos y el resto de campos obligatorios con datos válidos.
+45. Vacío y el resto de campos obligatorios con datos válidos.
+46. Caracteres numéricos y el resto de campos obligatorios con datos válidos.
+47. Caracteres con espacios y el resto de campos obligatorios con datos válidos.
+48. Caracteres con guiones y el resto de campos obligatorios con datos válidos.
+49. Caracteres con puntos y el resto de campos obligatorios con datos válidos.
+50. Caracteres con comas y el resto de campos obligatorios con datos válidos.
+51. Caracteres especiales y el resto de campos obligatorios con datos válidos.
+52. Caracteres de otro lenguaje y el resto de campos obligatorios con datos válidos.
+
+### Validación del body de la solicitud
+
+#### Cuenta creada con éxito - 201 Created y {ok: true}
+
+53. Todos los campos obligatorios válidos y firstName válido.		
+54. Todos los campos obligatorios válidos omitiendo firstName		
+
+#### 400 Bad Request
+
+55. Campo login inválido, password válido y omitir firstName.
+56. Omitir campo login y firstName, password válido devuelve mensaje "No hay suficientes datos para crear una cuenta".
+57. Campo login válido, password inválido y omitir firstName.
+58. Campo login válido, omitir password y firstName devuele mensaje "No hay suficientes datos para crear una cuenta".
+59. Campo login válido, password válido y firstName inválido.
+
+#### 409 Conflict
+
+60. Enviar solicitud con campo login ya existente devuelve mensaje "Este inicio de sesión no está disponible".
+
+### Verificar Base de Datos - Tabla Couriers
+
+61. El campo login coincide con el enviado.
+62. El campo passwordHash en la tabla no es la contraseña en texto plano (es un hash).
+63. El campo firstName coincide con el enviado.
+64. Enviar un login que ya existe no crea otro registro.
+
+## Eliminar un mensajero
+
+`DELETE /api/v1/courier/:id`
+
+65. Enviar DELETE /api/v1/courier/:id con id existente devuelve 200 OK y {ok: true}.
+66. Verificar en la tabla Couriers que el registro con ese id ya no existe.
+67. Verificar en la tabla Orders que todos los pedidos cuyo courierId coincidía con el id eliminado han sido borrados.
+68. Omitir el campo id devuelve 400 Bad Request y el mensaje "No hay datos suficientes para eliminar el mensajero".
+69. Enviar una solicitud con un id no existente devuelve 404 Not Found y el mensaje "No hay un mensajero con esta ID".
+
+## Obtener un pedido por su número
+
+`GET /api/v1/orders/track?t=<numero_pedido>`
+
+70. El parámetro "t" válido y existe un pedido con ese número devuelve 200 OK y la respuesta coincide con los datos del registro en la tabla "Orders".
+71. El parámetro "t" inválido devuelve 400 Bad Request.
+72. Omitir el parámetro devuelve 400 Bad Request y el mensaje "No hay suficientes datos para la búsqueda".
+73. Enviar la solicitud con un número de pedido no existente devuelve 404 Not Found y el mensaje "Pedido no encontrado".

@@ -23,13 +23,13 @@ Solo letras latinas. La longitud del texto es de 2 a 10 caracteres. `Obligatorio
 
 ### Campo `password`
 
-Solo números enteros. La longitud es exactamente de 4 caracteres. `Obligatorio`.
+Solo números enteros. La longitud es exactamente de 4 caracteres numéricos. `Obligatorio`.
 
 | Clase | Datos de Prueba | 
 | :--- | :--- |
 | [Válida] Texto 4 caracteres numéricos | 4 - `1234`|
 | [Inválida] Texto <4 caracteres numéricos | 3 - `123`<br>2 - `12` |
-| [Inválida] Texto >4 caracteres numéricos | 5 - `12345`<br>6 - `123456` |
+| [Inválida] Texto >4 caracteres numéricos | 5 - `12345`<br>6 - `123456`<br>7 - `1234567` |
 | [Inválida] Alfabeto Latino | `Arie` |
 | [Inválida] Vacío: 0 caracteres |
 | [Inválida] Omitir campo |
