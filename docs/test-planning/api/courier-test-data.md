@@ -44,6 +44,8 @@ Solo números enteros. La longitud es exactamente de 4 caracteres numéricos. `O
 
 Solo letras latinas. La longitud del texto es de 2 a 10 caracteres. `Opcional`.
 
+| Clase | Datos de Prueba | 
+| :--- | :--- |
 | [Válida] Texto 2-10 caracteres latinos | 2 - `Ar`<br>3 - `Ari`<br>5 - `Ariel`<br>9 - `ArielArie`<br>10 - `ArielAriel` |
 | [Válida] Omitir campo |
 | [Inválida] Texto <2 caracteres | 1 - `A` |

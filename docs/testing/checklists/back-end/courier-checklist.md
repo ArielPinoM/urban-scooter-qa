@@ -9,35 +9,56 @@
 #### Campo `login` - 201 Created y {ok: true}
 
 1. 2 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 2. 3 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 3. 5 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 4. 9 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 5. 10 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 
 #### Campo `login` - 400 Bad Request
 
 6. 1 caracter latino y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-34]](../../bug-reports/US-34.md)
 7. 11 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-35]](../../bug-reports/US-35.md)
 8. 12 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-36]](../../bug-reports/US-36.md)
 9. 13 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-37]](../../bug-reports/US-37.md)
 10. Vacío y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 11. Omitir campo y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 12. Caracteres numéricos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-38]](../../bug-reports/US-38.md)
 13. Caracteres con espacios y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-39]](../../bug-reports/US-39.md)
 14. Caracteres con guiones y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-40]](../../bug-reports/US-40.md)
 15. Caracteres con puntos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-41]](../../bug-reports/US-41.md)
 16. Caracteres con comas y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-42]](../../bug-reports/US-42.md)
 17. Caracteres especiales y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-43]](../../bug-reports/US-43.md)
 18. Caracteres de otro lenguaje y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-44]](../../bug-reports/US-44.md)
 
 #### Campo `password` - 201 Created y {ok: true}
 
 19. 4 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 
 #### Campo `password` - 400 Bad Request
 
 20. 1 caracter numérico y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-45]](../../bug-reports/US-45.md)
 21. 2 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-46]](../../bug-reports/US-46.md)
 22. 3 caracteres numéricos y el resto de campos obligatorios con datos válidos.
 23. 5 caracteres numéricos y el resto de campos obligatorios con datos válidos.
 24. 6 caracteres numéricos y el resto de campos obligatorios con datos válidos.
