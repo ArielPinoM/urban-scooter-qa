@@ -60,37 +60,63 @@
 21. 2 caracteres numéricos y el resto de campos obligatorios con datos válidos.
     - 🔴 FAILED [[US-46]](../../bug-reports/US-46.md)
 22. 3 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-47]](../../bug-reports/US-47.md)
 23. 5 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-48]](../../bug-reports/US-48.md)
 24. 6 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-49]](../../bug-reports/US-49.md)
 25. 7 caracteres numéricos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-50]](../../bug-reports/US-50.md)
 26. Caracteres del alfabeto latino y el resto de campos obligatorios con datos válidos.
-27. Vacío y el resto de campos obligatorios con datos válidos.
-28. Omitir campo y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-51]](../../bug-reports/US-51.md)
+27. Vacío y el resto de campos obligatorios con datos válidos devuelve mensaje "No hay suficientes datos para crear una cuenta".
+    - 🟢 PASSED
+28. Omitir campo y el resto de campos obligatorios con datos válidos devuelve mensaje "No hay suficientes datos para crear una cuenta".
+    - 🟢 PASSED
 29. Caracteres numéricos con espacios y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-52]](../../bug-reports/US-52.md)
 30. Caracteres numéricos con guiones y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-53]](../../bug-reports/US-53.md)
 31. Caracteres numéricos con puntos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-54]](../../bug-reports/US-54.md)
 32. Caracteres numéricos con comas y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-55]](../../bug-reports/US-55.md)
 33. Caracteres especiales y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-56]](../../bug-reports/US-56.md)
 34. Caracteres de otro lenguaje y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-57]](../../bug-reports/US-57.md)
 
 #### Campo `firstName` - 201 Created y {ok: true}
 
 35. 2 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 36. 3 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 37. 5 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 38. 9 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 39. 10 caracteres latinos y el resto de campos obligatorios con datos válidos.
-40. Omitir campo y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
+40. Vacío y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
+41. Omitir campo y el resto de campos obligatorios con datos válidos.
+    - 🟢 PASSED
 
 #### Campo `firstName` - 400 Bad Request
 
-41. 1 caracter latino y el resto de campos obligatorios con datos válidos.
-42. 11 caracteres latinos y el resto de campos obligatorios con datos válidos.
-43. 12 caracteres latinos y el resto de campos obligatorios con datos válidos.
-44. 13 caracteres latinos y el resto de campos obligatorios con datos válidos.
-45. Vacío y el resto de campos obligatorios con datos válidos.
+42. 1 caracter latino y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-58]](../../bug-reports/US-58.md)
+43. 11 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-59]](../../bug-reports/US-59.md)
+44. 12 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-60]](../../bug-reports/US-60.md)
+45. 13 caracteres latinos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-61]](../../bug-reports/US-61.md)
 46. Caracteres numéricos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-62]](../../bug-reports/US-62.md)
 47. Caracteres con espacios y el resto de campos obligatorios con datos válidos.
+
 48. Caracteres con guiones y el resto de campos obligatorios con datos válidos.
 49. Caracteres con puntos y el resto de campos obligatorios con datos válidos.
 50. Caracteres con comas y el resto de campos obligatorios con datos válidos.
