@@ -116,54 +116,79 @@
 46. Caracteres numéricos y el resto de campos obligatorios con datos válidos.
     - 🔴 FAILED [[US-62]](../../bug-reports/US-62.md)
 47. Caracteres con espacios y el resto de campos obligatorios con datos válidos.
-
+    - 🔴 FAILED [[US-63]](../../bug-reports/US-63.md)
 48. Caracteres con guiones y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-64]](../../bug-reports/US-64.md)
 49. Caracteres con puntos y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-65]](../../bug-reports/US-65.md)
 50. Caracteres con comas y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-66]](../../bug-reports/US-66.md)
 51. Caracteres especiales y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-67]](../../bug-reports/US-67.md)
 52. Caracteres de otro lenguaje y el resto de campos obligatorios con datos válidos.
+    - 🔴 FAILED [[US-68]](../../bug-reports/US-68.md)
 
 ### Validación del body de la solicitud
 
 #### Cuenta creada con éxito - 201 Created y {ok: true}
 
 53. Todos los campos obligatorios válidos y firstName válido.		
-54. Todos los campos obligatorios válidos omitiendo firstName		
+    - 🟢 PASSED
+54. Todos los campos obligatorios válidos omitiendo firstName.
+    - 🟢 PASSED
 
 #### 400 Bad Request
 
 55. Campo login inválido, password válido y omitir firstName.
-56. Omitir campo login y firstName, password válido devuelve mensaje "No hay suficientes datos para crear una cuenta".
+    - 🟢 PASSED
+56. Omitir campo login y firstName, password válido devuelve 
+mensaje "No hay suficientes datos para crear una cuenta".
+    - 🟢 PASSED
 57. Campo login válido, password inválido y omitir firstName.
-58. Campo login válido, omitir password y firstName devuele mensaje "No hay suficientes datos para crear una cuenta".
+    - 🟢 PASSED
+58. Campo login válido, omitir password y firstName devuelve mensaje "No hay suficientes datos para crear una cuenta".
+    - 🟢 PASSED
 59. Campo login válido, password válido y firstName inválido.
+    - 🔴 FAILED [[US-69]](../../bug-reports/US-69.md)
 
 #### 409 Conflict
 
 60. Enviar solicitud con campo login ya existente devuelve mensaje "Este inicio de sesión no está disponible".
+    - 🟢 PASSED
 
 ### Verificar Base de Datos - Tabla Couriers
 
 61. El campo login coincide con el enviado.
+    - 🟢 PASSED
 62. El campo passwordHash en la tabla no es la contraseña en texto plano (es un hash).
+    - 🟢 PASSED
 63. El campo firstName coincide con el enviado.
+    - 🟢 PASSED
 64. Enviar un login que ya existe no crea otro registro.
+    - 🟢 PASSED
 
 ## Eliminar un mensajero
 
 `DELETE /api/v1/courier/:id`
 
 65. Enviar DELETE /api/v1/courier/:id con id existente devuelve 200 OK y {ok: true}.
+    - 🟢 PASSED
 66. Verificar en la tabla Couriers que el registro con ese id ya no existe.
+    - 🟢 PASSED
 67. Verificar en la tabla Orders que todos los pedidos cuyo courierId coincidía con el id eliminado han sido borrados.
+    - 🔴 FAILED [[US-70]](../../bug-reports/US-70.md)
 68. Omitir el campo id devuelve 400 Bad Request y el mensaje "No hay datos suficientes para eliminar el mensajero".
+    - 🔴 FAILED [[US-71]](../../bug-reports/US-71.md)
 69. Enviar una solicitud con un id no existente devuelve 404 Not Found y el mensaje "No hay un mensajero con esta ID".
+    - 🟢 PASSED
 
 ## Obtener un pedido por su número
 
 `GET /api/v1/orders/track?t=<numero_pedido>`
 
 70. El parámetro "t" válido y existe un pedido con ese número devuelve 200 OK y la respuesta coincide con los datos del registro en la tabla "Orders".
-71. El parámetro "t" inválido devuelve 400 Bad Request.
-72. Omitir el parámetro devuelve 400 Bad Request y el mensaje "No hay suficientes datos para la búsqueda".
-73. Enviar la solicitud con un número de pedido no existente devuelve 404 Not Found y el mensaje "Pedido no encontrado".
+    - 🟢 PASSED
+71. Omitir el parámetro devuelve 400 Bad Request y el mensaje "No hay suficientes datos para la búsqueda".
+    - 🟢 PASSED
+72. Enviar la solicitud con un número de pedido no existente devuelve 404 Not Found y el mensaje "Pedido no encontrado".
+    - 🟢 PASSED
