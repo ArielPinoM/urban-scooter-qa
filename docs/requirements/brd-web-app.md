@@ -8,11 +8,21 @@ La aplicación admite estos navegadores: Opera 71 o superior, Chrome 85 o superi
 
 Hay un título y un plano de un scooter. Cuando el usuario o usuaria se desplaza, se muestra una animación: el plano se reemplaza por una foto y aparece una tabla con la descripción del producto.
 
+![](./assets/web/home-screen.jpg)
+
+![](./assets/web/home-screen-scrolled.jpg)
+
 Hay dos botones en el encabezado del inicio: "Pedir" y "Estado del pedido".
+
 Se le pide al usuario o usuaria que acepte el uso de cookies.
 
-Si el usuario o usuaria se desplaza al tercer bloque, encuentra la siguiente información:
-"Cómo funciona", "Preguntas frecuentes".
+![](./assets/web/cookies-popup.jpg)
+
+Si el usuario o usuaria se desplaza al tercer bloque, encuentra la siguiente información: "Cómo funciona", "Preguntas frecuentes".
+
+![](./assets/web/como-funciona-screen.jpg)
+
+![](./assets/web/preguntas-frecuentes-screen.jpg)
 
 ## Pantalla "Realizar pedido"
 
@@ -20,10 +30,14 @@ Para hacer un pedido, el usuario o usuaria necesita rellenar dos formularios: "P
 
 ### Para quién es el scooter
 
+![](./assets/web/para-quien-es-el-scooter-form.jpg)
+
 Los campos son: "Nombre", "Apellido", "Dirección: a dónde llevar el scooter", "Estación de metro" y "Teléfono: el repartidor o repartidora llamará".
 Todos los campos son obligatorios. Si el usuario no los rellena correctamente, no puede avanzar a la siguiente página. En la parte inferior se encuentra el botón "Siguiente" que conduce al usuario o usuaria al formulario "Alquiler".
 
 ### Alquiler
+
+![](./assets/web/alquiler-form.jpg)
 
 Los campos son "Fecha de entrega", "Periodo de alquiler", "Color del scooter" y "Comentario".
 
@@ -34,12 +48,16 @@ Los campos "Fecha de entrega" y "Periodo de alquiler" son obligatorios. "Color" 
 **El botón "Pedir"**. Si todos los campos se rellenaron correctamente, el pedido se hará cuando el usuario o usuaria haga clic en el botón "Pedir". Aparecerá una ventana emergente con el mensaje "Número de pedido NNNNN. Escríbelo: será útil para darle
 seguimiento al estado" mediante el botón "Comprueba el estado". El botón "Comprueba el estado" conduce al usuario o usuaria a la pantalla "Estado del pedido": el campo "Número de pedido" ya está completado.
 
+![](./assets/web/el-pedido-ha-sido-realizado-popup.jpg)
+
 Si no se rellenaron correctamente todos los campos obligatorios, cuando el usuario o
 usuaria haga clic en el botón "Pedir", aparecerá un error "Introduce un <nombre de campo> correcto".
 
 El usuario o usuaria puede hacer varios pedidos, uno tras otro.
 
 ## Pantalla "estado del pedido"
+
+![](./assets/web/estado-del-pedido-screen.jpg)
 
 Si el usuario o usuaria hace clic en "Estado del pedido" en el encabezado del inicio, aparece el campo "Número de pedido" El usuario o usuaria debe introducir un valor y presionar Enter. Si el número de pedido se introduce correctamente, aparece la información:
 
@@ -62,9 +80,13 @@ El usuario o usuaria puede introducir otro número de pedido y ver su estado.
 
 Si el usuario o usuaria hace clic en él, aparecerá una ventana emergente con el texto "¿Deseas cancelar el pedido?". Hay dos botones en la ventana emergente: "Cancelar" y "Atrás".
 
+![](./assets/web/deseas-cancelar-el-pedido-popup.jpg)
+
 Si el usuario o usuaria hace clic en "Atrás", volverá a la página de estado del pedido.
 
 Si el usuario o usuaria hace clic en "Cancelar", aparecerá una ventana emergente con el texto "El pedido ha sido cancelado. Siéntete libre de volver en cualquier momento :)", y hay un botón "Bien". El botón "Bien" llevará al usuario o usuaria a la página de inicio.
+
+![](./assets/web/el-pedido-ha-sido-cancelado-popup.jpg)
 
 El usuario o usuaria puede cancelar el pedido antes de que el repartidor o repartidora lo recoja. Cuando el repartidor o repartidora ya tenga el pedido, no se podrá hacer clic en el botón "Cancelar el pedido".
 
@@ -76,11 +98,15 @@ Un pedido se considera atrasado cuando el repartidor o repartidora no lo entreg�
 
 Si el pedido está atrasado, su estado cambia a "El repartidor o repartidora se demoró" y el mensaje cambia a "No podremos entregar el scooter a tiempo. Para aclarar el estado de tu pedido, llama a soporte: 0101." El estado y la leyenda están resaltados en rojo.
 
+![](./assets/web/delayed-order.jpg)
+
 Si se ha entregado al usuario o usuaria un pedido atrasado, la cuenta regresiva para el final del periodo de alquiler comienza cuando se recibe el pedido.
 
 ## Perfeccionamiento del front-end
 
 Se ha agregado un quinto estado a la cadena de estado: "El periodo de alquiler terminó". Esta es una función que sólo se implementó en el front-end, y el back-end aún no está listo. Este mensaje solía aparecer en lugar del cuarto estado, en el momento en que el periodo de alquiler estaba por terminar. Ahora el texto en el cuarto estado no cambia, simplemente se vuelve gris, como los otros estados.
+
+![](./assets/web/4th-status.jpg)
 
 Un ejemplo de la respuesta se describe en la documentación de la API en el bloque _Pedidos:_ obtener pedido por su número.
 
