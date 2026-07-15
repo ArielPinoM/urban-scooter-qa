@@ -1,27 +1,27 @@
-# Título
+# Title
 
-Título "2 horas hasta el final del pedido" está en negritas.
+"2 horas hasta el final del pedido" title is in bold.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
-# Componente
+# Component
 
-Notificación
+Notification
 
-# Precondiciones
+# Preconditions
 
-La notificación push se recibió correctamente.
+The push notification was received correctly.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Observar el estilo del título.
+1. Observe the style of the title.
 
-# Resultado esperado
+# Expected Result
 
-El título está en negritas.
+The title is in bold.
 
-# Evidencia
+# Evidence
 
 ![](../../testing/test-evidence/TC-MOB-DES-006/notification.png)

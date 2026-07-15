@@ -1,38 +1,37 @@
-# Título
+# Title
 
-Ventana emergente "Sin acceso a Internet" reaparece al tocar cualquier botón si aún no hay conexión. 
+"Sin acceso a Internet" popup window reappears when tapping any button if there is still no connection.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
 - Postman 12.17.3
 
-# Componente
+# Component
 
-Falta de Acceso a Internet - Ventana Emergente
+No Internet Access - Popup Window
 
-# Precondiciones
+# Preconditions
 
-- Se tiene acceso a internet en el dispositivo/emulador.
+- Internet access is available on the device/emulator.
 
-1. Crear una cuenta de mensajero con "login": "apm96", "password": "1234", "firstName": "Ariel" con POST /api/v1/courier.
+1. Create a courier account with "login": "apm96", "password": "1234", "firstName": "Ariel" using POST /api/v1/courier.
 
-2. Ingresar la url del backend en la pantalla de inicio de sesiÓn de la aplicación móvil.
+2. Enter the backend URL in the login screen of the mobile application.
 
-3. Iniciar sesión con las credenciales de la cuenta del mensajero que se creó."
+3. Log in with the credentials of the courier account that was created.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Activar el modo avión.
+1. Activate airplane mode.
 
-2. Tocar "Todos los pedidos".
+2. Tap "Todos los pedidos".
 
-3. En la ventana emergente, tocar "Ok".
+3. On the popup window, tap "OK".
 
-4. Tocar "Todos los pedidos".
+4. Tap "Todos los pedidos".
 
+# Expected Result
 
-# Resultado esperado
-
-- La ventana emergente reaparece mientras no haya conexión.
+- The popup window reappears as long as there is no connection.

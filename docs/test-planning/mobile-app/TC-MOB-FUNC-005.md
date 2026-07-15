@@ -1,42 +1,41 @@
-# Título
+# Title
 
-Tocar la notificación redirige a la pestaña "Mis pedidos" en la aplicación.
+Tapping the notification redirects to the "Mis pedidos" tab in the application.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
 - Postman 12.17.3
 
-# Componente
+# Component
 
-Notificación
+Notification
 
-# Precondiciones
+# Preconditions
 
-- La hora del servidor es antes de las 21:59.
+- Server time is before 21:59.
 
-1. Crear una cuenta de mensajero con ""login"": ""apm96"", ""password"": ""1234"", ""firstName: ""Ariel"" con POST /api/v1/courier.
+1. Create a courier account with "login": "apm96", "password": "1234", "firstName": "Ariel" using POST /api/v1/courier.
 
-2. Crear un pedido con POST /api/v1/orders, en el body, usar ""deliveryDate"": ""<fecha_de_hoy>"" y ""address"": ""State St 1214"".
+2. Create an order with POST /api/v1/orders, in the body, use "deliveryDate": "<today_date>" and "address": "State St 1214".
 
-3. La aplicación móvil tiene permisos de notificación concedidos.
+3. The mobile application has notification permissions granted.
 
-4. Ingresar la url del backend en la pantalla de inicio de sesión de la aplicación móvil.
+4. Enter the backend URL in the login screen of the mobile application.
 
-5. Iniciar sesión con las credenciales de la cuenta del mensajero que se creó.
+5. Log in with the credentials of the courier account that was created.
 
-6. Aceptar el pedido en la pantalla de pedidos, pestaña ""Todos los pedidos"".
+6. Accept the order on the orders screen, "Todos los pedidos" tab.
 
-7. Esperar a que la hora del servidor sea 21:59.
+7. Wait for server time to be 21:59.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Observar el emulador en espera de la notificación.
+1. Observe the emulator waiting for the notification.
 
-2. Tocar la notificación.
+2. Tap the notification.
 
+# Expected Result
 
-# Resultado esperado
-
-- Se abre la app (o se pone en primer plano) y muestra directamente la pestaña "Mis pedidos".
+- The app opens (or comes to the foreground) and directly displays the "Mis pedidos" tab.

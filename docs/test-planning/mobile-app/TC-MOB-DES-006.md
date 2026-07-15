@@ -1,27 +1,27 @@
-# Título
+# Title
 
-El color de fondo de la notificación es blanco.
+The background color of the notification is white.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
-# Componente
+# Component
 
-Notificación
+Notification
 
-# Precondiciones
+# Preconditions
 
-La notificación push se recibió correctamente.
+The push notification was received correctly.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Observa el color de fondo de la notificación.
+1. Observe the background color of the notification.
 
-# Resultado esperado
+# Expected Result
 
-El color de fondo es blanco.
+The background color is white.
 
-# Evidencia
+# Evidence
 
 ![](../../testing/test-evidence/TC-MOB-DES-006/notification.png)

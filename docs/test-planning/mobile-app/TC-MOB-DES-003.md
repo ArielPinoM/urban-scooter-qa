@@ -1,23 +1,23 @@
-# Título
+# Title
 
-Título "2 horas hasta el final del pedido" presente.
+"2 horas hasta el final del pedido" title present.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
-# Componente
+# Component
 
-Notificación
+Notification
 
-# Precondiciones
+# Preconditions
 
-La notificación push se recibió correctamente.
+The push notification was received correctly.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Leer el título de la notificación debajo de "Urban Scooter ⋅".
+1. Read the notification title below "Urban Scooter ⋅".
 
-# Resultado esperado
+# Expected Result
 
-El texto mostrado es "2 horas hasta el final del pedido".
+The displayed text is "2 horas hasta el final del pedido".

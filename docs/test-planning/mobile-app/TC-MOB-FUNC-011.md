@@ -1,34 +1,33 @@
-# Título
+# Title
 
-Clic en "Aceptar" en la ventana emergente "Sin acceso a Internet" cierra la ventana.
+Clicking "Aceptar" on the "Sin acceso a Internet" popup window closes the window.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
-# Componente
+# Component
 
-Falta de Acceso a Internet - Ventana Emergente
+No Internet Access - Popup Window
 
-# Precondiciones
+# Preconditions
 
-- Se tiene acceso a internet en el dispositivo/emulador.
+- Internet access is available on the device/emulator.
 
-1. Crear una cuenta de mensajero con "login": "apm96", "password": "1234", "firstName": "Ariel" con POST /api/v1/courier.
+1. Create a courier account with "login": "apm96", "password": "1234", "firstName": "Ariel" using POST /api/v1/courier.
 
-2. Ingresar la url del backend en la pantalla de inicio de sesiÓn de la aplicación móvil.
+2. Enter the backend URL in the login screen of the mobile application.
 
-3. Iniciar sesión con las credenciales de la cuenta del mensajero que se creó.
+3. Log in with the credentials of the courier account that was created.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Activar el modo avión.
+1. Activate airplane mode.
 
-2. Tocar "Mis pedidos".
+2. Tap "Mis pedidos".
 
-3. En la ventana emergente, tocar "Ok".
+3. On the popup window, tap "OK".
 
+# Expected Result
 
-# Resultado esperado
-
-- La ventana emergente desaparece.
+- The popup window disappears.

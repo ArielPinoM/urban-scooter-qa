@@ -1,40 +1,39 @@
-# Título
+# Title
 
-Se muestra ventana emergente "Sin acceso a Internet" al completar un pedido.
+"Sin acceso a Internet" popup window is displayed when completing an order.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
 - Postman 12.17.3
 
-# Componente
+# Component
 
-Falta de Acceso a Internet - Ventana Emergente
+No Internet Access - Popup Window
 
-# Precondiciones
+# Preconditions
 
-- Se tiene acceso a internet en el dispositivo/emulador.
+- Internet access is available on the device/emulator.
 
-1. Crear un pedido con POST /api/v1/orders.
+1. Create an order with POST /api/v1/orders.
 
-2. Crear una cuenta de mensajero con ""login"": ""apm96"", "password": "1234", "firstName": "Ariel" con POST /api/v1/courier.
+2. Create a courier account with "login": "apm96", "password": "1234", "firstName": "Ariel" using POST /api/v1/courier.
 
-3. Ingresar la url del backend en la pantalla de inicio de sesión de la aplicación móvil.
+3. Enter the backend URL in the login screen of the mobile application.
 
-4. Iniciar sesión con las credenciales de la cuenta del mensajero que se creó.
+4. Log in with the credentials of the courier account that was created.
 
-5. Tocar "Aceptar" en la tarjeta del pedido.
+5. Tap "Aceptar" on the order card.
 
-6. Tocar "Mis pedidos".
+6. Tap "Mis pedidos".
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Activar el modo avión.
+1. Activate airplane mode.
 
-2. Tocar ""Completar"" en la tarjeta del pedido.
+2. Tap "Completar" on the order card.
 
+# Expected Result
 
-# Resultado esperado
-
-Aparece ventana emergente "Sin acceso a Internet".
+A "Sin acceso a Internet" popup window appears.

@@ -1,27 +1,27 @@
-# Título
+# Title
 
-Texto "Urban Scooter ⋅" en la notificación
+"Urban Scooter ⋅" text in the notification
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
-# Componente
+# Component
 
-Notificación
+Notification
 
-# Precondiciones
+# Preconditions
 
-La notificación push se recibió correctamente.
+The push notification was received correctly.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Leer el texto de la parte superior de la notificación.
+1. Read the text at the top of the notification.
 
-# Resultado esperado
+# Expected Result
 
-El texto mostrado es "Urban Scooter ⋅".
+The displayed text is "Urban Scooter ⋅".
 
-# Evidencia
+# Evidence
 
 ![](../../testing/test-evidence/TC-MOB-DES-006/notification.png)

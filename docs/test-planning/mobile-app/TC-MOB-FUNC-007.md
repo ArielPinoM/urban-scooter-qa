@@ -1,26 +1,25 @@
-# Título
+# Title
 
-Se muestra ventana emergente "Sin acceso a Internet" al tocar "Iniciar sesión" sin conexión a internet.
+"Sin acceso a Internet" popup window is displayed when tapping "Iniciar sesión" without internet connection.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
-# Componente
+# Component
 
-Falta de Acceso a Internet - Ventana Emergente
+No Internet Access - Popup Window
 
-# Precondiciones
+# Preconditions
 
-- Modo avión activo en el dispositivo/emulador.
+- Airplane mode active on the device/emulator.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Abrir la aplicación.
+1. Open the application.
 
-2. Tocar "Iniciar sesión".
+2. Tap "Iniciar sesión".
 
+# Expected Result
 
-# Resultado esperado
-
-Aparece ventana emergente "Sin acceso a Internet".
+A "Sin acceso a Internet" popup window appears.

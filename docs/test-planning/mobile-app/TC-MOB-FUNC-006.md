@@ -1,44 +1,43 @@
-# Título
+# Title
 
-No se recibe notificación si el pedido ya fue completado.
+No notification is received if the order is already completed.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
 - Postman 12.17.3
 
-# Componente
+# Component
 
-Notificación
+Notification
 
-# Precondiciones
+# Preconditions
 
-- La hora del servidor es antes de las 21:59.
+- Server time is before 21:59.
 
-1. Crear una cuenta de mensajero con ""login"": ""apm96"", ""password"": ""1234"", ""firstName: ""Ariel"" con POST /api/v1/courier.
+1. Create a courier account with "login": "apm96", "password": "1234", "firstName": "Ariel" using POST /api/v1/courier.
 
-2. Crear un pedido con POST /api/v1/orders, en el body, usar ""deliveryDate"": ""<fecha_de_hoy>"".
+2. Create an order with POST /api/v1/orders, in the body, use "deliveryDate": "<today_date>".
 
-3. La aplicación móvil tiene permisos de notificación concedidos.
+3. The mobile application has notification permissions granted.
 
-4. Ingresar la url del backend en la pantalla de inicio de sesion de la aplicación móvil.
+4. Enter the backend URL in the login screen of the mobile application.
 
-5. Iniciar sesión con las credenciales de la cuenta del mensajero que se creó.
+5. Log in with the credentials of the courier account that was created.
 
-6. Aceptar el pedido en la pantalla de pedidos, pestaña "Todos los pedidos".
+6. Accept the order on the orders screen, "Todos los pedidos" tab.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Tocar ""Completar"" en ambas tarjetas del pedido (No deberían de haber dos tarjetas del mismo pedido).
+1. Tap "Completar" on both order cards (There should not be two cards for the same order).
 
-2. Tocar ""Sí"" en cada ventana emergente de confirmación.
+2. Tap "Sí" on each confirmation popup.
 
-2. Esperar a que la hora del servidor sea 21:59.
+2. Wait for server time to be 21:59.
 
-3. Observar el emulador.
+3. Observe the emulator.
 
+# Expected Result
 
-# Resultado esperado
-
-- No se recibe ninguna notificación push para ese pedido.
+- No push notification is received for that order.

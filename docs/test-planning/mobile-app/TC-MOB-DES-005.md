@@ -1,27 +1,27 @@
-# Título
+# Title
 
-El cuerpo del mensaje de la notificación "Se debe completar el pedido de <dirección_de_entrega>. Si no llegas a tiempo, contacta a soporte: 0101".
+The body of the notification message "Se debe completar el pedido de <delivery_address>. Si no llegas a tiempo, contacta a soporte: 0101".
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
-# Componente
+# Component
 
-Notificación
+Notification
 
-# Precondiciones
+# Preconditions
 
-La notificación push se recibió correctamente.
+The push notification was received correctly.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Leer el contenido de la notificación debajo del título.
+1. Read the content of the notification below the title.
 
-# Resultado esperado
+# Expected Result
 
-El contenido muestra "Se debe completar el pedido de <dirección_de_entrega>. Si no llegas a tiempo, contacta a soporte: 0101".
+The content displays "Se debe completar el pedido de <delivery_address>. Si no llegas a tiempo, contacta a soporte: 0101".
 
-# Evidencia
+# Evidence
 
 ![](../../testing/test-evidence/TC-MOB-DES-006/notification.png)

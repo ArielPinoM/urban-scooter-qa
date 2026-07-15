@@ -1,36 +1,35 @@
-# Título
+# Title
 
-No se recibe la notificación push 2 horas y 1 minuto después del plazo.
+Push notification is not received 2 hours and 1 minute after the deadline.
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
 - Postman 12.17.3
 
-# Componente
+# Component
 
-Notificación
+Notification
 
-# Precondiciones
+# Preconditions
 
-- La hora del servidor es antes de las 21:59.
+- Server time is before 21:59.
 
-1. Crear una cuenta de mensajero con ""login"": ""apm96"", ""password"": ""1234"", ""firstName: ""Ariel"" con POST /api/v1/courier.
+1. Create a courier account with "login": "apm96", "password": "1234", "firstName": "Ariel" using POST /api/v1/courier.
 
-2. Crear un pedido con POST /api/v1/orders, en el body, usar ""deliveryDate"": ""<fecha_de_hoy>"".
+2. Create an order with POST /api/v1/orders, in the body, use "deliveryDate": "<today_date>".
 
-3. La aplicación móvil tiene permisos de notificación concedidos.
+3. The mobile application has notification permissions granted.
 
-4. Ingresar la url del backend en la pantalla de inicio de sesión de la aplicación móvil.
+4. Enter the backend URL in the login screen of the mobile application.
 
-5. Iniciar sesión con las credenciales de la cuenta del mensajero que se creó.
+5. Log in with the credentials of the courier account that was created.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-- No se recibe ninguna notificación.
+- No notification is received.
 
+# Expected Result
 
-# Resultado esperado
-
-- No se recibe ninguna notificación.
+- No notification is received.

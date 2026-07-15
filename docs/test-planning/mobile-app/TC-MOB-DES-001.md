@@ -1,28 +1,28 @@
-# Título
+# Title
 
-Ícono de la aplicación presente
+Application icon present
 
-# Entorno
+# Environment
 
-- Emulador Android: Galaxy A3, Android 9
+- Android Emulator: Galaxy A3, Android 9
 
-# Componente
+# Component
 
-Notificación
+Notification
 
-# Precondiciones
+# Preconditions
 
-La notificación push se recibió correctamente.
+The push notification was received correctly.
 
-# Pasos para reproducir
+# Steps to Reproduce
 
-1. Observar la presencia del ícono y coincidencia con el diseño de Figma.
+1. Observe the presence of the icon and verify it matches the Figma design.
 
 
-# Resultado esperado
+# Expected Result
 
-El ícono coincide con el diseño de Figma.
+The icon matches the Figma design.
 
-# Evidencia
+# Evidence
 
 ![](../../testing/test-evidence/TC-MOB-DES-001/urban_scooter_icon.png)
