@@ -1,47 +1,47 @@
-# US-2: La estación de metro en "Estado del pedido" no coincide con la ingresada en el formulario
+# US-2: The subway station in "Order Status" does not match the one entered in the form
 
-# Detalles clave
+# Key details
 
-## Severidad
+## Severity
 🟠 Major
 
-## Prioridad
+## Priority
 🟧 High
 
-## Entorno
-Opera 132, 1280x720 (Chrome bloqueado por [US-1](./US-1.md))
+## Environment
+Opera 132, 1280x720 (Chrome blocked by [US-1](./US-1.md))
 
-## Componente
-Estado del Pedido - Información del Pedido
+## Component
+Order Status - Order Information
 
-## Descripción
-Al consultar un pedido en la pantalla “Estado del pedido“, el valor mostrado en el campo “Estación de metro“ es diferente al que se ingresó en el formulario “Para quién es el scooter“.
+## Description
+When checking an order on the “Order Status” screen, the value shown in the “Estación de metro” field is different from the one entered in the “Para quién es el scooter” form.
 
-### Pasos para reproducir
-1. Abrir la aplicación en Opera (1280x720).
-2. Hacer clic en “Pedir“.
-3. Ingresar “Ariel“ en el campo “Nombre“.
-4. Ingresar “Pino“ en el campo “Apellido“.
-5. Ingresar “1st Street“ en el campo “Dirección“.
-6. Seleccionar “Arcadia“ en el campo “Estación de metro“.
-7. Ingresar “+19999999999“ en el campo “Teléfono“.
-8. Hacer clic en “Siguiente“.
-9. Seleccionar la fecha de mañana en el campo “Fecha de entrega“.
-10. Seleccionar “un día“ en el campo “Periodo de alquiler“.
-11. Hacer clic en “Pedir“.
-12. En la ventana emergente “¿Deseas hacer un pedido?“, hacer clic en “Sí“.
-13. En la ventana emergente “El pedido ha sido realizado“, hacer clic en “Comprueba el estado“.
+### Steps to reproduce
+1. Open the application in Opera (1280x720).
+2. Click “Pedir”.
+3. Enter “Ariel” in the “Nombre” field.
+4. Enter “Pino” in the “Apellido” field.
+5. Enter “1st Street” in the “Dirección” field.
+6. Select “Arcadia” in the “Estación de metro” field.
+7. Enter “+19999999999” in the “Teléfono” field.
+8. Click “Siguiente”.
+9. Select tomorrow’s date in the “Fecha de entrega” field.
+10. Select “un día” in the “Periodo de alquiler” field.
+11. Click “Pedir”.
+12. In the “¿Deseas hacer un pedido?” popup, click “Sí”.
+13. In the “El pedido ha sido realizado” popup, click “Comprueba el estado”.
 
-### Resultado esperado
-Se muestra “Arcadia“ en “Estación de metro“.
+### Expected result
+“Arcadia” is displayed in the “Estación de metro” field.
 
-### Resultado actual
-Se muestra “Artesia“ en “Estación de metro“.
+### Actual result
+“Artesia” is displayed in the “Estación de metro” field.
 
-### Evidencia
+### Evidence
 
-#### Captura de pantalla del formulario con el dato ingresado
+#### Screenshot of the form with the entered data
 ![](../test-evidence/US-2/form-data.png)
 
-#### Captura de pantalla de “Estado del pedido“ mostrando el dato incorrecto
+#### Screenshot of the "Estado del Pedido" screen showing the incorrect data
 ![](../test-evidence/US-2/order-status-wrong-data.png)

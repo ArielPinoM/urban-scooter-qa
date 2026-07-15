@@ -1,56 +1,56 @@
-# US-5: Se duplica el pedido en la tabla "Orders" al aceptarlo
+# US-5: Order duplicates in the "Orders" table when accepted
 
-# Detalles clave
+# Key details
 
-## Severidad
+## Severity
 🟠 Major
 
-## Prioridad
+## Priority
 🟧 High
 
-## Entorno
-- Opera 132, 1280x720 (Chrome bloqueado por [US-1](./US-1.md))
+## Environment
+- Opera 132, 1280x720 (Chrome blocked by [US-1](./US-1.md))
 - Postman 12.16.4
-- Api Ez-scooter versión 1.0.0
-- Dispositivo móvil
+- Ez-scooter API version 1.0.0
+- Mobile device
     - Samsung Galaxy S23+
     - Android version: 16
-- Aplicación móvil “Urban Scooter“ versión 1.0
+- Urban Scooter mobile app version 1.0
 
-## Componente
-API - Aceptación de Pedidos
+## Component
+API - Order Acceptance
 
-## Descripción
-Cuando el mensajero acepta una orden mediante la API, se inserta un registro adicional en la tabla `Orders` con el mismo `track` y datos del pedido original. Esto provoca que el mensajero vea **dos tarjeta de pedido idénticas** en la aplicación móvil.
+## Description
+When the courier accepts an order through the API, an additional record is inserted into the `Orders` table with the same `track` and the original order data. This causes the courier to see **two identical order cards** in the mobile app.
 
-Para que el usuario final vea reflejado el cambio de estado en el seguimiento, el mensajero debe completar ambos registros por separado.
+For the end user to see the status change reflected in tracking, the courier must complete both records separately.
 
-### Precondiciones
-- Existe un pedido con un `track` único.
-- Existe un mensaje con credenciales válidas.
-- El mensajero no tienen ningún pedido aceptado.
-- Se ha obtenido el ID del mensajero y el ID del pedido mediante la API.
+### Preconditions
+- There is an order with a unique `track`.
+- There is a valid message with credentials.
+- The courier has no accepted orders.
+- The courier ID and order ID have been obtained via the API.
 
-### Pasos para reproducir
-1. Crear un pedido válido y obtener su número (`track`).
-2. Mediante Postman, iniciar sesión como mensajero y obtener su `courierId`.
-3. Obtener el `id` de la orden con `GET /api/v1/orders/track?t=<track>`.
-4. Verificar que devuelve 1 registro al consultar la tabla `Orders` filtrando por el `track` del pedido con `select * from "Orders" where "Orders".track = '<track>';`.
-5. Enviar una única solicitud `PUT /api/v1/orders/accept/<id_orden>?courierId=<courierId>`.
-6. Verificar que devuelve 2 registros al consultar la tabla `Orders` filtrando por el `track` del pedido con `select * from "Orders" where "Orders".track = '<track>';`.
-7. Iniciar sesión en la app móvil del mensajero y observar la lista de “Mis pedidos“.
+### Steps to reproduce
+1. Create a valid order and get its number (`track`).
+2. Using Postman, log in as a courier and obtain the `courierId`.
+3. Get the order `id` with `GET /api/v1/orders/track?t=<track>`.
+4. Verify that it returns 1 record when querying the `Orders` table filtered by the order `track` with `select * from "Orders" where "Orders".track = '<track>';`.
+5. Send a single request `PUT /api/v1/orders/accept/<order_id>?courierId=<courierId>`.
+6. Verify that it returns 2 records when querying the `Orders` table filtered by the `track` with `select * from "Orders" where "Orders".track = '<track>';`.
+7. Log in to the courier mobile app and observe the “Mis pedidos” list.
 
-### Resultado esperado
-- En la base de datos existe un solo registro con ese `track` y el campo `inDelivery = t`.
-- La app móvil muestra un único pedido pendiente para ese mensajero en “Mis pedidos“.
+### Expected result
+- The database contains a single record with that `track` and `inDelivery = t`.
+- The mobile app shows a single pending order for that courier in “Mis pedidos”.
 
-### Resultado actual
-- Aparecen dos registros en la tabla `Orders` con el mismo `track` (ej. ids 1 y 2).
-- La app móvil muestra dos tarjetas idénticas con la misma, dirección, fecha de entrega, etc.
+### Actual result
+- Two records appear in the `Orders` table with the same `track` (e.g. ids 1 and 2).
+- The mobile app shows two identical cards with the same address, delivery date, etc.
 
-### Evidencia
+### Evidence
 
-#### Captura de la tabla Orders mostrando los registros duplicados (ids 1 y 2)
+#### Screenshot of the Orders table showing duplicated records (ids 1 and 2)
 ![](../test-evidence/US-5/duplicate-orders.png)
 
 #### Captura de la app móvil con dos pedidos iguales

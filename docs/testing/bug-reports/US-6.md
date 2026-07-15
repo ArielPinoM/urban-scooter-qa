@@ -1,51 +1,51 @@
-# US-6: El campo "finished" se activa al presionar "Completar" (estado 3); posible inconsistencia con requisitos
+# US-6: The "finished" field is set when "Completar" is pressed (status 3); possible requirements inconsistency
 
-# Detalles clave
+# Key details
 
-## Severidad
+## Severity
 🔵 Minor
 
-## Prioridad
+## Priority
 🟨 Medium
 
-## Entorno
-- Opera 132, 1280x720 (Chrome bloqueado por [US-1](./US-1.md))
+## Environment
+- Opera 132, 1280x720 (Chrome blocked by [US-1](./US-1.md))
 - Postman 12.16.4
-- Api Ez-scooter versión 1.0.0
+- Ez-scooter API version 1.0.0
 - Back-end
     - Node.js v12.17.0
-- Base de datos PostgreSQL
+- PostgreSQL database
 
-## Componente
-Backend - Lógica de Estados del Pedido
+## Component
+Backend - Order Status Logic
 
-## Descripción
+## Description
 
-### Vinculación
-Bloqueado por [US-5](./US-5.md).
+### Link
+Blocked by [US-5](./US-5.md).
 
-Durante las pruebas de la cadena de estados, se observó que el campo `finished` en la tabla `Orders` cambia a `true` cuando el repartidor presiona **"Completar"** (lo que activa el estado "El servicio de entrega llegó"). Sin embargo, el documento de requisitos del backend indica que *el campo lógico finished se asigna cuando el pedido ha sido enviado,* **(Descripción del contenido de la base de datos > Orders)**.
+During status chain testing, it was observed that the `finished` field in the `Orders` table changes to `true` when the courier presses **"Completar"** (which activates the status "El servicio de entrega llegó"). However, the backend requirements document indicates that *the logical finished field is assigned when the order has been sent,* **(Database content description > Orders)**.
 
-Se necesita aclarar:
-- ¿”Enviado” equivale al momento en que el repartidor presiona “Completar“ (estado 3) o cuando se confirma la finalización (estado 4)?
-- Si `finished` debe reflejar la finalización del alquiler (estado 4), entonces está cambiando prematuramente.
+Clarification is needed:
+- Does "Enviado" correspond to the moment the courier presses “Completar“ (status 3) or when completion is confirmed (status 4)?
+- If `finished` should reflect rental completion (status 4), then it is changing prematurely.
 
-**Nota:** Esta verificación se realizó con el bug [US-5](./US-5.md). Es probable que el comportamiento sea el mismo sin duplicados, pero debe confirmarse una vez resuelto.
+**Note:** This verification was performed with bug [US-5](./US-5.md). It is likely the behavior is the same without duplicates, but it should be confirmed once resolved.
 
-### Precondiciones
-- [US-5](./US-5.md) resuelto.
-- Pedido creado y aceptado por el mensajero.
+### Preconditions
+- [US-5](./US-5.md) resolved.
+- Order created and accepted by the courier.
 
-### Pasos para reproducir
-1. Aceptar un pedido con un mensajero.
-2. Consultar `Orders`: verificar que `finished = false`.
-3. Presionar “Completar” (simular vía API o desde la app móvil).
-4. Consultar nuevamente `Orders` para el mismo pedido.
-5. Contrastar el valor de `finished` con los especificado en los requisitos.
+### Steps to reproduce
+1. Accept an order with a courier.
+2. Query `Orders`: verify that `finished = false`.
+3. Press “Completar” (simulate via API or from the mobile app).
+4. Query `Orders` again for the same order.
+5. Compare the value of `finished` with what is specified in the requirements.
 
 
-### Resultado esperado (según interpretación de requisitos)
-A confirmar. Si “enviado“ = estado 4, `finished` debería seguir siendo `false` tras “Completar“, y pasar a `true` solo al confirmar la finalización. 
+### Expected result (according to requirements interpretation)
+To confirm. If “Enviado“ = status 4, `finished` should remain `false` after “Completar”, and switch to `true` only when completion is confirmed.
 
-### Resultado actual (con [US-5](./US-5.md) presente)
-`finished` pasó a `true` inmediatamente después de “Completar“ (estado 3).
+### Actual result (with [US-5](./US-5.md) present)
+`finished` changed to `true` immediately after “Completar” (status 3).

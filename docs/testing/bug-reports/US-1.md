@@ -1,67 +1,67 @@
-# US-1: Ventana emergente de confirmación no documentada bloquea la creación del pedido en Chrome (funciona en Opera)
+# US-1: Undocumented confirmation popup blocks order creation in Chrome (works in Opera)
 
-# Detalles clave
+# Key details
 
-## Severidad
+## Severity
 🟠 Major
 
-## Prioridad
+## Priority
 🟧 High
 
-## Entorno
-Chrome 149, 1280x720 (falló) / Opera 132, 1280x720 (funciona con desviación)
+## Environment
+Chrome 149, 1280x720 (failed) / Opera 132, 1280x720 (works with deviation)
 
-## Componente
-Realizar Pedido - Formulario "Alquiler"
+## Component
+Place Order - "Alquiler" form
 
-## Descripción
+## Description
 
-### Desviación respecto a requisitos y diseño
-Al hacer clic en “Pedir“ con datos válidos, aparece una ventana emergente de confirmación “¿Deseas hacer un pedido?“ y los botones “No“ y “Sí“. Esta ventana:
+### Deviation from requirements and design
+When clicking “Pedir” with valid data, an undocumented confirmation popup appears: “¿Deseas hacer un pedido?” with buttons “No” and “Sí”. This popup:
 
-- No está descrita en los requisitos de negocio.
-- No aparece en los diseños de Figma.
+- Is not described in the business requirements.
+- Does not appear in the Figma designs.
 
-Según el BRD, el comportamiento esperado es:
+According to the BRD, the expected behavior is:
 
-> 'Si todos los campos se rellenaron correctamente, el pedido se hará cuando el usuario o usuaria haga clic en el botón "Pedir". Aparecerá una ventana emergente con el mensaje "Número de pedido NNNNN. Escríbelo: será útil para darle seguimiento al estado" mediante el botón "Comprueba el estado".'
+> 'If all fields were filled in correctly, the order is placed when the user clicks the "Pedir" button. A popup appears with the message "Número de pedido NNNNN. Escríbelo: será útil para darle seguimiento al estado" via the "Comprueba el estado" button.'
 
-No se menciona ningún paso intermedio de confirmación.
+No intermediate confirmation step is mentioned.
 
-### Comportamiento por navegador
-- Chrome 149: La ventana aparece. Al hacer clic en “Sí“ ocurre nada. El pedido no se crea.
-- Opera 132: La ventana aparece. Al hacer clic en “Sí” funciona: se crea el pedido y se muestra el número.
+### Browser behavior
+- Chrome 149: The popup appears. Clicking “Sí” does nothing. The order is not created.
+- Opera 132: The popup appears. Clicking “Sí” works: the order is created and the number is displayed.
 
-### Impacto
-- En Chrome, el Happy Path está completamente bloqueado.
-- En Opera, el flujo avanza, pero introduce un paso no documentado que contradice los requisitos y el diseño.
+### Impact
+- In Chrome, the happy path is completely blocked.
+- In Opera, the flow proceeds but introduces an undocumented step that contradicts requirements and design.
 
-### Pasos para reproducir
-1. Abrir la aplicación en Chrome 149 (1280x720).
-2. Hacer clic en “Pedir“.
-3. Ingresar “Ariel“ en el campo “Nombre“.
-4. Ingresar “Pino“ en el campo “Apellido“.
-5. Ingresar “1st Street“ en el campo “Dirección“.
-6. Seleccionar “5th Street“ en el campo “Estación de metro“.
-7. Ingresar “+19999999999“ en el campo “Teléfono“.
-8. Hacer clic en “Siguiente“.
-9. Seleccionar la fecha de mañana en el campo “Fecha de entrega“.
-10. Seleccionar “un día“ en el campo “Periodo de alquiler“.
-11. Hacer clic en “Pedir“.
-12. En la ventana emergente, hacer clic en “Sí“.
+### Steps to reproduce
+1. Open the application in Chrome 149 (1280x720).
+2. Click “Pedir”.
+3. Enter “Ariel” in the “Nombre” field.
+4. Enter “Pino” in the “Apellido” field.
+5. Enter “1st Street” in the “Dirección” field.
+6. Select “5th Street” in the “Estación de metro” field.
+7. Enter “+19999999999” in the “Teléfono” field.
+8. Click “Siguiente”.
+9. Select tomorrow’s date in the “Fecha de entrega” field.
+10. Select “un día” in the “Periodo de alquiler” field.
+11. Click “Pedir”.
+12. In the popup, click “Sí”.
 
-### Resultado esperado
-Tras “Pedir“, aparece directamente la ventana emergente “El pedido ha sido realizado“ con el número de pedido.
+### Expected result
+After clicking “Pedir”, the “El pedido ha sido realizado” popup appears directly with the order number.
 
-### Resultado actual
-Aparece la ventana emergente de confirmación “¿Deseas hacer un pedido?“ no documentada.
-- En Chrome, al hacer clic en “Sí“, no pasa nada.
-- En Opera, el flujo continúa y se crea el pedido.
+### Actual result
+An undocumented confirmation popup “¿Deseas hacer un pedido?” appears.
+- In Chrome, clicking “Sí” does nothing.
+- In Opera, the flow continues and the order is created.
 
-### Evidencia
+### Evidence
 
-#### Captura de la ventana emergente en Chrome
+#### Chrome popup screenshot
 ![](../test-evidence/US-1/pop-up-window-chrome.png)
 
-#### Captura de la ventana emergente en Opera tras el clic exitoso
+#### Opera popup after successful click screenshot
 ![](../test-evidence/US-1/order-success-opera.png)
