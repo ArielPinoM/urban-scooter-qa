@@ -1,663 +1,663 @@
-# Checklist - Pantalla "Realizar Pedido"
+# Checklist - "Realizar Pedido" Screen
 
-## Pruebas de diseño
+## Design Tests
 
 ### Header
 
 #### Logo
-41. El logo está presente y se muestra en la posición superior izquierda según Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Chrome 85 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+41. The logo is present and displayed in the top left position according to Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Chrome 85 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-42. El logo no está pixelado ni deformado.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Chrome 85 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+42. The logo is not pixelated or distorted.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Chrome 85 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-#### Botones del header
-43. El botón "Pedir" está presente y en la posición esperada.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Chrome 85 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+#### Header Buttons
+43. The "Pedir" button is present and in the expected position.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Chrome 85 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-44. El botón "Estado del pedido" está presente y en la posición esperada.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Chrome 85 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+44. The "Estado del pedido" button is present and in the expected position.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Chrome 85 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-45. Color de fondo del botón "Pedir" coincide con Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Chrome 85 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+45. Background color of the "Pedir" button matches Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Chrome 85 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-46. Color de fondo del botón "Estado del pedido" coincide con Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Chrome 85 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+46. Background color of the "Estado del pedido" button matches Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Chrome 85 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-47. Al hacer hover en "Pedir", el botón muestra el estilo especificado en Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Chrome 85 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1280x720: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+47. On hover over "Pedir", the button displays the style specified in Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Chrome 85 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1280x720: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-48. Al hacer hover en "Estado del pedido", el botón muestra el estilo especificado en Figma.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED
-- Chrome 85 o superior, 1280x720: 🔴 FAILED
-- Opera 71 o superior, 1280x720: 🔴 FAILED
-- Opera 71 o superior, 1920x1080: 🔴 FAILED
+48. On hover over "Estado del pedido", the button displays the style specified in Figma.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED
+- Chrome 85 or higher, 1280x720: 🔴 FAILED
+- Opera 71 or higher, 1280x720: 🔴 FAILED
+- Opera 71 or higher, 1920x1080: 🔴 FAILED
 - [[US-11]](/docs/testing/bug-reports/US-11.md)
 
 ---
 
-# Formulario "Para quién es el scooter"
+# Form "Para quién es el scooter"
 
-## Pruebas Funcionales
+## Functional Tests
 
-### Validaciones
-49. Si "Nombre" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un Nombre correcto".
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+### Validations
+49. If "Nombre" is empty or invalid, when attempting to advance, error "Introduce un Nombre correcto" is displayed.
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-50. Si "Apellido" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un apellido válido".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-12]](/docs/testing/bug-reports/US-12.md)
+50. If "Apellido" is empty or invalid, when attempting to advance, error "Introduce un apellido válido" is displayed.
+- Opera 71 or higher, 1920x1080: 🔴 FAILED [[US-12]](/docs/testing/bug-reports/US-12.md)
 
-51. Si "Dirección" está vacía o es inválida, al intentar avanzar se muestra error "Introduce una dirección válida".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-13]](/docs/testing/bug-reports/US-13.md)
+51. If "Dirección" is empty or invalid, when attempting to advance, error "Introduce una dirección válida" is displayed.
+- Opera 71 or higher, 1920x1080: 🔴 FAILED [[US-13]](/docs/testing/bug-reports/US-13.md)
 
-52. Si "Estación de metro" está vacía, al intentar avanzar se muestra error "Introduce una estación de metro correcta".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-14]](/docs/testing/bug-reports/US-14.md)
+52. If "Estación de metro" is empty, when attempting to advance, error "Introduce una estación de metro correcta" is displayed.
+- Opera 71 or higher, 1920x1080: 🔴 FAILED [[US-14]](/docs/testing/bug-reports/US-14.md)
 
-53. Si "Teléfono" está vacío o es inválido, al intentar avanzar se muestra error "Introduce un número de teléfono válido".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-15]](/docs/testing/bug-reports/US-15.md)
+53. If "Teléfono" is empty or invalid, when attempting to advance, error "Introduce un número de teléfono válido" is displayed.
+- Opera 71 or higher, 1920x1080: 🔴 FAILED [[US-15]](/docs/testing/bug-reports/US-15.md)
 
-### Navegación
-54. Si todos los campos están rellenados correctamente, al hacer clic en "Siguiente" se avanza al formulario "Alquiler".
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+### Navigation
+54. If all fields are filled correctly, clicking "Siguiente" advances to the "Alquiler" form.
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-55. Si algún campo se marca como inválido, al hacer clic en "Siguiente" se muestra el error correspondiente y no se avanza.
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+55. If any field is marked invalid, clicking "Siguiente" displays the corresponding error and does not advance.
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-## Pruebas de diseño
+## Design Tests
 
-### Encabezado
-56. Si algún campo se marca como inválido, al hacer clic en "Siguiente" se muestra el error correspondiente y no se avanza.
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+### Header
+56. If any field is marked invalid, clicking "Siguiente" displays the corresponding error and does not advance.
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-### Campos
-57. El campo "Nombre" está presente.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+### Fields
+57. The "Nombre" field is present.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-58. El placeholder de "Nombre" coincide con "* Nombre".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+58. The placeholder for "Nombre" matches "* Nombre".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-59. "Nombre" inválido se resalta en rojo.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+59. Invalid "Nombre" is highlighted in red.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-60. El campo "Apellido" está presente.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+60. The "Apellido" field is present.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-61. El placeholder de "Apellido" coincide con "* Apellido".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+61. The placeholder for "Apellido" matches "* Apellido".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-62. "Apellido" inválido se resalta en rojo.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+62. Invalid "Apellido" is highlighted in red.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-63. El campo "Dirección" está presente.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+63. The "Dirección" field is present.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-64. El placeholder de "Dirección" coincide con "* Dirección: a dónde llevar el scooter".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+64. The placeholder for "Dirección" matches "* Dirección: a dónde llevar el scooter".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-65. "Dirección" inválida se resalta en rojo.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+65. Invalid "Dirección" is highlighted in red.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-66. El campo "Estación de metro" está presente.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+66. The "Estación de metro" field is present.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-67. El placeholder de "Estación de metro" coincide con "* Estación de metro".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+67. The placeholder for "Estación de metro" matches "* Estación de metro".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-68. El campo "Teléfono" está presente.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+68. The "Teléfono" field is present.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-69. El placeholder de "Teléfono" coincide con "Teléfono: el repartidor o repartidora te llamará".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+69. The placeholder for "Teléfono" matches "Teléfono: el repartidor o repartidora te llamará".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-70. "Teléfono" inválido se resalta en rojo.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+70. Invalid "Teléfono" is highlighted in red.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-71. Los campos obligatorios están marcados con asterisco.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+71. Required fields are marked with an asterisk.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-### Botón "Siguiente"
-72. El botón "Siguiente" está presente en la parte inferior del formulario.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+### "Siguiente" Button
+72. The "Siguiente" button is present at the bottom of the form.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-73. Color de fondo del botón "Siguiente" coincide con Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+73. Background color of the "Siguiente" button matches Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-74. Al hacer hover en "Siguiente", el botón muestra el estilo especificado en Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+74. On hover over "Siguiente", the button displays the style specified in Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-75. Al hacer hover en "Siguiente", el cursor cambia a mano.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+75. On hover over "Siguiente", the cursor changes to a hand.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
 ---
 
-# Formulario "Alquiler"
+# Form "Alquiler"
 
-## Pruebas funcionales
+## Functional Tests
 
-### Validaciones de campos
+### Field Validations
 
-76. Si "Fecha de entrega" se marca como inválido, al hacer clic en "Pedir" se muestra error "Introduce una fecha de entrega correcta".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
+76. If "Fecha de entrega" is marked invalid, clicking "Pedir" displays error "Introduce una fecha de entrega correcta".
+- Opera 71 or higher, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
-77. Si "Periodo de alquiler" se marca como inválido, al hacer clic en "Pedir" se muestra error "Introduce un Periodo de alquiler correcto".
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-17]](/docs/testing/bug-reports/US-17.md)
+77. If "Periodo de alquiler" is marked invalid, clicking "Pedir" displays error "Introduce un Periodo de alquiler correcto".
+- Opera 71 or higher, 1920x1080: 🔴 FAILED [[US-17]](/docs/testing/bug-reports/US-17.md)
 
-### Botón "Atrás"
-78. Al hacer clic en "Atrás" se regresa a la pantalla "Para quién es el scooter".
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+### "Atrás" Button
+78. Clicking "Atrás" returns to the "Who is the scooter for?" screen.
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-79. Los campos de "Alquiler" conservan la información al regresar después de haber avanzado nuevamente.
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+79. The fields in the "Rental" form retain information when returning after advancing again.
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-### Botón "Pedir"
-80. Con todos los campos obligatorios correctos, al hacer clic en "Pedir" aparece una ventana emergente "El pedido ha sido realizado".
-- Chrome 85 o superior, 1920x1080
-- Opera 71 o superior, 1920x1080
+### "Pedir" Button
+80. With all required fields correct, clicking "Pedir" displays a modal "El pedido ha sido realizado".
+- Chrome 85 or higher, 1920x1080
+- Opera 71 or higher, 1920x1080
 - 🔴 FAILED [[US-1]](/docs/testing/bug-reports/US-1.md)
 
-81. La ventana emergente muestra el mensaje "Número de pedido NNNNN. Escríbelo: será útil para darle seguimiento al estado".
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+81. The modal displays the message "Número de pedido NNNNN. Escríbelo: será útil para darle seguimiento al estado".
+- Chrome 85 or higher, 1920x1080: 🟡 SKIPPED - Cannot create order [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-82. La ventana emergente contiene un botón "Comprueba el estado".
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+82. The modal contains a "Comprueba el estado" button.
+- Chrome 85 or higher, 1920x1080: 🟡 SKIPPED - Cannot create order [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-83. Al hacer clic en "Comprueba el estado" se redirige a la pantalla "Estado del pedido".
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+83. Clicking "Comprueba el estado" redirects to the "Order Status" screen.
+- Chrome 85 or higher, 1920x1080: 🟡 SKIPPED - Cannot create order [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-84. En la pantalla "Estado del pedido", el campo "Número de pedido" aparece ya completado con el número del pedido recién creado.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+84. On the "Order Status" screen, the "Número de pedido" field appears already filled with the number of the newly created order.
+- Chrome 85 or higher, 1920x1080: 🟡 SKIPPED - Cannot create order [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-### Botón "Pedir" (error)
-85. Si algún campo obligatorio está vacío o es inválido, al hacer clic en "Pedir" aparece un mensaje de error indicando el campo problemático.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-18]](/docs/testing/bug-reports/US-18.md)
+### "Pedir" Button (Error)
+85. If any required field is empty or invalid, clicking "Pedir" displays an error message indicating the problematic field.
+- Chrome 85 or higher, 1920x1080: 🟡 SKIPPED - Cannot create order [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 or higher, 1920x1080: 🔴 FAILED [[US-18]](/docs/testing/bug-reports/US-18.md)
 
-86. El formulario no se envía hasta que todos los campos obligatorios sean correctos.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
+86. The form is not submitted until all required fields are correct.
+- Chrome 85 or higher, 1920x1080: 🟡 SKIPPED - Cannot create order [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 or higher, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
-### Múltiples pedidos
-87. Después de realizar un pedido exitosamente, el usuario puede realizar otro pedido.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+### Multiple Orders
+87. After successfully placing an order, the user can place another order.
+- Chrome 85 or higher, 1920x1080: 🟡 SKIPPED - Cannot create order [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-88. Los datos del nuevo pedido no se mezclan con los del anterior.
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+88. The data from the new order does not mix with data from the previous order.
+- Chrome 85 or higher, 1920x1080: 🟡 SKIPPED - Cannot create order [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-89. Cada pedido genera un número de pedido distinto (visible en la ventana emergente).
-- Chrome 85 o superior, 1920x1080: 🟡 SKIPPED - No se puede crear pedido [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+89. Each order generates a different order number (visible in the modal).
+- Chrome 85 or higher, 1920x1080: 🟡 SKIPPED - Cannot create order [[BUG US-1]](/docs/testing/bug-reports/US-1.md)
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-## Pruebas de diseño
+## Design Tests
 
-### Encabezado
-90. El texto del encabezado coincide con "Alquiler".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+### Header
+90. The header text matches "Alquiler".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-### Campos
-91. El campo "Fecha de entrega" está presente.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+### Fields
+91. The "Fecha de entrega" field is present.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-92. El placeholder de "Fecha de entrega" coincide con "* Cuándo entregar el scooter".
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED 
-- Opera 71 o superior, 1920x1080: 🔴 FAILED
+92. The placeholder for "Fecha de entrega" matches "* Cuándo entregar el scooter".
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED 
+- Opera 71 or higher, 1920x1080: 🔴 FAILED
 - [[US-19]](/docs/testing/bug-reports/US-19.md)
 
-93. Focus en "Fecha de entrega" se resalta en azul.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+93. Focus on "Fecha de entrega" is highlighted in blue.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-94. "Fecha de entrega" es obligatorio, tiene indicación visual "*".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+94. "Fecha de entrega" is required, has visual indication "*".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-95. El campo "Periodo de alquiler" está presente.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+95. The "Periodo de alquiler" field is present.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-96. El placeholder de "Periodo de alquiler" coincide con "* Periodo de alquiler".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+96. The placeholder for "Periodo de alquiler" matches "* Periodo de alquiler".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-97. "Periodo de alquiler" es obligatorio, tiene indicación visual "*".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+97. "Periodo de alquiler" is required, has visual indication "*".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-98. El campo "Color" está presente.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+98. The "Color" field is present.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-99. El placeholder de "Color" coincide con "El color del scooter ☐ negro ☐ gris".  
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED  
-- Opera 71 o superior, 1920x1080: 🟢 PASSED  
+99. The placeholder for "Color" matches "El color del scooter ☐ negro ☐ gris".  
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED  
+- Opera 71 or higher, 1920x1080: 🟢 PASSED  
 
-100. El campo "Comentario" está presente.  
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED  
-- Opera 71 o superior, 1920x1080: 🟢 PASSED  
+100. The "Comentario" field is present.  
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED  
+- Opera 71 or higher, 1920x1080: 🟢 PASSED  
 
-101. El placeholder de "Comentario" coincide con "Comentario".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED  
-- Opera 71 o superior, 1920x1080: 🟢 PASSED  
+101. The placeholder for "Comentario" matches "Comentario".
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED  
+- Opera 71 or higher, 1920x1080: 🟢 PASSED  
 
-### Botones
+### Buttons
 
-102. El botón "Atrás" está presente en la parte inferior del formulario.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+102. The "Atrás" button is present at the bottom of the form.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-103. Color de fondo del botón "Atrás" coincide con Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+103. Background color of the "Atrás" button matches Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-104. Al hacer hover en "Atrás", el botón muestra el estilo especificado en Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+104. On hover over "Atrás", the button displays the style specified in Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-105. Al hacer hover en "Atrás", el cursor cambia a mano.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+105. On hover over "Atrás", the cursor changes to a hand.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-106. El botón "Pedir" está presente en la parte inferior del formulario.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+106. The "Pedir" button is present at the bottom of the form.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-107. Color de fondo del botón "Pedir" coincide con Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+107. Background color of the "Pedir" button matches Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-108. Color de fondo del botón "Pedir" coincide con Figma.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED
-- Opera 71 o superior, 1920x1080: 🟢 PASSED
+108. Background color of the "Pedir" button matches Figma.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED
+- Opera 71 or higher, 1920x1080: 🟢 PASSED
 
-108. Al hacer hover en "Pedir", el cursor cambia a mano.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
-- Opera 71 o superior, 1920x1080: 🟢 PASSED 
+108. On hover over "Pedir", the cursor changes to a hand.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
+- Opera 71 or higher, 1920x1080: 🟢 PASSED 
 
-## Pruebas de validación de datos en los campos
-Cada ítem verifica:
-- La señalización visual del campo (estilo de error).
-- La lógica de bloqueo/permiso en el flujo (botón "Siguiente" o "Pedir").
+## Data Validation Tests for Fields
+Each item verifies:
+- The visual signaling of the field (error styling).
+- The blocking/permission logic in the flow ("Siguiente" or "Pedir" button).
 
-### Formulario "Para quién es el scooter"
+### Form "Para quién es el scooter"
 
 #### Nombre
-109. **VÁLIDO** – Longitud 2 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+109. **VALID** – Length 2 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-110. **VÁLIDO** – Longitud 3 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+110. **VALID** – Length 3 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-111. **VÁLIDO** – Longitud 5 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+111. **VALID** – Length 5 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-112. **VÁLIDO** – Longitud 14 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+112. **VALID** – Length 14 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-113. **VÁLIDO** – Longitud 15 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+113. **VALID** – Length 15 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-114. **INVÁLIDO** – Longitud 1 caracter.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+114. **INVALID** – Length 1 character.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-115. **INVÁLIDO** – Longitud 16 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+115. **INVALID** – Length 16 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-116. **INVÁLIDO** – Longitud 17 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+116. **INVALID** – Length 17 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-117. **INVÁLIDO** – Longitud 18 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+117. **INVALID** – Length 18 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-118. **INVÁLIDO** – Vacío: 0 caracteres
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+118. **INVALID** – Empty: 0 characters
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-119. **VÁLIDO** – Caracteres del alfabeto latino
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+119. **VALID** – Latin alphabet characters
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-120. **VÁLIDO** – Nombre con espacios
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+120. **VALID** – Name with spaces
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-121. **VÁLIDO** – Nombre con guiones
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+121. **VALID** – Name with hyphens
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-122. **INVÁLIDO** – Nombre con puntos
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+122. **INVALID** – Name with periods
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-123. **INVÁLIDO** – Nombre con comas
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+123. **INVALID** – Name with commas
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-124. **INVÁLIDO** – Nombre con caracteres especiales [ №%@\" ]
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+124. **INVALID** – Name with special characters [ №%@\" ]
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-125. **INVÁLIDO** – Caracteres de otro lenguaje [ 加布里埃爾F加布爾 ]
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+125. **INVALID** – Characters from another language [ 加布里埃爾F加布爾 ]
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-126. **INVÁLIDO** – Números
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+126. **INVALID** – Numbers
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
 #### Apellido
 
-127. **VÁLIDO** – Longitud 2 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+127. **VALID** – Length 2 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-128. **VÁLIDO** – Longitud 3 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+128. **VALID** – Length 3 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-129. **VÁLIDO** – Longitud 5 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+129. **VALID** – Length 5 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-130. **VÁLIDO** – Longitud 14 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+130. **VALID** – Length 14 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-131. **VÁLIDO** – Longitud 15 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+131. **VALID** – Length 15 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-132. **INVÁLIDO** – Longitud 1 caracter.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+132. **INVALID** – Length 1 character.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-133. **INVÁLIDO** – Longitud 16 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-20]](/docs/testing/bug-reports/US-20.md)
+133. **INVALID** – Length 16 characters.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-20]](/docs/testing/bug-reports/US-20.md)
 
-134. **INVÁLIDO** – Longitud 17 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-21]](/docs/testing/bug-reports/US-21.md)
+134. **INVALID** – Length 17 characters.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-21]](/docs/testing/bug-reports/US-21.md)
 
-135. **INVÁLIDO** – Longitud 18 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-22]](/docs/testing/bug-reports/US-22.md)
+135. **INVALID** – Length 18 characters.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-22]](/docs/testing/bug-reports/US-22.md)
 
-136. **INVÁLIDO** – Vacío: 0 caracteres
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+136. **INVALID** – Empty: 0 characters
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-137. **VÁLIDO** – Caracteres del alfabeto latino
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+137. **VALID** – Latin alphabet characters
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-138. **VÁLIDO** – Apellido con espacios
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+138. **VALID** – Last name with spaces
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-139. **VÁLIDO** – Apellido con guiones
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+139. **VALID** – Last name with hyphens
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-140. **INVÁLIDO** – Apellido con puntos
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+140. **INVALID** – Last name with periods
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-141. **INVÁLIDO** – Apellido con comas
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+141. **INVALID** – Last name with commas
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-142. **INVÁLIDO** – Apellido con caracteres especiales [ №%@\" ]
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+142. **INVALID** – Last name with special characters [ №%@\" ]
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-143. **INVÁLIDO** – Caracteres de otro lenguaje [ 加布里埃爾F加布爾 ]
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+143. **INVALID** – Characters from another language [ 加布里埃爾F加布爾 ]
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-144. **INVÁLIDO** – Números
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+144. **INVALID** – Numbers
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
 #### Dirección
-145. **VÁLIDO** – Longitud 5 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+145. **VALID** – Length 5 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-146. **VÁLIDO** – Longitud 6 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+146. **VALID** – Length 6 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-147. **VÁLIDO** – Longitud 24 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+147. **VALID** – Length 24 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-148. **VÁLIDO** – Longitud 49 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+148. **VALID** – Length 49 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-149. **VÁLIDO** – Longitud 50 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-23]](/docs/testing/bug-reports/US-23.md)
+149. **VALID** – Length 50 characters.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-23]](/docs/testing/bug-reports/US-23.md)
 
-150. **INVÁLIDO** – Longitud 2 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+150. **INVALID** – Length 2 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-151. **INVÁLIDO** – Longitud 3 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+151. **INVALID** – Length 3 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-152. **INVÁLIDO** – Longitud 4 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+152. **INVALID** – Length 4 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-153. **INVÁLIDO** – Longitud 51 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+153. **INVALID** – Length 51 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-154. **INVÁLIDO** – Longitud 52 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+154. **INVALID** – Length 52 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-155. **INVÁLIDO** – Longitud 53 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+155. **INVALID** – Length 53 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-156. **INVÁLIDO** – Vacío: 0 caracteres
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-24]](/docs/testing/bug-reports/US-24.md)
+156. **INVALID** – Empty: 0 characters
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-24]](/docs/testing/bug-reports/US-24.md)
 
-157. **VÁLIDO** – Caracteres del alfabeto latino
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+157. **VALID** – Latin alphabet characters
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-158. **VÁLIDO** – Números
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+158. **VALID** – Numbers
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-159. **VÁLIDO** – Dirección con espacios
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+159. **VALID** – Address with spaces
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-160. **VÁLIDO** – Dirección con guiones
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+160. **VALID** – Address with hyphens
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-161. **VÁLIDO** – Dirección con puntos
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+161. **VALID** – Address with periods
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-162. **VÁLIDO** – Dirección con comas
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+162. **VALID** – Address with commas
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-163. **INVÁLIDO** – Dirección con caracteres especiales [ №%@\" ]
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+163. **INVALID** – Address with special characters [ №%@\" ]
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-164. **INVÁLIDO** – Caracteres de otro lenguaje [ 加布里埃爾F加布爾 ]
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+164. **INVALID** – Characters from another language [ 加布里埃爾F加布爾 ]
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-#### Estación de Metro
-165. **VÁLIDO** - Selección de alguna estación de la lista.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+#### Metro Station
+165. **VALID** - Selection of any station from the list.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-166. **INVÁLIDO** - Sin selección.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+166. **INVALID** - No selection.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
 #### Teléfono
 
-167. **VÁLIDO** - Longitud de 10 caracteres numéricos y símbolo "+" al inicio.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+167. **VALID** - Length of 10 numeric characters and "+" symbol at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-168. **VÁLIDO** - Longitud de 11 caracteres numéricos y símbolo "+" al inicio.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+168. **VALID** - Length of 11 numeric characters and "+" symbol at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-169. **VÁLIDO** - Longitud de 12 caracteres numéricos y símbolo "+" al inicio.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+169. **VALID** - Length of 12 numeric characters and "+" symbol at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-170. **INVÁLIDO** - Longitud de 7 caracteres numéricos y símbolo "+" al inicio.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+170. **INVALID** - Length of 7 numeric characters and "+" symbol at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-171. **INVÁLIDO** - Longitud de 8 caracteres numéricos y símbolo "+" al inicio.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+171. **INVALID** - Length of 8 numeric characters and "+" symbol at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-172. **INVÁLIDO** - Longitud de 9 caracteres numéricos y símbolo "+" al inicio.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+172. **INVALID** - Length of 9 numeric characters and "+" symbol at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-173. **INVÁLIDO** - Longitud de 13 caracteres numéricos y símbolo "+" al inicio.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+173. **INVALID** - Length of 13 numeric characters and "+" symbol at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-174. **INVÁLIDO** - Longitud de 14 caracteres numéricos y símbolo "+" al inicio.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+174. **INVALID** - Length of 14 numeric characters and "+" symbol at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-175. **INVÁLIDO** - Longitud de 15 caracteres numéricos y símbolo "+" al inicio.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+175. **INVALID** - Length of 15 numeric characters and "+" symbol at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-176. **INVÁLIDO** - Sin el símbolo "+".
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-25]](/docs/testing/bug-reports/US-25.md)
+176. **INVALID** - Without the "+" symbol.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-25]](/docs/testing/bug-reports/US-25.md)
 
-177. **INVÁLIDO** - Vacío: 0 caracteres con signo "+".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+177. **INVALID** - Empty: 0 characters with "+" sign.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-178. **INVÁLIDO** - Vacío: 0 caracteres sin signo "+".
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+178. **INVALID** - Empty: 0 characters without "+" sign.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-179. **INVÁLIDO** - Símbolo "+" no inicial.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+179. **INVALID** - "+" symbol not at the beginning.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-180. **INVÁLIDO** - Teléfono con caracteres del alfabeto
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+180. **INVALID** - Phone with alphabetic characters
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-181. **INVÁLIDO** - Teléfono con espacios
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+181. **INVALID** - Phone with spaces
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-182. **INVÁLIDO** - Teléfono con guiones
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+182. **INVALID** - Phone with hyphens
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-183. **INVÁLIDO** - Teléfono con puntos
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+183. **INVALID** - Phone with periods
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-184. **INVÁLIDO** - Teléfono con comas
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+184. **INVALID** - Phone with commas
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-185. **INVÁLIDO** - Teléfono con caracteres especiales
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+185. **INVALID** - Phone with special characters
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-186. **INVÁLIDO** - Teléfono con caracteres de otro lenguaje
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+186. **INVALID** - Phone with characters from another language
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-### Formulario "Alquiler"
+### Form "Alquiler"
 
-#### Fecha de entrega
+#### Delivery Date
 
-187. **VÁLIDO** - Fecha a partir del día siguiente.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+187. **VALID** - Date starting from tomorrow.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-188. **VÁLIDO** - Fecha 2 días después.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+188. **VALID** - Date 2 days later.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-189. **VÁLIDO** - Fecha 3 días después.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+189. **VALID** - Date 3 days later.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-190. **INVÁLIDO** - Fecha de ayer.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
+190. **INVALID** - Yesterday's date.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
-191. **INVÁLIDO** - Fecha de hoy.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
+191. **INVALID** - Today's date.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
-192. **INVÁLIDO** - Fecha de 2 días antes.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
+192. **INVALID** - Date 2 days ago.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
-193. **INVÁLIDO** - Sin selección de fecha de entrega.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
+193. **INVALID** - No delivery date selection.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-16]](/docs/testing/bug-reports/US-16.md)
 
-#### Periodo de alquiler
+#### Rental Period
 
-194. **VÁLIDO** - Selección de días de alquiler.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+194. **VALID** - Selection of rental days.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-195. **INVÁLIDO** - Sin selección de días de alquiler.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-17]](/docs/testing/bug-reports/US-17.md)
+195. **INVALID** - No selection of rental days.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-17]](/docs/testing/bug-reports/US-17.md)
 
 #### Color
 
-196. **VÁLIDO** - Selección de un color.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+196. **VALID** - Selection of one color.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-197. **VÁLIDO** - Selección de ambos colores.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+197. **VALID** - Selection of both colors.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-198. **VÁLIDO** - Sin selección de color.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+198. **VALID** - No color selection.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-#### Comentario
+#### Comment
 
-199. **VÁLIDO** - Vacío: 0 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+199. **VALID** - Empty: 0 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-200. **VÁLIDO** - Longitud de 1 caracter.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+200. **VALID** - Length of 1 character.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-201. **VÁLIDO** - Longitud de 12 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+201. **VALID** - Length of 12 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-202. **VÁLIDO** - Longitud de 23 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+202. **VALID** - Length of 23 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-203. **VÁLIDO** - Longitud de 24 caracteres.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+203. **VALID** - Length of 24 characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-204. **INVÁLIDO** - Longitud de 25 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-26]](/docs/testing/bug-reports/US-26.md)
+204. **INVALID** - Length of 25 characters.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-26]](/docs/testing/bug-reports/US-26.md)
 
-205. **INVÁLIDO** - Longitud de 26 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-27]](/docs/testing/bug-reports/US-27.md)
+205. **INVALID** - Length of 26 characters.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-27]](/docs/testing/bug-reports/US-27.md)
 
-206. **INVÁLIDO** - Longitud de 27 caracteres.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-28]](/docs/testing/bug-reports/US-28.md)
+206. **INVALID** - Length of 27 characters.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-28]](/docs/testing/bug-reports/US-28.md)
 
-207. **VÁLIDO** - Comentario con caracteres del alfabeto latino.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+207. **VALID** - Comment with Latin alphabet characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-208. **VÁLIDO** - Comentario con caracteres numéricos.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+208. **VALID** - Comment with numeric characters.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-209. **VÁLIDO** - Comentario con espacios.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+209. **VALID** - Comment with spaces.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-210. **VÁLIDO** - Comentario con guiones.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+210. **VALID** - Comment with hyphens.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-211. **VÁLIDO** - Comentario con puntos.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+211. **VALID** - Comment with periods.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-212. **VÁLIDO** - Comentario con comas.
-- Chrome 85 o superior, 1920x1080: 🟢 PASSED 
+212. **VALID** - Comment with commas.
+- Chrome 85 or higher, 1920x1080: 🟢 PASSED 
 
-213. **INVÁLIDO** - Comentario con caracteres especiales.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-29]](/docs/testing/bug-reports/US-29.md)
+213. **INVALID** - Comment with special characters.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-29]](/docs/testing/bug-reports/US-29.md)
 
-214. **INVÁLIDO** - Comentario con caracteres de otro lenguaje.
-- Chrome 85 o superior, 1920x1080: 🔴 FAILED [[US-30]](/docs/testing/bug-reports/US-30.md)
+214. **INVALID** - Comment with characters from another language.
+- Chrome 85 or higher, 1920x1080: 🔴 FAILED [[US-30]](/docs/testing/bug-reports/US-30.md)
