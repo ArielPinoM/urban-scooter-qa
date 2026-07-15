@@ -1,126 +1,126 @@
-# Requisitos aplicación móvil - Urban Scooter
+# Mobile Application Requirements - Urban Scooter
 
 ![](./assets/mobile/login-screen.jpg)
 
-## Pantalla "Inicio de sesión"
+## "Login" Screen
 
-1. La primera vez que un usuario o usuaria inicia sesión en la aplicación, aparece una pantalla de inicio de sesión.
-2. Si el repartidor o repartidora ya ha iniciado sesión, verá la pantalla de lista de pedidos predeterminada.
-3. Hay dos campos de entrada en la pantalla: Iniciar sesión y Contraseña. Hay un botón "Iniciar sesión".
-4. Si un usuario o usuaria toca "Olvidé la contraseña", aparecerá una notificación con el texto "Contacta a la gerencia: 0101" y el botón "Aceptar".
-5. El usuario o usuaria puede salir de la aplicación desde cualquier pantalla. Luego, al iniciar sesión, volverá a la pantalla de inicio de sesión.
+1. The first time a user logs in to the application, a login screen appears.
+2. If the courier has already logged in, they will see the default order list screen.
+3. There are two input fields on the screen: Login and Password. There is a "Login" button.
+4. If a user taps "Forgot password", a notification will appear with the text "Contact management: 0101" and an "Accept" button.
+5. A user can exit the application from any screen. Then, upon logging in again, they will return to the login screen.
 
-### Restricciones de los campos
+### Field Restrictions
 
-| Elemento       | Requisitos                                                                                                                                                                                               |
+| Element       | Requirements                                                                                                                                                                                               |
 | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Iniciar sesión | Solo letras latinas. La longitud del texto es de 2 a 10 caracteres. Si el nombre de usuario o la contraseña se introducen de forma incorrecta, aparece la notificación "Usuario o contraseña no válido". |
-| Contraseña     | Solo números enteros. La longitud es exactamente de 4 caracteres. Si el nombre de usuario o la contraseña se introducen de forma incorrecta, aparece la notificación "Usuario o contraseña no válido".   |
+| Login | Latin letters only. Text length is 2 to 10 characters. If the username or password are entered incorrectly, the notification "Invalid username or password" appears. |
+| Password     | Integers only. Length is exactly 4 characters. If the username or password are entered incorrectly, the notification "Invalid username or password" appears.   |
 
-## Pantalla "Lista de pedidos"
+## "Order List" Screen
 
 ![](./assets/mobile/order-list-screen.jpg)
 
-Hay dos pestañas en la pantalla: "Todos los pedidos" y "Mis pedidos".
+There are two tabs on the screen: "Todos los pedidos" and "Mis pedidos".
 
-En la pestaña "Todos los pedidos", los repartidores y repartidoras ven la misma lista de pedidos: estos son pedidos no reclamados.
+In the "Todos los pedidos" tab, couriers see the same order list: these are unclaimed orders.
 
-Tan pronto como un repartidor o repartidora acepta el pedido, este se mueve a la pestaña "Mis pedidos" y los otros repartidores y repartidoras ya no pueden verlo.
+As soon as a courier accepts an order, it moves to the "Mis pedidos" tab and other couriers can no longer see it.
 
-Dentro de la pestaña "Mis pedidos", el repartidor o repartidora ve los pedidos que ha aceptado.
+Within the "Mis pedidos" tab, the courier sees the orders they have accepted.
 
-Para actualizar la lista, un usuario o usuaria debe deslizar para actualizar.
+To refresh the list, a user must pull to refresh.
 
-Deslizar para actualizar:
+Pull to refresh:
 
-1. En la pestaña "Todos los pedidos": los pedidos que fueron aceptados por otro repartidor o repartidora desaparecen de la lista.
+1. In the "Todos los pedidos" tab: orders that were accepted by another courier disappear from the list.
 
-2. En la pestaña "Todos los pedidos": se eliminan los pedidos que han sido cancelados por el usuario o usuaria.
+2. In the "Todos los pedidos" tab: orders that have been canceled by the user are removed.
 
-3. En las pestañas "Todos los pedidos" y "Mis pedidos": las tarjetas se ordenan por la fecha de entrega especificada por el usuario o usuaria. Los pedidos atrasados están en la parte superior.
+3. In both the "Todos los pedidos" and "Mis pedidos" tabs: cards are sorted by the delivery date specified by the user. Overdue orders are at the top.
 
-Aquí es cuando se actualiza la lista de pedidos:
+Here is when the order list is updated:
 
-1. Cuando un usuario o usuaria desliza para actualizar.
+1. When a user pulls to refresh.
 
-2. Si un usuario o usuaria va a la pestaña "Mis pedidos" en la pantalla de inicio y luego regresa a la pestaña "Todos los pedidos".
+2. If a user goes to the "Mis pedidos" tab on the home screen and then returns to the "Todos los pedidos" tab.
 
-3. Si un usuario o usuaria aplica un filtro por estación de metro.
+3. If a user applies a filter by metro station.
 
-Aquí es cuando no se actualiza la lista de pedidos:
+Here is when the order list is NOT updated:
 
-1. Si un usuario o usuaria acepta el pedido, este se mueve a "Mis pedidos", pero el resto de la lista no se actualiza.
+1. If a user accepts an order, it moves to "Mis pedidos", but the rest of the list does not refresh.
 
-Las características de la pantalla "Lista de pedidos":
+Features of the "Order List" screen:
 
-1. Cuando no hay pedidos, se muestra la pantalla "Sin pedidos". Para actualizar la pantalla, un usuario o usuaria debe deslizar para actualizar.
+1. When there are no orders, the "Sin pedidos" screen is displayed. To refresh the screen, a user must pull to refresh.
 
 ![](./assets/mobile/no-orders-screen.jpg)
 
-2. Cuando el usuario o usuaria realiza un pedido, aparece una versión corta de la tarjeta de pedido.
+2. When a user places an order, a short version of the order card appears.
 
-3. La lista de pedidos está ordenada por prioridad de entrega: los atrasados están en la parte superior. Un pedido se considera atrasado si no se entregó al cliente antes a las 11:59 p.m. o antes en el día requerido. El marco y la fecha de la tarjeta caducada están resaltados en rojo y la negrita del texto es Media. Esta condición funciona para las listas "Todos los pedidos" y "Mis pedidos".
+3. The order list is sorted by delivery priority: overdue orders are at the top. An order is considered overdue if it was not delivered to the customer before 11:59 p.m. on the required day. The frame and date of the overdue card are highlighted in red and the text weight is Medium. This condition applies to both the "Todos los pedidos" and "Mis pedidos" lists.
 
-4. Dentro de la pestaña "Todos los pedidos", hay un filtro para seleccionar una estación de metro. Con este, el repartidor o repartidora puede configurar para qué estaciones quiere ver los pedidos. Al tocar el filtro, se abre una lista que se forma a partir de las estaciones donde existen pedidos. Si hay dos o más pedidos con la misma estación de metro, el nombre de la estación sólo aparece una vez en el filtro: las mismas estaciones no se duplican.
+4. Within the "Todos los pedidos" tab, there is a filter to select a metro station. With this, the courier can configure which stations they want to see orders for. Tapping the filter opens a list formed from the stations where orders exist. If there are two or more orders with the same metro station, the station name appears only once in the filter: duplicate stations do not appear.
 
-5. La tarjeta de filtro aumenta de tamaño a medida que se agregan estaciones de metro. La tarjeta tiene capacidad para un máximo de 8 estaciones y, a partir de la novena, aparece una barra de desplazamiento.
+5. The filter card increases in size as metro stations are added. The card has capacity for a maximum of 8 stations and, from the ninth onward, a scrollbar appears.
 
-6. La tarjeta de pedido tiene una versión corta y una completa.
+6. The order card has a short version and a full version.
 
-- Campos para la versión corta: "Dirección", "Fecha de entrega" y estación de metro seleccionada.
+- Fields for the short version: "Dirección", "Fecha de entrega" and selected metro station.
 
-- Campos para la versión completa: "Dirección", "Fecha de entrega" y estación de metro seleccionada. Se agregan "Nombre", "Apellido", "Teléfono", "Color" y "Comentario". Si el usuario o usuaria no completó el campo "Color", se escribe cualquiera".
+- Fields for the full version: "Dirección", "Fecha de entrega" and selected metro station. "Nombre", "Apellido", "Teléfono", "Color" and "Comentario" are added. If the user did not complete the "Color" field, it reads "cualquiera".
 
 ![](./assets/mobile/all-orders-screen.jpg)
 
-7. Un usuario o usuaria puede cambiar la versión de la tarjeta tocando la tarjeta. Esto funciona para las pestañas "Todos los pedidos" y "Mis pedidos".
+7. A user can change the card version by tapping the card. This works for both the "Todos los pedidos" and "Mis pedidos" tabs.
 
-8. Cuando un usuario o usuaria cambia al modo de tarjeta completa, el botón "Aceptar" permanece en su lugar. Las cartas que siguen en la lista se mueven hacia abajo.
+8. When a user switches to full card mode, the "Aceptar" button stays in place. The following cards in the list move down.
 
-9. Para aceptar el pedido, toca el botón "Aceptar"; esto funciona tanto para la versión corta como para la completa de una tarjeta.
+9. To accept the order, tap the "Aceptar" button; this works for both the short and full versions of a card.
 
-10. Al tocar el botón, aparece una notificación con el texto "¿Deseas aceptar el pedido?" y dos botones: "Sí" y "No". Tocar "No" devolverá al usuario o usuaria a la lista de pedidos y el botón "Aceptar" permanecerá activo. Tocar "Sí" confirma la aceptación del pedido.
+10. Upon tapping the button, a notification appears with the text "¿Deseas aceptar el pedido?" and two buttons: "Sí" and "No". Tapping "No" will return the user to the order list and the "Aceptar" button will remain active. Tapping "Sí" confirms the order acceptance.
 
 ![](./assets/mobile/desea-aceptar-pedido-popup.jpg)
 
-11. Los usuarios o usuarias no pueden aceptar el pedido de otra persona o un pedido cancelado. Aparece el mensaje "No puedes aceptar el pedido. Ya ha sido aceptado por otro repartidor o repartidora, o el usuario o usuaria lo ha cancelado.”
+11. Users cannot accept someone else's order or a canceled order. The message "No puedes aceptar el pedido. Ya ha sido aceptado por otro repartidor o repartidora, o el usuario o usuaria lo ha cancelado." appears.
 
-12. Cuando se acepta el pedido, la tarjeta sale de la lista "Todos los pedidos", con una animación de movimiento hacia arriba. Cuando se acepta el pedido, la tarjeta sale de la lista "Todos los pedidos", con una animación de movimiento hacia arriba.
+12. When the order is accepted, the card exits the "Todos los pedidos" list with an upward movement animation. When the order is accepted, the card exits the "Todos los pedidos" list with an upward movement animation.
 
-13. Lógica del punto azul: aparece si hay tarjetas que no han sido visualizadas en la pestaña "Mis pedidos". No hay una transición automática a la pestaña "Mis pedidos".
+13. Blue dot logic: it appears if there are cards that have not been viewed in the "Mis pedidos" tab. There is no automatic transition to the "Mis pedidos" tab.
 
 ![](./assets/mobile/my-orders-blue-dot.jpg)
 
-14. La tarjeta aceptada por el repartidor o repartidora se coloca en la pestaña "Mis pedidos". El botón cambia a "Completar". Un usuario o usuaria puede completar el pedido con un toque en el botón "Completar", tanto en la vista de tarjeta corta como en la completa.
+14. The card accepted by the courier is placed in the "Mis pedidos" tab. The button changes to "Completar". A user can complete the order with a single tap on the "Completar" button, in both short and full card view.
 
 ![](./assets/mobile/completar-button-on-order-card.jpg)
 
-15. Si un usuario o usuaria hace clic en "Completar", verá la notificación "¿Has completado el pedido?" y dos botones: "Sí" y "No". Tocar "Sí" confirma que el pedido está completo.
+15. If a user clicks "Completar", they will see the notification "¿Has completado el pedido?" and two buttons: "Sí" and "No". Tapping "Sí" confirms that the order is complete.
 
 ![](./assets/mobile/has-completado-pedido-popup.jpg)
 
-16. Cuando se completa el pedido, la tarjeta de pedido se mueve al final de la lista. Si el pedido estaba atrasado, pero luego se completó, la tarjeta no se resalta en rojo.
+16. When the order is completed, the order card moves to the end of the list. If the order was overdue, but then completed, the card is not highlighted in red.
 
-17. Los pedidos completados se ordenan por el tiempo que tardaron en completarse: cuanto antes se complete el pedido, más abajo estará en la lista.
+17. Completed orders are sorted by the time it took to complete them: the sooner an order is completed, the lower it will be in the list.
 
-### Notificación
+### Notification
 
 ![](./assets/mobile/notification.jpg)
 
-1. **Una notificación llega cuando quedan 2 horas para completar un pedido. El pedido deberá entregarse el día especificado por el usuario o usuaria antes de las 11:59 p.m. Por ejemplo, en el caso de un pedido para el 8 de mayo, si el repartidor o repartidora no ha entregado el scooter a las 9:59 p.m. el 8 de mayo, recibirá una notificación push.**
+1. **A notification arrives when 2 hours remain to complete an order. The order must be delivered on the day specified by the user before 11:59 p.m. For example, in the case of an order for May 8, if the courier has not delivered the scooter by 9:59 p.m. on May 8, they will receive a push notification.**
 
-2. **La notificación contiene el siguiente mensaje: "2 horas hasta el final del pedido. Se debe completar el pedido "State St 1214". Si no llegas a tiempo, contacta a soporte: 0101".**
+2. **The notification contains the following message: "2 horas hasta el final del pedido. Se debe completar el pedido "State St 1214". Si no llegas a tiempo, contacta a soporte: 0101".**
 
-3. **Tocar la notificación lleva a la pestaña "Mis pedidos" en la aplicación.**
+3. **Tapping the notification takes you to the "Mis pedidos" tab in the application.**
 
-### Falta de acceso a internet
+### No Internet Access
 
 ![](./assets/mobile/no-internet-access.jpg)
 
-1. **Si no hay conexión a Internet, se muestra la ventana emergente "Sin acceso a Internet”. Aparece cuando un usuario o usuaria toca cualquier botón activo en cualquier pantalla, desaparece solo al tocar el botón "Aceptar".**
+1. **If there is no Internet connection, a "Sin acceso a Internet" popup window is displayed. It appears when a user taps any active button on any screen and disappears only when tapping the "Aceptar" button.**
 
-2. **Cuando un usuario o usuaria toca el botón "Aceptar", la notificación emergente se cierra. Si todavía no hay conexión a Internet, el proceso se repite: tocar cualquier zona activa lleva a la notificación emergente "Sin acceso a Internet".**
+2. **When a user taps the "Aceptar" button, the popup notification closes. If there is still no Internet connection, the process repeats: tapping any active area leads to the "Sin acceso a Internet" popup notification.**
 
-## Orientación
+## Orientation
 
-La aplicación está en orientación vertical solamente.
+The application is in portrait orientation only.
