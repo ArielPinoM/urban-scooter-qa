@@ -58,6 +58,31 @@ All bug reports generated during the project are collected in [docs/testing/bug-
 
 The repository includes defect documentation from US-1 through US-71, covering issues identified during web, mobile, and API testing.
 
+## 5. Test Execution Summary
+
+### Mobile App
+- **Total Tests Designed:** 27
+- **Passed:** 16 ✅
+- **Failed:** 3 ❌
+- **Skipped:** 8 ⏭️
+- **Pass Rate:** 59.3%
+
+### Backend
+- **Total Tests Designed:** 72
+- **Passed:** 34 ✅
+- **Failed:** 38 ❌
+- **Pass Rate:** 47.2%
+
+### Web App
+- **Total Tests Designed:** 215
+- **Passed:** 240 ✅
+- **Failed:** 39 ❌
+- **Skipped:** 49 ⏭️
+- **Total Test Executions:** 328*
+- **Pass Rate:** 73.2%
+
+*Note: Several test cases were executed across different browsers and screen resolutions, which increased the total number of test executions beyond the number of tests designed.
+
 ## QA Engineering Focus
 
 This project reflects core QA engineering practices such as:
