@@ -1,115 +1,115 @@
-# Datos de Prueba - Formulario de Pedido
+# Test Data - Order Form
 
-Esta documentación usa particiones de equivalencia y análisis de valores límite para cubrir los escenarios más importantes del formulario de pedido. Cada campo se divide en clases válidas e inválidas, de modo que se seleccionan entradas representativas de cada partición. Además, se incluyen casos en los límites de las restricciones (por ejemplo, 2 y 15 caracteres en el nombre) para verificar el comportamiento en valores justo dentro y justo fuera de los límites.
+This document uses equivalence partitioning and boundary value analysis to cover the most important scenarios of the order form. Each field is divided into valid and invalid classes so that representative inputs from each partition are selected. In addition, cases at the limits of the constraints (for example, 2 and 15 characters in the name) are included to verify behavior at values just inside and just outside the limits.
 
-## Formulario "Para quién es el scooter"
+## Form "Para quién es el scooter"
 
-### Campo: Nombre
-| Clase | Datos de Prueba | 
+### Field: Name
+| Class | Test Data |
 | :--- | :--- |
-| [Válida] Texto 2-15 caracteres | 2 - Ar<br>3 - Ari<br>5 - Ariel<br>14 - ArielArielArie<br>15 - ArielArielAriel |
-| [Válida] Alfabeto Latino | Ariel |
-| [Válida] Espacios | Ariel Ariel |
-| [Válida] Guiones | Ariel-Ariel |
-| [Inválida] Texto <2 caracteres | 1 - A |
-| [Inválida] Texto >15 caracteres | 16 - ArielArielArielA<br>17 - ArielArielArielAr<br>18 - ArielArielArielAri |
-| [Inválida] Vacío: 0 caracteres |
-| [Inválida] Puntos | Ariel. |
-| [Inválida] Comas | Ariel, |
-| [Inválida] Caracteres especiales | №%@\" |
-| [Inválida] Caracteres de otro lenguaje | 加布里埃爾F加布爾 |
-| [Inválida] Caracteres numéricos | 1234567890 |
+| [Valid] Text 2-15 characters | 2 - Ar<br>3 - Ari<br>5 - Ariel<br>14 - ArielArielArie<br>15 - ArielArielAriel |
+| [Valid] Latin alphabet | Ariel |
+| [Valid] Spaces | Ariel Ariel |
+| [Valid] Hyphens | Ariel-Ariel |
+| [Invalid] Text <2 characters | 1 - A |
+| [Invalid] Text >15 characters | 16 - ArielArielArielA<br>17 - ArielArielArielAr<br>18 - ArielArielArielAri |
+| [Invalid] Empty: 0 characters |
+| [Invalid] Periods | Ariel. |
+| [Invalid] Commas | Ariel, |
+| [Invalid] Special characters | №%@\" |
+| [Invalid] Non-Latin characters | 加布里埃爾F加布爾 |
+| [Invalid] Numeric characters | 1234567890 |
 
-### Campo: Apellido
-| Clase | Datos de Prueba | 
+### Field: Last Name
+| Class | Test Data |
 | :--- | :--- |
-| [Válida] Texto 2-15 caracteres | 2 - Pi<br>3 - Pin<br>5 - PinoP<br>14 - PinoPinoPinoPin<br>15 - PinoPinoPinoPinoPin |
-| [Válida] Alfabeto Latino | Pino |
-| [Válida] Espacios | Pino Pino |
-| [Válida] Guiones | Pino-Pino |
-| [Inválida] Texto <2 caracteres | 1 - P |
-| [Inválida] Texto >15 caracteres | 16 - PinoPinoPinoPino<br>17 - PinoPinoPinoPinoP<br>18 - PinoPinoPinoPinoPi |
-| [Inválida] Vacío: 0 caracteres |
-| [Inválida] Puntos | Pino. |
-| [Inválida] Comas | Pino, |
-| [Inválida] Caracteres especiales | №%@\" |
-| [Inválida] Caracteres de otro lenguaje | 加布里埃爾F加布爾 |
-| [Inválida] Caracteres numéricos | 1234567890 |
+| [Valid] Text 2-15 characters | 2 - Pi<br>3 - Pin<br>5 - PinoP<br>14 - PinoPinoPinoPin<br>15 - PinoPinoPinoPinoPin |
+| [Valid] Latin alphabet | Pino |
+| [Valid] Spaces | Pino Pino |
+| [Valid] Hyphens | Pino-Pino |
+| [Invalid] Text <2 characters | 1 - P |
+| [Invalid] Text >15 characters | 16 - PinoPinoPinoPino<br>17 - PinoPinoPinoPinoP<br>18 - PinoPinoPinoPinoPi |
+| [Invalid] Empty: 0 characters |
+| [Invalid] Periods | Pino. |
+| [Invalid] Commas | Pino, |
+| [Invalid] Special characters | №%@\" |
+| [Invalid] Non-Latin characters | 加布里埃爾F加布爾 |
+| [Invalid] Numeric characters | 1234567890 |
 
-### Campo: Dirección
-| Clase | Datos de Prueba | 
+### Field: Address
+| Class | Test Data |
 | :--- | :--- |
-| [Válida] Texto 5-50 caracteres | 5 - 95501<br>6 - 955011<br>24 - 1 A St, Eureka, CA 95501<br>49 - 350 East 1st Street Apt 205, Los Angeles, CA 9001<br>50 - 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
-| [Válida] Alfabeto Latino | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
-| [Válida] Números | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
-| [Válida] Espacios | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
-| [Válida] Guiones | 100 Universal City Plaza - 0123 |
-| [Válida] Puntos | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
-| [Válida] Comas | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
-| [Inválida] Texto <5 caracteres | 2 - 1s<br>3 - 1st<br>4 - 9550 |
-| [Inválida] Texto >50 caracteres | 51 - 350 East 1st Street Apt. 205, Los Angeles, CAL 9001<br>52 - 350 East 1st Street Apt. 205, Los Angeles, CAL<br>53 - 350 East 1st Street Apt. 2051, Los Angeles, CAL 90012 |
-| [Inválida] Vacío: 0 caracteres |
-| [Inválida] Caracteres especiales | №%@\" |
-| [Inválida] Caracteres de otro lenguaje | 加布里埃爾F加布爾 |
+| [Valid] Text 5-50 characters | 5 - 95501<br>6 - 955011<br>24 - 1 A St, Eureka, CA 95501<br>49 - 350 East 1st Street Apt 205, Los Angeles, CA 9001<br>50 - 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
+| [Valid] Latin alphabet | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
+| [Valid] Numbers | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
+| [Valid] Spaces | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
+| [Valid] Hyphens | 100 Universal City Plaza - 0123 |
+| [Valid] Periods | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
+| [Valid] Commas | 350 East 1st Street Apt. 205, Los Angeles, CA 9001 |
+| [Invalid] Text <5 characters | 2 - 1s<br>3 - 1st<br>4 - 9550 |
+| [Invalid] Text >50 characters | 51 - 350 East 1st Street Apt. 205, Los Angeles, CAL 9001<br>52 - 350 East 1st Street Apt. 205, Los Angeles, CAL<br>53 - 350 East 1st Street Apt. 2051, Los Angeles, CAL 90012 |
+| [Invalid] Empty: 0 characters |
+| [Invalid] Special characters | №%@\" |
+| [Invalid] Non-Latin characters | 加布里埃爾F加布爾 |
 
-### Campo: Estación de Metro
-| Clase | Datos de Prueba | 
+### Field: Metro Station
+| Class | Test Data |
 | :--- | :--- |
-| [Válida] Selección de alguna estación de la lista | 1st Street |
-| [Inválida] Sin selección |
+| [Valid] Select one station from the list | 1st Street |
+| [Invalid] No selection |
 
-### Campo: Teléfono
-| Clase | Datos de Prueba | 
+### Field: Phone
+| Class | Test Data |
 | :--- | :--- |
-| [Válida] Texto 10-12 caracteres numéricos y símbolo "+" al inicio | 10 - +1234567890<br>11 - +12345678901<br>12 - +123456789012 |
-| [Inválida] Texto <10 caracteres | 7 - +1234567<br>8 - +12345678<br>9 - +123456789
-| [Inválida] Texto >12 caracteres | 13 - +1234567890123<br>14 - +12345678901234<br>15 - +123456789012345
-| [Inválida] Sin el símbolo "+" | 1234567890
-| [Inválida] Vacío: 0 caracteres con signo "+" | +
-| [Inválida] Vacío: 0 caracteres sin signo "+" |
-| [Inválida] Símbolo "+" no inicial | 1+234567890 |
-| [Inválida] Alfabeto | +a234567890 |
-| [Inválida] Espacios | + 234567890 |
-| [Inválida] Guiones | +-234567890 |
-| [Inválida] Puntos | +.234567890 |
-| [Inválida] Comas | +,234567890 |
-| [Inválida] Caracteres especiales | +№%@\"890 |
-| [Inválida] Caracteres de otro lenguaje | +加布爾4567890 |
+| [Valid] Text 10-12 characters with "+" at the beginning | 10 - +1234567890<br>11 - +12345678901<br>12 - +123456789012 |
+| [Invalid] Text <10 characters | 7 - +1234567<br>8 - +12345678<br>9 - +123456789 |
+| [Invalid] Text >12 characters | 13 - +1234567890123<br>14 - +12345678901234<br>15 - +123456789012345 |
+| [Invalid] Missing "+" sign | 1234567890 |
+| [Invalid] Empty: 0 characters with "+" sign | + |
+| [Invalid] Empty: 0 characters without "+" sign |
+| [Invalid] "+" sign not at the beginning | 1+234567890 |
+| [Invalid] Alphabet | +a234567890 |
+| [Invalid] Spaces | + 234567890 |
+| [Invalid] Hyphens | +-234567890 |
+| [Invalid] Periods | +.234567890 |
+| [Invalid] Commas | +,234567890 |
+| [Invalid] Special characters | +№%@\"890 |
+| [Invalid] Non-Latin characters | +加布爾4567890 |
 
 ---
 
-## Formulario "Alquiler"
+## Form "Alquiler"
 
-### Campo: Calendario Desplegable "Fecha de Entrega"
-| Clase | Datos de Prueba | 
+### Field: Dropdown Calendar "Fecha de Entrega"
+| Class | Test Data |
 | :--- | :--- |
-| [Válida] Fecha a partir del día siguiente | Fecha día siguiente<br>Fecha 2 días después<br>Fecha 3 días después |
-| [Inválida] Fecha actual y anteriores | Fecha actual<br>Fecha de ayer<br>Fecha de 2 días antes
-| [Inválida] Sin selección | 
+| [Valid] Date from the following day onward | Next day<br>2 days later<br>3 days later |
+| [Invalid] Current date and earlier | Current date<br>Yesterday<br>2 days before |
+| [Invalid] No selection |
 
-### Campo: Lista Desplegable "Periodo de Alquiler"
-| Clase | Datos de Prueba | 
+### Field: Dropdown List "Periodo de Alquiler"
+| Class | Test Data |
 | :--- | :--- |
-| [Válida] Selección de días de alquiler | un día |
-| [Inválida] Sin selección |
+| [Valid] Select rental days | One day |
+| [Invalid] No selection |
 
-### Campo: Casilla de Verificación "Color"
-| Clase | Datos de Prueba | 
+### Field: Checkbox "Color"
+| Class | Test Data |
 | :--- | :--- |
-| [Válida] Selección de 1 color | ✓ negro |
-| [Inválida] Selección de ambos colores | ✓ negro<br>✓ gris |
-| [Inválida] Sin selección |
+| [Valid] Select 1 color | ✓ black |
+| [Invalid] Select both colors | ✓ black<br>✓ gray |
+| [Invalid] No selection |
 
-### Campo: Comentario
-| Clase | Datos de Prueba | 
+### Field: Comment
+| Class | Test Data |
 | :--- | :--- |
-| [Válida] Texto 0-24 caracteres | 0 caracteres<br>1 caracter - A<br>12 caracteres - ArielArielAr<br>23 caracteres - ArielArielArielArielAri<br>24 caracteres - ArielArielArielArielArie |
-| [Válida] Alfabeto latino | ArielArielArielArielArie |
-| [Válida] Números | 12341234 |
-| [Válida] Espacios | Ariel Ariel |
-| [Válida] Guiones | Ariel-Ariel |
-| [Válida] Puntos | Ariel. |
-| [Válida] Comas | Ariel, |
-| [Inválida] Texto 25 caracteres y más | 25 caracteres - ArielArielArielArielAriel<br>26 caracteres - ArielArielArielArielArielA<br>27 caracteres - ArielArielArielArielArielAr |
-| [Inválida] Caracteres especiales | №%@\" |
-| [Inválida] Caracteres de otro lenguaje | 加布里埃爾F加布爾 |
+| [Valid] Text 0-24 characters | 0 characters<br>1 character - A<br>12 characters - ArielArielAr<br>23 characters - ArielArielArielArielAri<br>24 characters - ArielArielArielArielArie |
+| [Valid] Latin alphabet | ArielArielArielArielArie |
+| [Valid] Numbers | 12341234 |
+| [Valid] Spaces | Ariel Ariel |
+| [Valid] Hyphens | Ariel-Ariel |
+| [Valid] Periods | Ariel. |
+| [Valid] Commas | Ariel, |
+| [Invalid] Text 25 characters and more | 25 characters - ArielArielArielArielAriel<br>26 characters - ArielArielArielArielArielA<br>27 characters - ArielArielArielArielArielAr |
+| [Invalid] Special characters | №%@\" |
+| [Invalid] Non-Latin characters | 加布里埃爾F加布爾 |
