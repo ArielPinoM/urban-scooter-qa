@@ -1,56 +1,56 @@
-# Requisitos para el back-end de la aplicación
+# Requirements for the application back-end
 
-## Tecnologías
+## Technologies
 
-- El lenguaje de la aplicación es JavaScript.
+- The application language is JavaScript.
 
-- Se ejecuta en el entorno Node.js v12.17.0
+- It runs in the Node.js v12.17.0 environment
 
-- Acceso a la aplicación a través del protocolo HTTP 1.1.
+- Access to the application through the HTTP 1.1 protocol.
 
-## Requisitos generales
+## General Requirements
 
-La aplicación utiliza la base de datos PostgreSQL. La aplicación interactúa con la base de datos a través del paquete npm `sequelize` sobre el paquete `pg`. `sequelize` es un ORM para trabajar con diferentes bases de datos en node.js.
+The application uses the PostgreSQL database. The application interacts with the database through the npm package `sequelize` over the `pg` package. `sequelize` is an ORM for working with different databases in node.js.
 
-Las solicitudes se registran a través del módulo `winston`. La documentación de la aplicación se organiza mediante el módulo `apidoc`.
+Requests are logged through the `winston` module. Application documentation is organized through the `apidoc` module.
 
-La aplicación debe cumplir con los requisitos REST.
+The application must comply with REST requirements.
 
-La aplicación debe tener un controlador de errores global. Si ocurren excepciones, deben manejarse y la aplicación debe continuar ejecutándose.
+The application must have a global error handler. If exceptions occur, they must be handled and the application must continue running.
 
-Los errores de la aplicación (solicitudes fallidas, excepciones, respuestas que no sean 2XX) se deben registrar en un archivo `error.log` separado.
+Application errors (failed requests, exceptions, non-2XX responses) must be logged to a separate `error.log` file.
 
-## Requisitos de la URL
+## URL Requirements
 
-### URL auxiliares
+### Helper URLs
 
-- Debe haber una URL que te ayude a comprobar que el back-end se esté ejecutando y aceptando solicitudes. El estado `200 OK` debería regresar si la respuesta es exitosa.
+- There must be a URL that helps you check that the back-end is running and accepting requests. Status `200 OK` should be returned if the response is successful.
 
-- Debe existir una URL a través de la cual funcione la búsqueda de estaciones de metro. Si la búsqueda tiene éxito, se debe devolver el número, el color y el nombre de la estación. Si hay más de una estación, se debe devolver el número, el color y el nombre de cada estación. Si no se encuentra ninguna estación, se debe devolver una lista vacía.
+- There must be a URL through which metro station search works. If the search is successful, the station number, color, and name should be returned. If there is more than one station, the number, color, and name of each station must be returned. If no stations are found, an empty list must be returned.
 
-### URL para repartidores o repartidoras [Test]
+### URLs for Couriers [Test]
 
-- **La URL debe estar presente: al acceder, el repartidor o repartidora puede registrarse en la aplicación. La URL debe aceptar el nombre de usuario, la contraseña y el nombre del repartidor o repartidora. El inicio de sesión, el hash de la contraseña y el nombre del repartidor o repartidora deben escribirse en los campos `login` , `passwordHash` y `firstName` de la tabla Couriers (Servicio de entrega). El campo `passwordHash` almacena el hash de la contraseña. Se genera mediante funciones estándar, por lo que puedes comprobar la coincidencia hash-contraseña mediante la autorización.**
+- **The URL must be present: upon access, a courier can register in the application. The URL must accept the username, password, and courier name. The login, password hash, and courier name must be written to the `login`, `passwordHash`, and `firstName` fields of the Couriers table. The `passwordHash` field stores the password hash. It is generated using standard functions, so you can check the hash-password match through authorization.**
 
-- **El campo de inicio de sesión debe ser único. Si el registro es exitoso, la entrada correspondiente debe aparecer en la base de datos; si no tiene éxito, se debe devolver un error. Aprende más sobre errores en la documentación `/docs/en/#api-Orders-CreateOrder`.**
+- **The login field must be unique. If registration is successful, the corresponding entry must appear in the database; if unsuccessful, an error must be returned. Learn more about errors in the documentation `/docs/en/#api-Orders-CreateOrder`.**
 
-- Debe haber una URL para iniciar sesión en la cuenta de repartidor o repartidora. El nombre de usuario y la contraseña de repartidor o repartidora deben enviarse al iniciar sesión. Se debe devolver la ID del repartidor o repartidora cuando se haya iniciado sesión correctamente. Si el inicio de sesión falla, se debe devolver un error.
+- There must be a URL to log in to a courier account. The courier username and password must be sent when logging in. The courier ID must be returned when successfully logged in. If login fails, an error must be returned.
 
-- **La URL para eliminar la cuenta del repartidor o repartidora debe estar presente. Al acceder se debe obtener la `ID` del repartidor o repartidora en la tabla Couriers. Al eliminar, los pedidos vinculados en la tabla Orders (Pedidos) deben borrarse.**
+- **The URL to delete the courier account must be present. When accessed, the `ID` of the courier in the Couriers table must be obtained. When deleting, linked orders in the Orders table must be deleted.**
 
-### URL para los pedidos [Test]
+### URLs for Orders [Test]
 
-Siempre que alguna de las URL devuelva datos completos del pedido, la respuesta también debe contener el estado de cada pedido. El estado debe tener estos valores:
+Whenever any of the URLs returns complete order data, the response must also contain the status of each order. The status should have these values:
 
-- `0` : se creó el pedido, no pasó nada más;
+- `0`: order was created, nothing else happened;
 
-- `1` : el repartidor o repartidora ha aceptado el pedido;
+- `1`: courier has accepted the order;
 
-- `2` : el pedido ha sido completado;
+- `2`: order has been completed;
 
-- `1` : el pedido ha sido cancelado.
+- `-1`: order has been canceled.
 
-El estado se debe calcular en relación con los valores de los campos en la base de datos en la tabla Orders (ver "Descripción del contenido de la base de datos"). Los campos se enumeran en orden de prioridad:
+The status must be calculated in relation to the values of the fields in the database in the Orders table (see "Database Content Description"). The fields are listed in priority order:
 
 - `finished = true` → status = 2
 
@@ -60,99 +60,99 @@ El estado se debe calcular en relación con los valores de los campos en la base
 
 - `Other cases` → status = 0
 
-Debe haber una URL para crear un pedido; al crear un pedido, se especifican los siguientes parámetros:
+There must be a URL to create an order; when creating an order, the following parameters are specified:
 
-- nombre
+- first name
 
-- apellido
+- last name
 
-- dirección
+- address
 
-- estación de metro más cercana
+- nearest metro station
 
-- teléfono
+- phone
 
-- número de días de alquiler
+- number of rental days
 
-- fecha de entrega
+- delivery date
 
-- comentario
+- comment
 
-- lista de colores que coinciden
+- list of matching colors
 
-Se debe asignar un número de seguimiento individual al pedido cuando se crea.
+An individual tracking number must be assigned to the order when it is created.
 
-Los parámetros enviados se escriben en la tabla `Orders` (Pedidos) de la siguiente manera:
+The sent parameters are written to the `Orders` table as follows:
 
-- nombre: `firstName`
+- first name: `firstName`
 
-- apellido: `lastName`
+- last name: `lastName`
 
-- dirección: `address`
+- address: `address`
 
-- estación de metro más cercana: `subwayStation`
+- nearest metro station: `subwayStation`
 
-- teléfono: `phone`
+- phone: `phone`
 
-- periodo de alquiler: `rentTime`
+- rental period: `rentTime`
 
-- fecha de entrega: `deliveryDate`
+- delivery date: `deliveryDate`
 
-- comentario: `comment`
+- comment: `comment`
 
-- lista de colores que coinciden: `color`
+- list of matching colors: `color`
 
-- número de seguimiento: `track`
+- tracking number: `track`
 
-Si el pedido se creó con éxito, se debe devolver su número de seguimiento; de lo contrario, se debe devolver un error. Lee más sobre los errores en la documentación: `/docs/en/#api-Orders-CreateOrder`.
+If the order was created successfully, its tracking number must be returned; otherwise, an error must be returned. Read more about errors in the documentation: `/docs/en/#api-Orders-CreateOrder`.
 
-- **Debe haber una URL para recuperar los datos del pedido desde su número de seguimiento. Se debe obtener un número en el acceso. Si se encuentra un pedido que coincida, se deben devolver sus datos; de lo contrario, se debe devolver un error.**
+- **There must be a URL to retrieve order data from its tracking number. A number must be obtained on access. If an order matching is found, its data must be returned; otherwise, an error must be returned.**
 
-- Debe haber una URL para que el repartidor o repartidora acepte el pedido. La URL toma el número de seguimiento del pedido y la ID del repartidor o repartidora. Si hay un problema al aceptar el pedido, se debe devolver un error.
+- There must be a URL for the courier to accept the order. The URL takes the order tracking number and the courier ID. If there is a problem accepting the order, an error must be returned.
 
-- Debe haber una URL **para cancelar el pedido**. La URL acepta el número de seguimiento del pedido. En caso de una cancelación sin éxito, se debe devolver un error.
+- There must be a URL **to cancel the order**. The URL accepts the order tracking number. In case of unsuccessful cancellation, an error must be returned.
 
-- Debe haber una URL para completar el pedido. El número de pedido se envía al iniciar sesión. En caso de que no se complete correctamente, se debe devolver un error.
+- There must be a URL to complete the order. The order number is sent when logging in. In case it is not completed correctly, an error must be returned.
 
-- Debe haber una URL para recuperar todos los pedidos que coincidan con los parámetros especificados. Los parámetros de búsqueda son la estación de metro más cercana y la ID del repartidor o repartidora. También se deben enviar los límites en el número de registros de salida por página y el número de página. Lee más sobre errores y casos de uso en la documentación: `/docs/#api-Orders-GetOrdersPageByPage`.
+- There must be a URL to retrieve all orders that match the specified parameters. The search parameters are the nearest metro station and the courier ID. Output record limits and page number must also be sent. Read more about errors and use cases in the documentation: `/docs/#api-Orders-GetOrdersPageByPage`.
 
-- La URL para el número de pedidos de repartidor o repartidora completados debe estar presente. Se debe obtener la ID del repartidor o repartidora al iniciar sesión. Lee más sobre errores y casos de uso en la documentación: `/docs/en/#api-Couriers-GetOrdersCountByCourierId`.
+- The URL for the number of completed orders by courier must be present. The courier ID must be obtained when logging in. Read more about errors and use cases in the documentation: `/docs/en/#api-Couriers-GetOrdersCountByCourierId`.
 
-### Restricciones de los campos [Test]
+### Field Restrictions [Test]
 
-| Elemento      | Requisitos                                                          | Obligatorio |
+| Element      | Requirements                                                          | Required |
 | :------------ | :------------------------------------------------------------------ | :---------- |
-| **login**     | Solo letras latinas. La longitud del texto es de 2 a 10 caracteres. | ☑️          |
-| **firstName**  | Solo letras latinas. La longitud del texto es de 2 a 10 caracteres. | ⬜          |
-| **password** | Solo números enteros. La longitud es exactamente de 4 caracteres.   | ☑️          |
+| **login**     | Latin letters only. Text length is 2 to 10 characters. | ☑️          |
+| **firstName**  | Latin letters only. Text length is 2 to 10 characters. | ⬜          |
+| **password** | Integers only. Length is exactly 4 characters.   | ☑️          |
 
-## Descripción del contenido de la base de datos
+## Database Content Description
 
-La base de datos consiste en dos tablas: `Couriers` y `Orders`. La primera tabla contiene datos sobre repartidores y repartidoras, la segunda almacena datos sobre pedidos.
+The database consists of two tables: `Couriers` and `Orders`. The first table contains data about couriers, the second stores data about orders.
 
 ### Couriers
 
-| Nombre           | Tipo   | Asignación                                     |
+| Name           | Type   | Description                                     |
 | :--------------- | :----- | :--------------------------------------------- |
-| **login**        | string | Inicio de sesión del repartidor o repartidora. |
-| **passwordHash** | string | Contraseña hash del repartidor o repartidora.  |
-| **firstName**    | string | Primer nombre del repartidor o repartidora.    |
+| **login**        | string | Login of the courier. |
+| **passwordHash** | string | Password hash of the courier.  |
+| **firstName**    | string | First name of the courier.    |
 
 ### Orders
 
-| Nombre           | Tipo             | Asignación                                               |
+| Name           | Type             | Description                                               |
 | :--------------- | :--------------- | :------------------------------------------------------- |
-| **courierId**    | número           | El campo que vincula esta tabla con la tabla `Couriers`. |
-| **firstName**    | string           | Nombre del cliente.                                      |
-| **lastName**     | string           | Apellido del cliente.                                    |
-| **address**      | string           | Dirección.                                               |
-| **metroStation** | string           | Estación de metro más cercana.                           |
-| **phone**        | string           | Número de teléfono.                                      |
-| **rentTime**     | número           | Periodo de alquiler.                                     |
-| **deliveryDate** | fecha            | Fecha de entrega.                                        |
-| **track**        | número           | Número de seguimiento.                                   |
-| **color**        | array de strings | Colores de scooter preferidos.                           |
-| **comment**      | string           | Un comentario para el repartidor o repartidora.          |
-| **cancelled**    | string           | Un comentario para el repartidor o repartidora.          |
-| **finished**     | lógico           | El pedido ha sido enviado.                               |
-| **inDelivery**   | lógico           | El pedido se está entregando.                            |
+| **courierId**    | number           | The field that links this table to the `Couriers` table. |
+| **firstName**    | string           | Customer first name.                                      |
+| **lastName**     | string           | Customer last name.                                    |
+| **address**      | string           | Address.                                               |
+| **metroStation** | string           | Nearest metro station.                           |
+| **phone**        | string           | Phone number.                                      |
+| **rentTime**     | number           | Rental period.                                     |
+| **deliveryDate** | date            | Delivery date.                                        |
+| **track**        | number           | Tracking number.                                   |
+| **color**        | array of strings | Preferred scooter colors.                           |
+| **comment**      | string           | A comment for the courier.          |
+| **cancelled**    | string           | A comment for the courier.          |
+| **finished**     | boolean           | The order has been delivered.                               |
+| **inDelivery**   | boolean           | The order is being delivered.                            |
