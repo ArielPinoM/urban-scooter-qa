@@ -4,21 +4,21 @@
 
 ## Couriers
 
-### Couriers - Obtener el número de pedidos del mensajero
+### Couriers - Get the number of orders for the courier
 
 > `GET` /api/v1/courier/:id/ordersCount
 
-#### Parámetro
+#### Parameter
 
-| Campo | Tipo   | Descripción                        |
+| Field | Type   | Description                        |
 | :---- | :----- | :--------------------------------- |
-| `id`  | number | Número de mensajero {"id": 123456} |
+| `id`  | number | Courier number {"id": 123456} |
 
-#### Número de pedidos del mensajero "1"
+#### Number of orders for courier "1"
 
 > /api/v1/courier/`1`/ordersCount
 
-#### Éxito de respuesta
+#### Success response
 
 ```json
 HTTP/1.1 200
@@ -28,39 +28,39 @@ HTTP/1.1 200
 }
 ```
 
-#### Solicitud sin número
+#### Request without number
 
 ```json
 HTTP/1.1 400 Bad Request
 {
-  "message":  "No hay suficientes datos para la búsqueda"
+  "message":  "Insufficient data for search"
 }
 ```
 
-#### Solicitud con un número no existente
+#### Request with non-existent number
 
 ```json
 HTTP/1.1 404 Not Found
 {
-  "message": "Mensajero no encontrado"
+  "message": "Courier not found"
 }
 ```
 
-## Mensajero
+## Courier
 
-### Mensajero - Crear un mensajero
+### Courier - Create a courier
 
 > `POST` /api/v1/courier
 
-#### Parámetro
+#### Parameter
 
-| Campo       | Tipo   | Descripción                                                                                                              |
+| Field       | Type   | Description                                                                                                              |
 | :---------- | :----- | :----------------------------------------------------------------------------------------------------------------------- |
-| `login`     | string | El inicio de sesión del mensajero se escribe en la columna `login` (inicio de sesión) de la hoja de cálculo Mensajeros.  |
-| `password`  | string | La contraseña del mensajero, el hash del valor se escribe en la columna `passwordHash` de la hoja de cálculo Mensajeros. |
-| `firstName` | string | El nombre del mensajero se escribe en la columna `firstName` de la hoja de cálculo Mensajeros.                           |
+| `login`     | string | The courier login is written to the `login` column of the Couriers table.  |
+| `password`  | string | The courier password, the hash of the value is written to the `passwordHash` column of the Couriers table. |
+| `firstName` | string | The courier name is written to the `firstName` column of the Couriers table.                           |
 
-#### Solicitud
+#### Request
 
 ```json
 {
@@ -70,7 +70,7 @@ HTTP/1.1 404 Not Found
 }
 ```
 
-#### La cuenta ha sido creada con éxito
+#### Account created successfully
 
 ```json
 HTTP/1.1 201 Created
@@ -79,36 +79,36 @@ HTTP/1.1 201 Created
 }
 ```
 
-#### Solicitud sin inicio de sesión ni contraseña
+#### Request without login or password
 
 ```json
 HTTP/1.1 400 Bad Request
 {
-  "message": "No hay suficientes datos para crear una cuenta"
+  "message": "Insufficient data to create an account"
 }
 ```
 
-#### Solicitud con un inicio de sesión duplicado
+#### Request with duplicate login
 
 ```json
 HTTP/1.1 409 Сonflict
 {
-  "message": "Este inicio de sesión no está disponible"
+  "message": "This login is not available"
 }
 ```
 
-### Mensajero - El inicio de sesión del mensajero en el sistema
+### Courier - Courier login to the system
 
 > `POST` /api/v1/courier/login
 
-#### Parámetro
+#### Parameter
 
-| Campo      | Tipo   | Descripción                                                                                                              |
+| Field      | Type   | Description                                                                                                              |
 | :--------- | :----- | :----------------------------------------------------------------------------------------------------------------------- |
-| `login`    | string | El inicio de sesión del mensajero se escribe en la columna `login` (inicio de sesión) de la hoja de cálculo Mensajeros.  |
-| `password` | string | La contraseña del mensajero, el hash del valor se escribe en la columna `passwordHash` de la hoja de cálculo Mensajeros. |
+| `login`    | string | The courier login is written to the `login` column of the Couriers table.  |
+| `password` | string | The courier password, the hash of the value is written to the `passwordHash` column of the Couriers table. |
 
-#### Solicitud
+#### Request
 
 ```json
 {
@@ -117,7 +117,7 @@ HTTP/1.1 409 Сonflict
 }
 ```
 
-#### Inicio de sesión exitoso
+#### Successful login
 
 ```json
 HTTP/1.1 200
@@ -126,16 +126,16 @@ HTTP/1.1 200
 }
 ```
 
-#### Solicitud sin inicio de sesión ni contraseña
+#### Request without login or password
 
 ```json
 HTTP/1.1 400 Bad Request
 {
-  "message":  "No hay datos suficientes para iniciar sesión"
+  "message":  "Insufficient data to log in"
 }
 ```
 
-#### Solicitud con un par de inicio de sesión y contraseña no existente
+#### Request with non-existent login and password pair
 
 ```json
 HTTP/1.1 404 Not Found
@@ -144,17 +144,17 @@ HTTP/1.1 404 Not Found
 }
 ```
 
-### Mensajero - Eliminar un mensajero
+### Courier - Delete a courier
 
 > `DELETE` /api/v1/courier/:id
 
-#### Parámetro
+#### Parameter
 
-| Campo | Tipo   | Descripción                                                                             |
+| Field | Type   | Description                                                                             |
 | :---- | :----- | :-------------------------------------------------------------------------------------- |
-| `id`  | string | El número de mensajero se almacena en la columna `id` de la hoja de cálculo Mensajeros. |
+| `id`  | string | The courier number is stored in the `id` column of the Couriers table. |
 
-#### Solicitud
+#### Request
 
 ```json
 {
@@ -162,7 +162,7 @@ HTTP/1.1 404 Not Found
 }
 ```
 
-#### El mensajero ha sido eliminado con éxito
+#### Courier deleted successfully
 
 ```json
 HTTP/1.1 200 OK
@@ -171,42 +171,42 @@ HTTP/1.1 200 OK
 }
 ```
 
-#### Solicitud sin ID
+#### Request without ID
 
 ```json
 HTTP/1.1 400 Bad Request
 {
-  "message":  "No hay datos suficientes para eliminar el mensajero"
+  "message":  "Insufficient data to delete the courier"
 }
 ```
 
-#### Solicitud con una ID no existente
+#### Request with non-existent ID
 
 ```json
 HTTP/1.1 404 Not Found
 {
-  "message": "No hay un mensajero con esta ID"
+  "message": "No courier with this ID"
 }
 ```
 
-## Pedidos
+## Orders
 
-### Pedidos - Aceptar el pedido
+### Orders - Accept the order
 
 > `PUT` /api/v1/orders/accept/:id
 
-#### Parámetro
+#### Parameter
 
-| Campo       | Tipo   | Descripción                                                                                   |
+| Field       | Type   | Description                                                                                   |
 | :---------- | :----- | :-------------------------------------------------------------------------------------------- |
-| `id`        | number | El número del pedido se almacena en la columna `id` de la hoja de cálculo Pedidos.            |
-| `courierId` | number | ID del mensajero (courierId) se almacena en la columna `id` de la hoja de cálculo Mensajeros. |
+| `id`        | number | The order number is stored in the `id` column of the Orders table.            |
+| `courierId` | number | Courier ID (courierId) is stored in the `id` column of the Couriers table. |
 
-#### Solicitud
+#### Request
 
 > /api/v1/orders/accept/`1`?courierId=`213`
 
-#### Respuesta exitosa
+#### Successful response
 
 ```json
 HTTP/1.1 200
@@ -215,62 +215,62 @@ HTTP/1.1 200
 }
 ```
 
-#### Solicitud sin número
+#### Request without number
 
 ```json
 HTTP/1.1 400 Bad Request
 {
-  "message":  "No hay suficientes datos para la búsqueda"
+  "message":  "Insufficient data for search"
 }
 ```
 
-#### Solicitud con un número no existente
+#### Request with non-existent number
 
 ```json
 HTTP/1.1 404 Not Found
 {
-  "message": "No hay un pedido con esta ID"
+  "message": "No order with this ID"
 }
 ```
 
-#### Solicitud con un número de mensajero no existente
+#### Request with non-existent courier number
 
 ```json
 HTTP/1.1 404 Not Found
 {
-  "message": "No hay un mensajero con esta ID"
+  "message": "No courier with this ID"
 }
 ```
 
-#### El pedido ya fue procesado
+#### Order already processed
 
 ```json
 HTTP/1.1 409 Conflict
 {
-  "message": "El pedido se está procesando"
+  "message": "Order is being processed"
 }
 ```
 
-#### Sin ID del mensajero o ID del pedido
+#### Without courier ID or order ID
 
 ```json
 HTTP/1.1 400 Conflict
 {
-  "message": "No hay suficientes datos para la búsqueda"
+  "message": "Insufficient data for search"
 }
 ```
 
-### Pedidos - Cancelar el pedido
+### Orders - Cancel the order
 
 > `POST` /api/v1/orders/cancel
 
-#### Parámetro
+#### Parameter
 
-| Campo   | Tipo   | Descripción                                                                                         |
+| Field   | Type   | Description                                                                                         |
 | :------ | :----- | :-------------------------------------------------------------------------------------------------- |
-| `track` | string | El número del pedido se almacena en la columna `track` (seguimiento) de la hoja de cálculo Pedidos. |
+| `track` | string | The order number is stored in the `track` column of the Orders table. |
 
-#### Solicitud
+#### Request
 
 ```json
 {
@@ -278,7 +278,7 @@ HTTP/1.1 400 Conflict
 }
 ```
 
-#### Respuesta exitosa
+#### Successful response
 
 ```json
 HTTP/1.1 200
@@ -287,44 +287,44 @@ HTTP/1.1 200
 }
 ```
 
-#### Solicitud sin número
+#### Request without number
 
 ```json
 HTTP/1.1 400 Bad Request
 {
-  "message":  "No hay suficientes datos para la búsqueda"
+  "message":  "Insufficient data for search"
 }
 ```
 
-#### Solicitud con un número no existente
+#### Request with non-existent number
 
 ```json
 HTTP/1.1 404 Not Found
 {
-  "message": "Pedido no encontrado"
+  "message": "Order not found"
 }
 ```
 
-#### El pedido se está procesando
+#### Order is being processed
 
 ```json
 HTTP/1.1 409 Conflict
 {
-  "message": "El pedido se está procesando"
+  "message": "Order is being processed"
 }
 ```
 
-### Pedidos - Completar el pedido
+### Orders - Complete the order
 
 > `PUT` /api/v1/orders/finish/:id
 
-#### Parámetro
+#### Parameter
 
-| Campo | Tipo   | Descripción                                                                        |
+| Field | Type   | Description                                                                        |
 | :---- | :----- | :--------------------------------------------------------------------------------- |
-| `id`  | number | El número del pedido se almacena en la columna `id` de la hoja de cálculo Pedidos. |
+| `id`  | number | The order number is stored in the `id` column of the Orders table. |
 
-#### Solicitud
+#### Request
 
 ```json
 {
@@ -332,7 +332,7 @@ HTTP/1.1 409 Conflict
 }
 ```
 
-#### Respuesta exitosa
+#### Successful response
 
 ```json
 HTTP/1.1 200
@@ -341,61 +341,61 @@ HTTP/1.1 200
 }
 ```
 
-#### Solicitud sin número
+#### Request without number
 
 ```json
 HTTP/1.1 400 Bad Request
 {
-  "message":  "No hay suficientes datos para la búsqueda"
+  "message":  "Insufficient data for search"
 }
 ```
 
-#### Solicitud con un número no existente
+#### Request with non-existent number
 
 ```json
 HTTP/1.1 404 Not Found
 {
-  "message": "No hay un pedido con esta ID"
+  "message": "No order with this ID"
 }
 ```
 
-#### Solicitud con un número de mensajero no existente
+#### Request with non-existent courier number
 
 ```json
 HTTP/1.1 404 Not Found
 {
-  "message": "No hay un mensajero con esta ID"
+  "message": "No courier with this ID"
 }
 ```
 
-#### No se puede completar el pedido
+#### Cannot complete the order
 
 ```json
 HTTP/1.1 409 Conflict
 {
-  "message": "Este pedido no se puede completar"
+  "message": "This order cannot be completed"
 }
 ```
 
-### Pedidos - Creación de un pedido
+### Orders - Order creation
 
 > `POST` /api/v1/orders
 
-#### Parámetro
+#### Parameter
 
-| Campo                | Tipo     | Descripción                                                                                                                             |
+| Field                | Type     | Description                                                                                                                             |
 | :------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| `firstName`          | string   | El nombre del cliente se escribe en la columna `firstName` de la hoja de cálculo Pedidos.                                               |
-| `lastName`           | string   | El apellido del cliente se escribe en la columna `lastName` de la hoja de cálculo de Pedidos.                                           |
-| `address`            | string   | La dirección del cliente se escribe en la columna `address` (dirección) de la hoja de cálculo Pedidos.                                  |
-| `metroStation`       | string   | La estación de metro más cercana al cliente se escribe en la columna `subwayStation` (estación de metro) de la hoja de cálculo Pedidos. |
-| `phone`              | string   | El teléfono del cliente se escribe en la columna `phone` (teléfono) de la hoja de cálculo Pedidos.                                      |
-| `rentTime`           | number   | El número de días de alquiler se escribe en la columna `rentTime` de la hoja de cálculo Pedidos.                                        |
-| `deliveryDate`       | string   | La fecha de entrega se escribe en la columna `deliveryDate` (fecha de entrega) de la hoja de cálculo de Pedidos.                        |
-| `comment` `optional` | string   | El comentario de un cliente se escribe en la columna `comment` (comentario) de la hoja de cálculo Pedidos.                              |
-| `color` `optional`   | string[] | Los colores preferidos se escriben en la columna `color` de la hoja de cálculo Pedidos.                                                 |
+| `firstName`          | string   | The customer name is written to the `firstName` column of the Orders table.                                               |
+| `lastName`           | string   | The customer last name is written to the `lastName` column of the Orders table.                                           |
+| `address`            | string   | The customer address is written to the `address` column of the Orders table.                                  |
+| `metroStation`       | string   | The nearest metro station to the customer is written to the `subwayStation` column of the Orders table. |
+| `phone`              | string   | The customer phone is written to the `phone` column of the Orders table.                                      |
+| `rentTime`           | number   | The number of rental days is written to the `rentTime` column of the Orders table.                                        |
+| `deliveryDate`       | string   | The delivery date is written to the `deliveryDate` column of the Orders table.                        |
+| `comment` `optional` | string   | A customer comment is written to the `comment` column of the Orders table.                              |
+| `color` `optional`   | string[] | The preferred colors are written to the `color` column of the Orders table.                                                 |
 
-#### Solicitud
+#### Request
 
 ```json
 {
@@ -411,7 +411,7 @@ HTTP/1.1 409 Conflict
 }
 ```
 
-#### El pedido ha sido creado con éxito
+#### Order created successfully
 
 ```json
 HTTP/1.1 201 Created {
@@ -419,21 +419,21 @@ HTTP/1.1 201 Created {
 }
 ```
 
-### Pedidos - Obtener un pedido por su número
+### Orders - Get an order by its number
 
 > `GET` /api/v1/orders/track
 
-#### Parámetro
+#### Parameter
 
-| Campo | Tipo   | Descripción                       |
+| Field | Type   | Description                       |
 | :---- | :----- | :-------------------------------- |
-| `t`   | number | Número de seguimiento del pedido. |
+| `t`   | number | Order tracking number. |
 
-#### Solicitud
+#### Request
 
 > /api/v1/orders/track?`t=123456`
 
-#### Éxito de respuesta
+#### Success response
 
 ```json
 HTTP/1.1 200
@@ -463,53 +463,52 @@ HTTP/1.1 200
 }
 ```
 
-#### Solicitud sin número
+#### Request without number
 
 ```json
 HTTP/1.1 400 Bad Request
 {
-  "message":  "No hay suficientes datos para la búsqueda"
+  "message":  "Insufficient data for search"
 }
 ```
 
-#### Solicitud con un número no existente
+#### Request with non-existent number
 
 ```json
 HTTP/1.1 404 Not Found
 {
-  "message": "Pedido no encontrado"
+  "message": "Order not found"
 }
 ```
 
+### Orders - Get a list of orders
 
-### Pedidos - Obtener una lista de pedidos
+#### Parameter
 
-#### Parámetro
-
-| Campo | Tipo   | Descripción                       |
+| Field | Type   | Description                       |
 | :---- | :----- | :-------------------------------- |
-| `courierId` `opcional`   | number | ID del mensajero. Si se especifica, devuelve todos los pedidos activos y completados del mensajero. |
-| `nearestStation` `optional`   | string | Filtro de estaciones del metro. Enviado como JSON, por ejemplo, `{ nearestStation: ["1", "2"] }`. Al enviar, el resultado final se filtra por las estaciones de metro especificadas. |
-| `limit` `optional`   | number | Número de pedidos por página. `Máximo: 30`. `Valor por defecto: 30`. |
-| `page` `optional`   | number | Página de visualización de pedidos actuales. `Valor por defecto: 0`. |
+| `courierId` `optional`   | number | Courier ID. If specified, returns all active and completed orders of the courier. |
+| `nearestStation` `optional`   | string | Metro station filter. Sent as JSON, for example, `{ nearestStation: ["1", "2"] }`. When sent, the final result is filtered by the specified metro stations. |
+| `limit` `optional`   | number | Number of orders per page. `Maximum: 30`. `Default value: 30`. |
+| `page` `optional`   | number | Page number of current order view. `Default value: 0`. |
 
-#### Todos los pedidos del mensajero activos/completados
+#### All active/completed orders of the courier
 
 > /api/v1/orders?`courierId=1`
 
-#### Todos los pedidos del mensajero activos/completados en las estaciones "First Avenue"(1) o "Broadway Junction"(2)
+#### All active/completed orders of the courier at "First Avenue"(1) or "Broadway Junction"(2) stations
 
 > /api/v1/orders?courierId=1&`nearestStation=["1", "2"]`
 
-#### 10 pedidos disponibles para recolección por mensajero
+#### 10 available orders for collection by courier
 
 > /api/v1/orders?`limit=10`&`page=0`
 
-#### 10 pedidos disponibles para recolección por mensajero cerca de la estación de metro "York Street"(110)
+#### 10 available orders for collection by courier near "York Street"(110) metro station
 
 > /api/v1/orders?`limit=10`&`page=0`&`nearestStation=["110"]`
 
-#### Solicitud exitosa sin courierId
+#### Successful request without courierId
 
 ```json
 HTTP/1.1 200
@@ -581,31 +580,31 @@ HTTP/1.1 200
  }
 ```
 
-#### Solicitud con una ID no existente
+#### Request with non-existent ID
 
 ```json
 HTTP/1.1 404 Not Found
 {
-  "message": "No se encontró el mensajero con ID {courierId}"
+  "message": "Courier with ID {courierId} not found"
 }
 ```
 
-## Utilidades
+## Utilities
 
-### Utilidades - Buscar estaciones de metro por nombre
+### Utilities - Search metro stations by name
 
 > `GET` /api/v1/stations/search
 
-#### Parámetro
+#### Parameter
 
-| Campo | Tipo   | Descripción                       |
+| Field | Type   | Description                       |
 | :---- | :----- | :-------------------------------- |
-| `s` | string | String de búsqueda de estación. |
+| `s` | string | Station search string. |
 
-#### Buscar metro "Del"
+#### Search for metro "Del"
 > /api/v1/stations/search?`s=Del`
 
-#### Búsqueda exitosa
+#### Successful search
 
 ```json
 HTTP/1.1 200 OK
@@ -623,11 +622,11 @@ HTTP/1.1 200 OK
 ]
 ```
 
-### Utilidades - Servidor de ping
+### Utilities - Ping server
 
 > `GET` /api/v1/ping
 
-#### Éxito de respuesta
+#### Success response
 
 ```json
 HTTP/1.1 200 Ok
