@@ -1,49 +1,49 @@
-# US-9: El botón "Cancelar el pedido" desaparece en un lugar de permanecer deshabilitado tras la aceptación del repartidor
+# US-9: The "Cancelar el pedido" button disappears instead of remaining disabled after courier acceptance
 
-# Detalles clave
+# Key details
 
-## Severidad
+## Severity
 🔵 Minor
 
-## Prioridad
+## Priority
 🟩 Low
 
-## Entorno
+## Environment
 - Opera 132, 1280x720 (Chrome bloqueado por [US-1](./US-1.md))
 - Postman 12.16.4
 - Api Ez-scooter versión 1.0.0
 
-## Componente
-Estado del Pedido
+## Component
+Order Status
 
-## Descripción
+## Description
 
-### Precondiciones
-- Se ha creado un pedido nuevo y se ha guardado su número.
-- Mediante Postman, se ha solicitado el pedido usando su número de pedido y se ha guardado su ID.
-- Se ha creado una cuenta de mensajero.
-- Mediante Postman, se ha iniciado sesión usando las credenciales del mensajero creado y se ha guardado su ID que devuelve en la respuesta.
+### Preconditions
+- A new order has been created and its number has been saved.
+- Using Postman, the order has been requested by its order number and the returned ID has been saved.
+- A courier account has been created.
+- Using Postman, a login has been performed with the newly created courier credentials and the returned ID has been saved.
 
-### Pasos para reproducir
-1. Abrir la página de Inicio.
-2. Hacer clic en “Estado del pedido”.
-3. Ingresar el número del pedido y hacer clic en “¡Vamos!”.
-4. Observar la presencia del botón en la parte inferior izquierda de la pantalla.
-5. Mediante Postman, aceptar el pedido usando el ID del mensajero y el ID del pedido.
-6. Hacer clic en el logo de Urban Scooter para volver a la página de inicio.
-7. Volver a consultar el pedido con el botón “Estado del pedido“.
-8. Observar la parte inferior izquierda de la pantalla.
+### Steps to reproduce
+1. Open the "Inicio" page.
+2. Click "Estado del pedido".
+3. Enter the order number and click "¡Vamos!".
+4. Observe the presence of the button in the bottom left of the screen.
+5. Using Postman, accept the order using the courier ID and order ID.
+6. Click the Urban Scooter logo to return to the home page.
+7. Check the order again with the "Estado del pedido" button.
+8. Observe the bottom left of the screen.
 
-### Resultado esperado
-El botón “Cancelar el pedido“ sigue visible pero aparece en estado deshabilitado (no es cliqueable).
+### Expected result
+The "Cancelar el pedido" button remains visible but appears disabled (not clickable).
 
-### Resultado actual
-El botón “Cancelar el pedido” desaparece completamente de la pantalla.
+### Actual result
+The "Cancelar el pedido" button disappears completely from the screen.
 
-### Evidencia
+### Evidence
 
-#### Captura de pantalla antes de la aceptación
+#### Screenshot before acceptance
 ![](../test-evidence/US-9/button-visible-clickable.png)
 
-#### Captura de la pantalla después de la aceptación
+#### Screenshot after acceptance
 ![](../test-evidence/US-9/button-disappeared.png)
