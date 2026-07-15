@@ -1,23 +1,23 @@
-# Ejecución de pruebas funcionales de la aplicación móvil
+# Execution of mobile application functional tests
 
-## Notificación
+## Notification
 
-| ID | Título | Estado | Reporte de error |
+| ID | Title | Status | Error Report |
 | :--- | :--- | :--- | :--- |
-| [TC-MOB-FUNC-001](../../../test-planning/mobile-app/TC-MOB-FUNC-001.md) | Recepción de la notificación push 2 horas antes del plazo. | 🔴 FAILED | [US-31](../../bug-reports/US-31.md) |
-| [TC-MOB-FUNC-002](../../../test-planning/mobile-app/TC-MOB-FUNC-002.md) | No se recibe la notificación push 1 hora y 59 minutos antes del plazo. | 🟢 PASSED |
-| [TC-MOB-FUNC-003](../../../test-planning/mobile-app/TC-MOB-FUNC-003.md) | No se recibe la notificación push 2 horas y 1 minuto después del plazo | 🟢 PASSED |
-| [TC-MOB-FUNC-004](../../../test-planning/mobile-app/TC-MOB-FUNC-004.md) | La notificación incluye la misma dirección del pedido aceptado. | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): sin notificación no se puede verificar el contenido. |
-| [TC-MOB-FUNC-005](../../../test-planning/mobile-app/TC-MOB-FUNC-005.md) | Tocar la notificación redirige a la pestaña "Mis pedidos" en la aplicación. | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): sin notificación no se puede verificar el contenido. |
-| [TC-MOB-FUNC-006](../../../test-planning/mobile-app/TC-MOB-FUNC-006.md) | No se recibe notificación si el pedido ya fue completado. | 🟢 PASSED |
+| [TC-MOB-FUNC-001](../../../test-planning/mobile-app/TC-MOB-FUNC-001.md) | Reception of push notification 2 hours before the deadline. | 🔴 FAILED | [US-31](../../bug-reports/US-31.md) |
+| [TC-MOB-FUNC-002](../../../test-planning/mobile-app/TC-MOB-FUNC-002.md) | Push notification is not received 1 hour and 59 minutes before the deadline. | 🟢 PASSED |
+| [TC-MOB-FUNC-003](../../../test-planning/mobile-app/TC-MOB-FUNC-003.md) | Push notification is not received 2 hours and 1 minute after the deadline | 🟢 PASSED |
+| [TC-MOB-FUNC-004](../../../test-planning/mobile-app/TC-MOB-FUNC-004.md) | The notification includes the same address as the accepted order. | 🟡 SKIPPED | Blocked by [US-31](../../bug-reports/US-31.md): without notification, content cannot be verified. |
+| [TC-MOB-FUNC-005](../../../test-planning/mobile-app/TC-MOB-FUNC-005.md) | Tapping the notification redirects to the "Mis pedidos" tab in the application. | 🟡 SKIPPED | Blocked by [US-31](../../bug-reports/US-31.md): without notification, content cannot be verified. |
+| [TC-MOB-FUNC-006](../../../test-planning/mobile-app/TC-MOB-FUNC-006.md) | No notification is received if the order is already completed. | 🟢 PASSED |
 
-## Falta de acceso a internet
+## No Internet Access
 
-| ID | Título | Estado | Reporte de error |
+| ID | Title | Status | Error Report |
 | :--- | :--- | :--- | :--- |
-| [TC-MOB-FUNC-007](../../../test-planning/mobile-app/TC-MOB-FUNC-007.md) | Se muestra ventana emergente "Sin acceso a Internet" al tocar "Iniciar sesión" sin conexión a internet. | 🔴 FAILED | [US-32](../../bug-reports/US-32.md) |
-| [TC-MOB-FUNC-008](../../../test-planning/mobile-app/TC-MOB-FUNC-008.md) | Se muestra ventana emergente "Sin acceso a Internet" al tocar "Mis pedidos" sin conexión a internet. | 🟢 PASSED |
-| [TC-MOB-FUNC-009](../../../test-planning/mobile-app/TC-MOB-FUNC-009.md) | Se muestra ventana emergente "Sin acceso a Internet" al tocar aceptar un pedido sin conexión a internet. | 🟢 PASSED |
-| [TC-MOB-FUNC-010](../../../test-planning/mobile-app/TC-MOB-FUNC-010.md) | Se muestra ventana emergente "Sin acceso a Internet" al completar un pedido sin conexión a internet. | 🟢 PASSED |
-| [TC-MOB-FUNC-011](../../../test-planning/mobile-app/TC-MOB-FUNC-011.md) | Clic en "Aceptar" en la ventana emergente "Sin acceso a Internet" cierra la ventana. | 🟢 PASSED |
-| [TC-MOB-FUNC-012](../../../test-planning/mobile-app/TC-MOB-FUNC-012.md) | Ventana emergente "Sin acceso a Internet" reaparece al tocar cualquier botón si aún no hay conexión.  | 🟢 PASSED |
+| [TC-MOB-FUNC-007](../../../test-planning/mobile-app/TC-MOB-FUNC-007.md) | "Sin acceso a Internet" popup window is displayed when tapping "Iniciar sesión" without internet connection. | 🔴 FAILED | [US-32](../../bug-reports/US-32.md) |
+| [TC-MOB-FUNC-008](../../../test-planning/mobile-app/TC-MOB-FUNC-008.md) | "Sin acceso a Internet" popup window is displayed when tapping "Mis pedidos" without internet connection. | 🟢 PASSED |
+| [TC-MOB-FUNC-009](../../../test-planning/mobile-app/TC-MOB-FUNC-009.md) | "Sin acceso a Internet" popup window is displayed when tapping to accept an order without internet connection. | 🟢 PASSED |
+| [TC-MOB-FUNC-010](../../../test-planning/mobile-app/TC-MOB-FUNC-010.md) | "Sin acceso a Internet" popup window is displayed when completing an order without internet connection. | 🟢 PASSED |
+| [TC-MOB-FUNC-011](../../../test-planning/mobile-app/TC-MOB-FUNC-011.md) | Clicking "Aceptar" on the "Sin acceso a Internet" popup window closes the window. | 🟢 PASSED |
+| [TC-MOB-FUNC-012](../../../test-planning/mobile-app/TC-MOB-FUNC-012.md) | "Sin acceso a Internet" popup window reappears when tapping any button if there is still no connection.  | 🟢 PASSED |

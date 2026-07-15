@@ -1,26 +1,26 @@
-# Ejecución de pruebas de diseño de la aplicación móvil
+# Execution of mobile application design tests
 
-## Notificación
+## Notification
 
-| ID | Título | Estado | Reporte de error |
+| ID | Title | Status | Error Report |
 | :--- | :--- | :--- | :--- |
-| [TC-MOB-DES-001](../../../test-planning/mobile-app/TC-MOB-DES-001.md) | Ícono de la aplicación presente | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): no se recibe la notificación. |
-| [TC-MOB-DES-002](../../../test-planning/mobile-app/TC-MOB-DES-002.md) | Texto "Urban Scooter ⋅" en la notificación. | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): no se recibe la notificación. |
-| [TC-MOB-DES-003](../../../test-planning/mobile-app/TC-MOB-DES-003.md) | Título "2 horas hasta el final del pedido" presente. | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): no se recibe la notificación. |
-| [TC-MOB-DES-004](../../../test-planning/mobile-app/TC-MOB-DES-004.md) | Título "2 horas hasta el final del pedido" está en negritas. | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): no se recibe la notificación. |
-| [TC-MOB-DES-005](../../../test-planning/mobile-app/TC-MOB-DES-005.md) | El cuerpo del mensaje de la notificación "Se debe completar el pedido de <dirección_de_entrega>. Si no llegas a tiempo, contacta a soporte: 0101". | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): no se recibe la notificación. |
-| [TC-MOB-DES-006](../../../test-planning/mobile-app/TC-MOB-DES-006.md) | El color de fondo de la notificación es blanco. | 🟡 SKIPPED | Bloqueado por [US-31](../../bug-reports/US-31.md): no se recibe la notificación. |
+| [TC-MOB-DES-001](../../../test-planning/mobile-app/TC-MOB-DES-001.md) | Application icon present | 🟡 SKIPPED | Blocked by [US-31](../../bug-reports/US-31.md): notification is not received. |
+| [TC-MOB-DES-002](../../../test-planning/mobile-app/TC-MOB-DES-002.md) | "Urban Scooter ⋅" text in the notification. | 🟡 SKIPPED | Blocked by [US-31](../../bug-reports/US-31.md): notification is not received. |
+| [TC-MOB-DES-003](../../../test-planning/mobile-app/TC-MOB-DES-003.md) | "2 horas hasta el final del pedido" title present. | 🟡 SKIPPED | Blocked by [US-31](../../bug-reports/US-31.md): notification is not received. |
+| [TC-MOB-DES-004](../../../test-planning/mobile-app/TC-MOB-DES-004.md) | "2 horas hasta el final del pedido" title is in bold. | 🟡 SKIPPED | Blocked by [US-31](../../bug-reports/US-31.md): notification is not received. |
+| [TC-MOB-DES-005](../../../test-planning/mobile-app/TC-MOB-DES-005.md) | The body of the notification message "Se debe completar el pedido de <delivery_address>. Si no llegas a tiempo, contacta a soporte: 0101". | 🟡 SKIPPED | Blocked by [US-31](../../bug-reports/US-31.md): notification is not received. |
+| [TC-MOB-DES-006](../../../test-planning/mobile-app/TC-MOB-DES-006.md) | The background color of the notification is white. | 🟡 SKIPPED | Blocked by [US-31](../../bug-reports/US-31.md): notification is not received. |
 
-## Falta de acceso a internet
+## No Internet Access
 
-| ID | Título | Estado | Reporte de error |
+| ID | Title | Status | Error Report |
 | :--- | :--- | :--- | :--- |
-| [TC-MOB-DES-007](../../../test-planning/mobile-app/TC-MOB-DES-007.md) | La ventana emergente tiene bordes redondeados. | 🟢 PASSED |
-| [TC-MOB-DES-008](../../../test-planning/mobile-app/TC-MOB-DES-008.md) | La ventana emergente tiene bordes de color negro. | 🟢 PASSED |
-| [TC-MOB-DES-009](../../../test-planning/mobile-app/TC-MOB-DES-009.md) | La ventana emergente tiene fondo de color blanco. | 🟢 PASSED |
-| [TC-MOB-DES-010](../../../test-planning/mobile-app/TC-MOB-DES-010.md) | Título de la ventana emergente coincide con "Sin acceso a Internet". | 🟢 PASSED |
-| [TC-MOB-DES-011](../../../test-planning/mobile-app/TC-MOB-DES-011.md) | Título de la ventana emergente está en negritas. | 🟢 PASSED |
-| [TC-MOB-DES-012](../../../test-planning/mobile-app/TC-MOB-DES-012.md) | El mensaje de la ventana emergente coincide con "Comprueba la conexión o espera una notificación de que se ha restablecido". | 🟢 PASSED |
-| [TC-MOB-DES-013](../../../test-planning/mobile-app/TC-MOB-DES-013.md) | Botón "ok" presente en la parte inferior. | 🔴 FAILED | [US-33](../../bug-reports/US-33.md) |
-| [TC-MOB-DES-014](../../../test-planning/mobile-app/TC-MOB-DES-014.md) | Botón "ok" tiene bordes redondeados de color negro. | 🟢 PASSED |
-| [TC-MOB-DES-015](../../../test-planning/mobile-app/TC-MOB-DES-015.md) | Botón "ok" tiene fondo de color blanco. | 🟢 PASSED |
+| [TC-MOB-DES-007](../../../test-planning/mobile-app/TC-MOB-DES-007.md) | The popup window has rounded corners. | 🟢 PASSED |
+| [TC-MOB-DES-008](../../../test-planning/mobile-app/TC-MOB-DES-008.md) | The popup window has black borders. | 🟢 PASSED |
+| [TC-MOB-DES-009](../../../test-planning/mobile-app/TC-MOB-DES-009.md) | The popup window has a white background. | 🟢 PASSED |
+| [TC-MOB-DES-010](../../../test-planning/mobile-app/TC-MOB-DES-010.md) | Popup window title matches "Sin acceso a Internet". | 🟢 PASSED |
+| [TC-MOB-DES-011](../../../test-planning/mobile-app/TC-MOB-DES-011.md) | Popup window title is in bold. | 🟢 PASSED |
+| [TC-MOB-DES-012](../../../test-planning/mobile-app/TC-MOB-DES-012.md) | The popup window message matches "Comprueba la conexión o espera una notificación de que se ha restablecido". | 🟢 PASSED |
+| [TC-MOB-DES-013](../../../test-planning/mobile-app/TC-MOB-DES-013.md) | "OK" button present at the bottom. | 🔴 FAILED | [US-33](../../bug-reports/US-33.md) |
+| [TC-MOB-DES-014](../../../test-planning/mobile-app/TC-MOB-DES-014.md) | "OK" button has rounded corners with black borders. | 🟢 PASSED |
+| [TC-MOB-DES-015](../../../test-planning/mobile-app/TC-MOB-DES-015.md) | "OK" button has a white background. | 🟢 PASSED |
