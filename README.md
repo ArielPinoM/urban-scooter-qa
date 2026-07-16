@@ -1,6 +1,47 @@
 # Urban Scooter QA Engineering Project
 
-This repository documents the final project developed during a QA Engineer bootcamp. It showcases a complete QA engineering workflow covering requirements analysis, test planning, test execution, defect reporting, and evidence collection for the Urban Scooter application.
+Comprehensive manual testing project for a scooter rental application, covering web, mobile, and API layers with structured defect reporting.
+
+## Objective
+
+To validate the functional and design quality of the Urban Scooter application across its three layers — web frontend, mobile frontend, and backend API — by designing and executing structured tests, documenting defects, and collecting evidence in a professional QA workflow.
+
+## Problem Statement
+
+The application exhibited numerous functional, validation, and documentation bugs that compromised user experience and data integrity. A systematic testing approach was required to identify, report, and track these issues through to resolution.
+
+## Key Learnings & Achievements
+
+- Designed test cases and checklists directly from business requirements and Figma prototypes.
+- Executed functional and UI tests across multiple browsers, screen resolutions, and a physical mobile device.
+- Performed API testing using Postman, including database verification via SQL.
+- Logged over 70 detailed bug reports in Jira with full traceability and evidence.
+- Built a clean, well-organized repository structure suitable for a professional QA portfolio.
+
+## Skills
+
+**Testing & Analysis**
+- Requirements review and traceability
+- Test case and checklist design (functional and UI)
+- Boundary value and equivalence partitioning
+- API testing with Postman
+- Database validation through SQL queries
+- Cross-browser and cross-device testing
+- Design validation against Figma references
+
+**Documentation & Process**
+- Defect tracking and management in Jira
+- Test evidence collection and organization
+- Test run reporting and progress tracking
+- Professional repository documentation with Markdown
+- Version control with Git and GitHub
+
+## Tech Stack
+
+- **Testing tools:** Postman, Figma (design reference), Jira (defect tracking)
+- **Browsers:** Chrome 85+, Opera 71+
+- **Devices:** Samsung Galaxy S23+, Android Emulator (Pixel 6)
+- **Documentation:** Markdown, Git/GitHub
 
 ## Project Overview
 
@@ -58,42 +99,19 @@ All bug reports generated during the project are collected in [docs/testing/bug-
 
 The repository includes defect documentation from US-1 through US-71, covering issues identified during web, mobile, and API testing.
 
-## 5. Test Execution Summary
+## Test Execution Summary
 
-### Mobile App
-- **Total Tests Designed:** 27
-- **Passed:** 16 ✅
-- **Failed:** 3 ❌
-- **Skipped:** 8 ⏭️
-- **Pass Rate:** 59.3%
+| Layer       | Tests Designed | Tests Executed | Passed | Failed | Skipped | Pass Rate |
+|-------------|----------------|----------------|--------|--------|---------|-----------|
+| Web App     | 215            | 328*           | 240    | 39     | 49      | 73.2%     |
+| Mobile App  | 27             | 27             | 16     | 3      | 8       | 59.3%     |
+| Backend API | 72             | 72             | 34     | 38     | 0       | 47.2%     |
+| **Total**   | **314**        | **427**        | **290** | **80** | **57**   | **67.9%** |
 
-### Backend
-- **Total Tests Designed:** 72
-- **Passed:** 34 ✅
-- **Failed:** 38 ❌
-- **Pass Rate:** 47.2%
+*Several web test cases were executed across multiple browsers and resolutions, increasing execution count.
 
-### Web App
-- **Total Tests Designed:** 215
-- **Passed:** 240 ✅
-- **Failed:** 39 ❌
-- **Skipped:** 49 ⏭️
-- **Total Test Executions:** 328*
-- **Pass Rate:** 73.2%
+**Coverage:** All critical user flows across web, mobile, and API layers, including positive and negative scenarios, UI validation, and backend data integrity.
 
-*Note: Several test cases were executed across different browsers and screen resolutions, which increased the total number of test executions beyond the number of tests designed.
+---
 
-## QA Engineering Focus
-
-This project reflects core QA engineering practices such as:
-
-- Requirements review and traceability
-- Test case and checklist design
-- Functional and UI validation
-- Boundary value and equivalence partition testing
-- Test execution and evidence documentation
-- Bug reporting and defect analysis
-
-## Conclusion
-
-This repository serves as a practical QA portfolio that demonstrates the end-to-end documentation and execution process of testing activities for a real-world application scenario.
+*This repository serves as a practical QA portfolio demonstrating the end-to-end testing process of a real-world application.*
